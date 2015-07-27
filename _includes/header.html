@@ -1,0 +1,33 @@
+{% include facebook.html %}
+
+<!-- Logo -->
+	<h1><a href="/index.html">{{ page.header }}</a></h1>
+
+<!-- Nav -->
+	<nav id="nav">
+		<ul>
+			<li {% if page.navcurrent == 'home' %}class="current"{% endif %}><a href="/index.html">Home</a></li>
+			<li {% if page.navcurrent == 'people' %}class="current"{% endif %}>
+				<a href="/people/">Our Team</a>
+				<ul>
+					<li><a href="/people/#leadership">Leadership</a></li>
+					<li><a href="/people/#developers">Developers</a></li>
+					<li><a href="/people/#researchers">Developers</a></li>
+					<li><a href="/people/#trainees">Trainees</a></li>
+					<li><a href="/people/#alumni">Alumni</a></li>
+				</ul>
+			</li>
+			<li {% if page.navcurrent == 'projects' %}class="current"{% endif %}>
+				<a href="/projects/">Our Projects</a>
+				<ul>
+					<li><a href="/projects/#software">Software</a></li>
+					<li><a href="/projects/#research">Research</a></li>
+				</ul>
+			</li>
+			<li {% if page.navcurrent == 'opportunities' %}class="current"{% endif %}><a href="/opportunities/">Opportunities</a></li>
+
+			<!-- <li><a href="left-sidebar.html">Left Sidebar</a></li>
+			<li><a href="right-sidebar.html">Right Sidebar</a></li>
+			<li><a href="no-sidebar.html">No Sidebar</a></li> -->
+		</ul>
+	</nav>
