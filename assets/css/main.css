@@ -2561,3 +2561,8 @@
 .headspace {
 	margin-top: 15px;
 }
+
+.border {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
