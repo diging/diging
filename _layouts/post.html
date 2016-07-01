@@ -1,0 +1,47 @@
+<html>
+	{% include head.html %}
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<div id="header-wrapper">
+				<div id="header">
+
+					{% include header.html %}
+
+				</div>
+			</div>
+
+			<div id="main-wrapper">
+				<div class="container">
+					<section class="container">
+						<div class="row">
+							<div class="8u -2u 12u(mobile)">
+								<header>
+									<h2>{{ page.title }}</h2>
+                                    <h4 style="color: #555;">{{ page.subtitle }}</h4>
+                                    <h4>{{ page.date | date: '%B %d, %Y' }}</h4>
+								</header>
+                                {% if page.feature_image %}
+                                <div class="image" style="float:right; width: 50%; margin-left: 15px; margin-left: 15px; border 2px solid #555;">
+                                <img class="image"
+                                    src="{{ page.feature_image | prepend: site.baseurl }}">
+                                    <p style="font-size: 9pt; color: #555;">{{ page.feature_image_caption }}</p>
+                                </div>
+
+                                {% endif %}
+
+                                {{ content }}
+
+							</div>
+
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		{% include footer.html %}
+
+		{% include scripts.html %}
+	</body>
+</html>
