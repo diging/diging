@@ -1,1 +1,1 @@
-# diging
+# Digital Innovation Group Website
