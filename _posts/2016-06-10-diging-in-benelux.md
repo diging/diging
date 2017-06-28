@@ -3,7 +3,7 @@ layout: post
 header: The Digital Innovation Group @ ASU
 title: DigInG visits Benelux
 subtitle: Digital Humanities Benelux Conference, 2016
-feature_image: assets/images/20160631/Belval_crop.jpg
+feature_image: assets/images/20160631/Belval.jpg
 feature_image_caption: "The University of Luxembourg campus at Belval"
 summary: "The developers and researchers of the Digital Innovation Group (DigInG) at ASU have had a busy year. Some of their hard work was on display this week at the DH Benelux Conference 2016 in Belval, Luxembourg."
 ---
