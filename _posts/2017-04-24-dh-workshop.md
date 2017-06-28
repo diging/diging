@@ -3,7 +3,7 @@ layout: post
 header: Workshop at DH 2017
 title: Let’s Develop an Infrastructure for Historical Research Tools
 subtitle: Workshop at DH 2017 in Montréal
-feature_image: assets/images/dh2017-skyline.jpg
+feature_image: assets/images/dh2017-skyline.png
 #feature_image_caption: "The University of Luxembourg campus at Belval"
 summary: "Join us for the workshop “Let’s Develop an Infrastructure for Historical Research Tools” at the Digital Humanities Conference 2017! We would like to gather developers and programming-literate scholars to share their tool-building experiences and to present our first practical steps to create a system integrating multiple tools to work with historical documents from scan to analysis.
 <br><br>
