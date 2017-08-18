@@ -1,6 +1,6 @@
 ---
 layout: post
-header: Workshop at DH 2017
+header: The Digital Innovation Group @ ASU
 title: Let’s Develop an Infrastructure for Historical Research Tools
 subtitle: Workshop at DH 2017 in Montréal
 feature_image: assets/images/dh2017-skyline.png
