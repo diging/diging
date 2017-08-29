@@ -28,9 +28,9 @@ navcurrent: home
                                 <header class="major">
                                     <h2>News</h2>
                                 </header>
-                                <div class="row">
+                                <div class="w3-content w3-display-container">
                                     {% for post in site.posts %}
-                                    <div class="6u 12u(mobile)">
+                                    <div class="mySlides">
                                         <section class="box">
                                             <a href="{{ post.url }}" class="image featured"><img src="{{ post.feature_image }}" alt="" /></a>
                                             <header>
@@ -64,6 +64,8 @@ navcurrent: home
                                             </footer>
                                         </section>
                                     </div> -->
+																		<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+																		<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
                                 </div>
                             </section>
 
