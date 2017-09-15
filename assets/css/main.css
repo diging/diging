@@ -1375,6 +1375,12 @@
 		padding-right: 20px;
 	}
 
+	.image-news img {
+		display: block;
+		width: 55%;
+		margin: 0 auto;
+	}
+
 	.image {
 		display: inline-block;
 		outline: 0;
@@ -1382,7 +1388,7 @@
 
 		.image img {
 			display: block;
-			width: 55%;
+			width: 100%;
 			margin: 0 auto;
 		}
 
