@@ -1382,7 +1382,8 @@
 
 		.image img {
 			display: block;
-			width: 100%;
+			width: 55%;
+			margin: 0 auto;
 		}
 
 		.image.centered {
