@@ -1367,6 +1367,14 @@
 
 /* Image */
 
+	.image-post {
+		display: inline-block;
+		outline: 0;
+		width: 50%;
+		float: left;
+		padding-right: 20px;
+	}
+
 	.image {
 		display: inline-block;
 		outline: 0;
