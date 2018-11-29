@@ -2666,3 +2666,14 @@
 	border-bottom: 1px solid #efefef;
   padding: 52px 49px 8px 58px;
 }
+
+#hydra{
+		text-align: right;
+    position: absolute;
+    top: 13px;
+    right: 0;
+    padding: 0 20px;
+		text-transform: uppercase;
+    font-size: .8em;
+    width: 100%;
+}
