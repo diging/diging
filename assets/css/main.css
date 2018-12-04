@@ -1626,7 +1626,7 @@
 		.icon.featured {
 			position: relative;
 			display: inline-block;
-			background-color: #d52349;
+			background-color: #ffb204;
 			width: 9em;
 			padding: 1.75em 0 0.75em 0;
 			border-top-left-radius: 5px;
@@ -1646,7 +1646,7 @@
 				position: absolute;
 				bottom: -1.95em;
 				left: 0;
-				border-top: solid 2em #d52349;
+				border-top: solid 2em #ffb204;
 				border-left: solid 4.5em transparent;
 				border-right: solid 4.5em transparent;
 			}
@@ -2687,3 +2687,51 @@ margin-left: auto;
     padding-right: 15px;
     max-width: 1170px;
 	}
+
+	/*<!--search bar-->
+
+.widget_search .screen-reader-text{
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: normal;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  -webkit-font-smoothing: subpixel-antialiased;
+	display: block !important;
+}
+
+input[type=text] {
+    margin: 0.5em 0;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    padding: 2px;
+    color: #4e4e4e;
+}
+
+input[type="submit" i]{
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px 7px 2px;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    -webkit-appearance: push-button;
+user-select: none;
+white-space: pre;
+}
+
+.screen-reader-text {
+    word-wrap: normal!important;
+}
+*/
