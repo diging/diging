@@ -795,6 +795,10 @@ ul.shortcode-list i {
   font-size: 2.57143rem;
   color: #333;
 }
+.top-bar .title-area .name h2 a {
+  font-weight: bold;
+  color: #000;
+}
 
 .contain-to-grid {
   -moz-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
@@ -2116,7 +2120,7 @@ form input.error, form textarea.error {
   background-position: absolute;
   position: absolute;
   top: 0;
-  opacity: 0.6;
+  /*opacity: 0;*/
 }
 .modDefaultSlider .sequence .frame.static .bg {
   left: 0;
@@ -2505,16 +2509,17 @@ form input.error, form textarea.error {
   transition-duration: 1s;
 }
 .modDefaultSlider .sequence .title h2 {
-  font-size: 5.14286rem;
-  line-height: 5.14286rem;
+  font-size: 1.5em;
+  line-height: 3.14286rem;
   display: inline-block;
   color: #fff;
-  letter-spacing: 2px;
-  font-weight: bold;
+  letter-spacing: 0px;
+  font-weight: normal;
   padding: 0.8rem;
   /*margin-bottom: 40px;*/
-  text-transform: uppercase;
+  text-transform: none;
   background-color: #005DA5;
+  text-align: center;
 }
 .modDefaultSlider .sequence .small-title h2 {
   font-size: 1.28571rem;
@@ -3837,8 +3842,8 @@ body {
 }
 
 .haufemerriweather {font-family: 'HaufeMerriweather',serif; font-weight: normal;}
- 
- 
+
+
 /* Webfont: HaufeMerriweather-Bold */@font-face {
     font-family: 'HaufeMerriweather';
     src: url('fonts/HaufeMerriweather-Bold.eot'); /* IE9 Compat Modes */
@@ -3852,8 +3857,8 @@ body {
 }
 
 .haufemerriweatherbold { font-family: 'HaufeMerriweather', serif; font-weight: bold;}
- 
- 
+
+
 /* Webfont: HaufeMerriweather-BoldItalic */@font-face {
     font-family: 'HaufeMerriweather';
     src: url('fonts/HaufeMerriweather-BoldItalic.eot'); /* IE9 Compat Modes */
@@ -3868,8 +3873,8 @@ body {
 
 .haufemerriweatherbolditalic { font-family: 'HaufeMerriweather', serif;   font-style: italic;
     font-weight: bold;}
- 
- 
+
+
 /* Webfont: HaufeMerriweather-Italic */@font-face {
     font-family: 'HaufeMerriweather';
     src: url('fonts/HaufeMerriweather-Italic.eot'); /* IE9 Compat Modes */
@@ -3885,7 +3890,7 @@ body {
     font-weight: normal;
 
  }
- 
+
  /* Webfont: HaufeMerriweatherSans */@font-face {
     font-family: 'HaufeMerriweatherSans';
     src: url('fonts/HaufeMerriweatherSans.eot'); /* IE9 Compat Modes */
@@ -3899,7 +3904,7 @@ body {
 }
 .haufemerriweathersans {  font-family: 'HaufeMerriweatherSans', sans-serif;    font-style: normal;
     font-weight: normal;}
-	
+
 /* Webfont: HaufeMerriweatherSans-Bold */@font-face {
     font-family: 'HaufeMerriweatherSans';
     src: url('fonts/HaufeMerriweatherSans-Bold.eot'); /* IE9 Compat Modes */
@@ -3914,28 +3919,30 @@ body {
 
 	.haufemerriweathersansbold {  font-family: 'HaufeMerriweatherSans', sans-serif;    font-style: normal;
     font-weight: bold;}
-	
-	
+
+
 	body {font-family: 'HaufeMerriweather', serif;     font-style: normal;
     font-weight: normal; color: #33332E; background-color: #F7F7F4;}
-	
-	h1, h2, h3, h4, h5, h6 {font-family: 'HaufeMerriweatherSans', sans-serif;     font-style: normal;
+
+	h1, h2, h3, h4, h5, h6 {
+    font-family: 'HaufeMerriweatherSans', sans-serif;
+    font-style: normal;
     font-weight: bold;}
-	
+
 	.button, .button.boxed, nav, .top-bar-section ul li > a, .info  {font-family: 'HaufeMerriweatherSans', sans-serif;     font-style: normal;
     font-weight: normal;}
-	
+
 	a, .modBlogPost.big h3 a:hover, .pager a, .modIconText .icon-text-circle:hover i  {color: #005DA5; /*haufe blue*/}
 	.top-bar-section ul li > a {color: #33332E /*black*/}
 	.top-bar-section li.active:not(.has-form) a:not(.button) { color: #EB6005; background: none;  }
 	.top-bar-section ul li:hover:not(.has-form) > a, .top-bar-section li.active:not(.has-form) a:not(.button):hover {color: #005DA5; background: none;}
-	
+
 	a:hover, .pager a:hover {color: #337DB7;}
 	a:active {color: #337DB7;}
-	
+
 .modBlogPost.big .info, blockquote, blockquote p {color: #999994; /*grey on white*/	}
-	
-	
+
+
  /*ELEMENTS*/
 
 .button {
@@ -3966,5 +3973,3 @@ background-color: #EF8037;}
 }
 
 p { line-height: 1.8; margin-bottom: 1.8rem;}
-
-
