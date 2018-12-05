@@ -1,47 +1,44 @@
-{% include facebook.html %}
-<!-- ASU Header-->
-<div class="asu_nav_container">
-      <a href= "//www.asu.edu/" target="_top"><img style = "float:left" width="200px" src="/images/asu_full_logo.png"/></a>
-				{% include navigation.html %}
+<div class='contain-to-grid sticky'>
+  <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
+    <ul class='title-area'>
+      <li class='name'>
+        <h1>
+          <a href='{{site.url}}/index.html'>
+            <img alt="" src="{{site.url}}/images/haufe-gruppe-logo.png" />
+          </a>
+        </h1>
+      </li>
+      <li class='toggle-topbar menu-icon'>
+        <a href='#'>Menu</a>
+      </li>
+    </ul>
+    <section class='top-bar-section'>
+      <ul class="right">
+        {% for item in site.data.nav %}
+          {% if item.section_id == page.section_id %}
+            {% assign active_class = "active" %}
+          {% else %}
+            {% assign active_class = "" %}
+          {% endif %}
 
-			</div>
-<!-- Logo -->
-	<div id = "top-area">
-		<h1><a href="/index.html">{{ page.header }}</a></h1>
-	</div>
-<!-- Nav -->
-
-	<nav id="nav">
-		<ul>
-			<li {% if page.navcurrent == 'home' %}class="current"{% endif %}><a href="/index.html">Home</a></li>
-			<li {% if page.navcurrent == 'people' %}class="current"{% endif %}>
-				<a href="/people/">Our Team</a>
-				<ul>
-					<li><a href="/people/#leadership">Leadership</a></li>
-					<li><a href="/people/#developers">Developers</a></li>
-					<li><a href="/people/#researchers">Developers</a></li>
-					<li><a href="/people/#trainees">Trainees</a></li>
-					<li><a href="/people/#alumni">Alumni</a></li>
-				</ul>
-			</li>
-			<li {% if page.navcurrent == 'projects' %}class="current"{% endif %}>
-				<a href="/projects/">Our Projects</a>
-				<ul>
-					<li><a href="/projects/#software">Software</a></li>
-					<li><a href="/projects/#research">Research</a></li>
-				</ul>
-			</li>
-			<li {% if page.navcurrent == 'opportunities' %}class="current"{% endif %}><a href="/opportunities/">Opportunities</a></li>
-
-			<!-- <li><a href="left-sidebar.html">Left Sidebar</a></li>
-			<li><a href="right-sidebar.html">Right Sidebar</a></li>
-			<li><a href="no-sidebar.html">No Sidebar</a></li> -->
-		</ul>
-
-	</nav>
-  <!--<div>
-    <label class="screen-reader-text" for="s">Search for:</label>
-    <input type="text" value="" name="s" id="s">
-    <input type="submit" id="searchsubmit" value="Search">
-  </div>
--->
+          {% if item.children %}
+            <li class="has-dropdown {{active_class}}">
+              <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
+              <ul class='dropdown'>
+                {% for child in item.children %}
+                  <li>
+                    <a href="{{site.url}}/{{ child.path }}">{{ child.name }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% else %}
+            <li class="{{active_class}}">
+              <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+  </nav>
+</div>
