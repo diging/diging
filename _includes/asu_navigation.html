@@ -1,0 +1,15 @@
+<div id ="asu_hdr">
+  <div id = "asu_nav_menu" role ="navigation">
+  <div id ="asu_universal_nav">
+
+    <ul >
+      <li>
+      {% for item in site.data.asu_navigation %}
+      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+      {% endfor %}
+
+    </li>
+    </ul>
+  </div>
+</div>
+</div>

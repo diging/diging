@@ -1,7 +1,7 @@
 - name: Home
   path: index.html
   section_id: home
-- name: About
+- name: Our Team
   path: about.html
   section_id: about
 - name: Services
