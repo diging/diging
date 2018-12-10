@@ -29,7 +29,7 @@ testimonials:
   <div class='four spacing'></div>
 </div>
 
-<div class='full'>
+<!--<div class='full'>
   <div class='row'>
     <div class='medium-6 columns'>
       <h3>Our history</h3>
@@ -53,7 +53,7 @@ testimonials:
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <div class='full'>
   <div class="row">
@@ -100,33 +100,138 @@ testimonials:
   <div class='row'>
     <div class='medium-6 columns'>
       <h3 align = "center">Software Developers</h3>
-      <p>DigInG Software Developers are a dynamic and creative team of student engineers. Our developers work in an agile environment to create robust, beautiful, and scalable software to support computational research. Each team member cultivates a unique skillset tailored to their career goals and intellectual interests, and receives one-on-one mentorship in software engineering. <strong>The first step to becoming a DigInG Software Developer is typically to participate as a <a href="#trainees">DigInG Trainee</strong></a>. If you are interested in becoming a DigInG Software Engineer, please contact <a href="mailto:jdamerow@asu.edu">Julia Damerow (jdamerow@asu.edu)</a>.</p>
+      <p>DigInG Software Developers are a dynamic and creative team of student engineers. Our developers work in an agile environment to create robust, beautiful, and scalable software to support computational research. Each team member cultivates a unique skillset tailored to their career goals and intellectual interests, and receives one-on-one mentorship in software engineering.
+      <strong>The first step to becoming a DigInG Software Developer is typically to participate as a <a href="#trainees">DigInG Trainee</strong></a>. If you are interested in becoming a DigInG Software Engineer, please contact <a href="mailto:jdamerow@asu.edu">Julia Damerow (jdamerow@asu.edu)</a>.</p>
+      <br>
+      <div class='row'>
+        {% for member in site.data.sw_developers %}
+          <div class='medium-6 columns'>
+            <div class='mod modTeamMember'>
+              <div class='member'>
+                <img class="avatar" alt="" width="160px"src="{{ member.avatar }}" />
+                <div class='overlay'>
+                  <div class='intro'>
+                    <h3>{{member.name}}</h3>
+                    <p>{{member.position}}</p>
+                    <ul class='socials'>
+                      {% for social in member.socials %}
+                        <li>
+                          <a href='{{social.link}}'>
+                            <i class='fa fa-{{social.icon}}'></i>
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <p class='centered-text'>{{member.desc}}</p>
+              <div class='two spacing'></div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
     </div>
     <div class='medium-6 columns'>
       <h3 align = "center">Researchers</h3>
-      <p>DigInG Researchers deploy our research tools and workflows to address a wide range of problems in the humanities, from a computational perspective. DigInG researchers come from both the sciences and humanities, and work closely with DigInG Developers to improve and extend our tools and methods. Our researchers are expected to develop and address their own research questions, based on their interests, and have the opportunity to acquire skills in computer science. <strong>The first step to becoming a DigInG Researcher is typically to participate as a <a href="#trainees">DigInG Trainee</strong></a>. If you are interested in becoming a DigInG Researcher, please contact <a href="mailto:jdamerow@asu.edu">Julia Damerow (jdamerow@asu.edu)</a>.</p>
+      <p>DigInG Researchers deploy our research tools and workflows to address a wide range of problems in the humanities, from a computational perspective. DigInG researchers come from both the sciences and humanities, and work closely with DigInG Developers to improve and extend our tools and methods. Our researchers are expected to develop and address their own research questions, based on their interests, and have the opportunity to acquire skills in computer science.
+      <strong>The first step to becoming a DigInG Researcher is typically to participate as a <a href="#trainees">DigInG Trainee</strong></a>. If you are interested in becoming a DigInG Researcher, please contact <a href="mailto:jdamerow@asu.edu">Julia Damerow (jdamerow@asu.edu)</a>.</p>
+      <div class='row'>
+
+        {% for member in site.data.researchers %}
+          <div class='medium-6 columns'>
+            <div class='mod modTeamMember'>
+              <div class='member'>
+                <img class="avatar" alt="" width="160px"src="{{ member.avatar }}" />
+                <div class='overlay'>
+                  <div class='intro'>
+                    <h3>{{member.name}}</h3>
+                    <p>{{member.position}}</p>
+                    <ul class='socials'>
+                      {% for social in member.socials %}
+                        <li>
+                          <a href='{{social.link}}'>
+                            <i class='fa fa-{{social.icon}}'></i>
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <p class='centered-text'>{{member.desc}}</p>
+              <div class='two spacing'></div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>
+<div class='full' style='background: #f5f5f5'>
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="mod modSectionHeader ">
+        <div class="special-title centered-text">
+          <a name="trainees"></a>
+          <h2 style="color: ;">Trainees</h2>
+          </div>
+        </div>
+      <div class="spacing"></div>
+      <p>DigInG Trainees are graduate and undergraduate students who participate in our computational humanities workshops and training courses. Trainees come from a wide range of departments on the ASU Tempe campus, including the School of Life Sciences, the School of Computing, Informatics, and Decision Systems Engineering, the Center for Biology and Society, the Department of English, the ASU Library. <strong>DigInG Trainees have the opportunity to join the DigInG Research and Software Development teams.</strong></p>
+    		<a href="/opportunities/" class="button">Get Involved</a>
+    </div>
+  </div>
 
+</div>
 
-<div class='full parallax' style='background: #f5f5f5'>
-  <div class='row'>
+<div class='full' style='background: #F7F7F4'>
+  <!--<div class='row'>
     <div class='large-12 columns'>
       <p class='centered-text'>
         <i class='fa fa-quote-left' style='color: #F9CE06; font-size: 36px;'></i>
       </p>
     </div>
-  </div>
+  </div>-->
   <div class='row'>
     <div class='large-12 columns'>
-      {% include section-header.html title="What our clients say" %}
+      {% include section-header.html title="Alumni" %}
       <div class='spacing'></div>
     </div>
   </div>
   <div class='row'>
+    <a name="alumni"></a>
+    {% for member in site.data.alumni %}
+      <div class='small-6 medium-3 large-3 columns'>
+        <div class='mod modTeamMember'>
+          <div class='member'>
+            <img class="avatar" alt="" width="160px"src="{{ member.avatar }}" />
+            <div class='overlay'>
+              <div class='intro'>
+                <h3>{{member.name}}</h3>
+                <p>{{member.position}}</p>
+                <ul class='socials'>
+                  {% for social in member.socials %}
+                    <li>
+                      <a href='{{social.link}}'>
+                        <i class='fa fa-{{social.icon}}'></i>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class='centered-text'>{{member.desc}}</p>
+          <div class='two spacing'></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class='row'>
     <div class='large-12 columns'>
-      <div class='mod modTestimonials'>
+
+      <!--<div class='mod modTestimonials'>
         <div class='row'>
           <div class='small-12 columns'>
             <div class='items centered-text'>
@@ -141,9 +246,9 @@ testimonials:
           </div>
           <div class='spacing'></div>
         </div>
-      </div>
+      </div>-->
     </div>
   </div>
 </div>
 
-{% include our-customers.html %}
+<!--{% include our-customers.html %}-->

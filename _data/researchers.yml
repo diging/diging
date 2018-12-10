@@ -1,21 +1,27 @@
-- avatar: images/people/erick.jpg
-  name: Erick Peirson
-  position: Research Associate
-  desc:
-    Erick has a PhD in Biology (History & Philosophy of Science) and develops web applications for scholarly research.
-- avatar: images/people/manfred.jpg
-  name: Manfred Laubichler
-  position: Director
+- avatar: images/people/erin.png
+  name: Erin Bottino
+  position: Researcher
   socials:
   desc:
-    Dr. Laubichler is Presidents Professor of Theoretical Biology and History of Biology at ASU.
-- avatar: images/people/julia.jpg
-  name: Julia Damerow
-  position: Head of Development
+
+- avatar: images/people/matthew.png
+  name: Matthew Nunez
+  position: Researcher
+  socials:
   desc:
-    Julia is a software engineer focusing on the development of software for digital/computational history and philosophy of science and digital humanities.
-- avatar: images/people/dirk.jpg
-  name: Dirk Wintergrün
-  position: Department I MPIWG
+
+- avatar: images/people/Simba.png
+  name: Simbarashe Sithole
+  position: Researcher
+  socials:
   desc:
-    Dirk is in charge of software and infrastructure projects in Department I of the Max Planck Institute for the History of Science.
+- avatar: images/people/Bailey.png
+  name: Bailey Reynolds
+  position: Researcher
+  socials:
+  desc:
+- avatar: images/people/Megan.png
+  name: Megan Bromley
+  position: Researcher
+  socials:
+  desc:
