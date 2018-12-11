@@ -4,6 +4,11 @@
 - name: Our Team
   path: about.html
   section_id: about
+  children:
+    - name: Portfolio
+      path: portfolio.html
+    - name: Portfolio item
+      path: portfolio-item.html
 - name: Services
   path: services.html
   section_id: services

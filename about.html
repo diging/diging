@@ -184,8 +184,23 @@ testimonials:
   </div>
 
 </div>
-
 <div class='full' style='background: #F7F7F4'>
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="mod modSectionHeader ">
+        <div class="special-title centered-text">
+          <a name="trainees"></a>
+          <h2 style="color: ;">Alumni</h2>
+          </div>
+        </div>
+      <div class="spacing"></div>
+      {% for member in site.data.alumni %}
+      <p class='centered-text' style="margin-bottom: -0.2rem">{{member.name}}, {{member.position}}, {{member.desc}}</p>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
   <!--<div class='row'>
     <div class='large-12 columns'>
       <p class='centered-text'>
@@ -193,62 +208,5 @@ testimonials:
       </p>
     </div>
   </div>-->
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="Alumni" %}
-      <div class='spacing'></div>
-    </div>
-  </div>
-  <div class='row'>
-    <a name="alumni"></a>
-    {% for member in site.data.alumni %}
-      <div class='small-6 medium-3 large-3 columns'>
-        <div class='mod modTeamMember'>
-          <div class='member'>
-            <img class="avatar" alt="" width="160px"src="{{ member.avatar }}" />
-            <div class='overlay'>
-              <div class='intro'>
-                <h3>{{member.name}}</h3>
-                <p>{{member.position}}</p>
-                <ul class='socials'>
-                  {% for social in member.socials %}
-                    <li>
-                      <a href='{{social.link}}'>
-                        <i class='fa fa-{{social.icon}}'></i>
-                      </a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
-            </div>
-          </div>
-          <p class='centered-text'>{{member.desc}}</p>
-          <div class='two spacing'></div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-  <div class='row'>
-    <div class='large-12 columns'>
-
-      <!--<div class='mod modTestimonials'>
-        <div class='row'>
-          <div class='small-12 columns'>
-            <div class='items centered-text'>
-              {% for testimonial in page.testimonials %}
-                <div class='item'>
-                  <p class='quote'>"{{testimonial.quote}}"</p>
-                  <p class='author'>- {{testimonial.author}}</p>
-                  <div class='two spacing'></div>
-                </div>
-              {% endfor %}
-            </div>
-          </div>
-          <div class='spacing'></div>
-        </div>
-      </div>-->
-    </div>
-  </div>
-</div>
 
 <!--{% include our-customers.html %}-->
