@@ -1421,7 +1421,7 @@ form input.error, form textarea.error {
   background: #fff;
 }
 .modBlogPost .content {
-  padding: 30px 20px;
+  padding: 30px 20px 0px 20px;
 }
 .modBlogPost h4 a {
   color: #333;
@@ -1443,7 +1443,9 @@ form input.error, form textarea.error {
   font-style: italic;
 }
 .modBlogPost img {
-  width: 100%;
+  width: 50%;
+  padding: 0px 20px 0px 20px;
+  vertical-align: baseline;
 }
 .modBlogPost a:hover img {
   -moz-transition-duration: 0.5s;

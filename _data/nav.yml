@@ -5,10 +5,18 @@
   path: about.html
   section_id: about
   children:
-    - name: Portfolio
-      path: portfolio.html
-    - name: Portfolio item
-      path: portfolio-item.html
+    - name: leadership
+      path: /about.html/leadership
+    - name: Developers
+      path: /about.html/#developers
+    - name: Researchers
+      path: /about.html/#researchers
+    - name: Trainees
+      path: /about.html/#Trainees
+    - name: Developers
+      path: /about.html/#Alumni
+    - name: Alumni
+      path: /about.html/#Alumni
 - name: Services
   path: services.html
   section_id: services

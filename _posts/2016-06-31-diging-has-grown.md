@@ -3,8 +3,8 @@ layout: post
 header: The Digital Innovation Group @ ASU
 title: DigInG goes International
 subtitle: Introducing the expanded DigInG, a cooperation between ASU and the Max Planck Institute for the History of Science
-feature_image: assets/images/20160631/mpiwg.png
-feature_image_caption: "The Max Planck Institute for the History of Science in Berlin, Germany"
+images: images/20160631/mpiwg.png
+images_caption: "The Max Planck Institute for the History of Science in Berlin, Germany"
 summary: "DigInG has grown! As of June, 2016, the Digital Innovation Group at ASU has merged with software development activities within Department I of the Max Planck Institute for the History of Science in Berlin, Germany to form an efficient and agile software development and innovation unit for computational history of knowledge."
 ---
 

@@ -1,8 +1,8 @@
 # Site settings
-title: Haufe Group Dev Blog
-email: doru.mihai@haufe-lexware.com
+title: The Digital Innovation Group @ ASU
+#email: doru.mihai@haufe-lexware.com
 description: > # this means to ignore newlines until "baseurl:"
-  Developer Blog of the Haufe Group. 
+  
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: Haufe-Lexware
