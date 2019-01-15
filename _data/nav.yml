@@ -6,21 +6,19 @@
   section_id: about
   children:
     - name: leadership
-      path: /about.html/leadership
+      path: about/#leadership
     - name: Developers
-      path: /about.html/#developers
+      path: about/#developers
     - name: Researchers
-      path: /about.html/#researchers
+      path: about/#researchers
     - name: Trainees
-      path: /about.html/#Trainees
-    - name: Developers
-      path: /about.html/#Alumni
+      path: about/#Trainees
     - name: Alumni
-      path: /about.html/#Alumni
-- name: Services
-  path: services.html
-  section_id: services
-- name: Portfolio
+      path: about/#alumni
+#- name: Services
+#  path: services.html
+#  section_id: services
+#- name: Portfolio
   path: portfolio.html
   section_id: portfolio
   children:
@@ -31,6 +29,9 @@
 - name: Contact
   path: contact.html
   section_id: contact
-- name: Blog
-  path: blog/
-  section_id: blog
+- name: Our Projects
+  path: Projects/
+  section_id: projects
+- name: Opportunities
+  path: opportunities
+  section_id: opportunities
