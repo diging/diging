@@ -1416,6 +1416,113 @@ form input.error, form textarea.error {
   opacity: 0.75;
 }
 
+.modProjectPost {
+  margin-bottom: 40px;
+  background: #fff;
+}
+.modProjectPost .content {
+  padding: 30px 20px 0px 20px;
+}
+.modProjectPost h4 a {
+  color: #333;
+}
+.modProjectPost h4 a:hover {
+  color: #f9ce06;
+}
+.modProjectPost .date {
+  font-size: 0.78571rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+.modProjectPost .tags {
+  padding: 5px 0;
+}
+.modProjectPost .tags a {
+  font-style: italic;
+}
+..modProjectPost img {
+  width: 100%;
+  padding: 0px 20px 0px 20px;
+  vertical-align: baseline;
+}
+.modProjectPost a:hover img {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  opacity: 0.5;
+}
+.modProjectPost .slick-slider {
+  margin-bottom: 0;
+}
+.modProjectPost .images .slick-dots {
+  margin: 0;
+}
+.modProjectPost .images .slick-dots li button:before {
+  font-size: 30px;
+  top: -65px;
+}
+
+.modProjectPost.big {
+  width: 97%;
+}
+.modProjectPost.big .content {
+  padding: 50px 40px;
+}
+.modProjectPost.big .info {
+  font-size: 0.78571rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ccc;
+}
+.modProjectPost.big h3 {
+  font-size: 2.5rem;
+}
+.modProjectPost.big h3 a {
+  color: #33332E;
+}
+.modProjectPost.big h3 a:hover {
+  color: #f9ce06;
+}
+.modProjectPost.big h4 {
+  font-size: 1.7rem;
+}
+.modProjectPost.big h5 {
+  font-size: 1.15rem;
+}
+.modProjectPost.big a:hover img {
+  opacity: 1;
+}
+.modProjectPost.big blockquote {
+  color: #ccc;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 1.7rem;
+  padding: 0 20px;
+}
+
+.modProjectPost.masonry {
+  width: 343px;
+  height: auto;
+  overflow: hidden;
+}
+
+.modProjectPost.no_bg {
+  background: none;
+}
+.modProjectPost.no_bg .content {
+  padding: 30px 0 10px;
+  background: none;
+}
+
+.modProjectPost.no_bg.no-media .content {
+  padding: 0 0 10px;
+}
+
+
+
 .modBlogPost {
   margin-bottom: 40px;
   background: #fff;
@@ -4059,4 +4166,35 @@ p { line-height: 1.8; margin-bottom: 1.8rem;}
 }
 
 
-/*----------------------*/
+/*--------
+list edits
+----------*/
+ul.actions li {
+display: inline-block;
+margin-left: 1em;
+
+}
+
+ul.actions li:first-child {
+margin-left: 0;
+	}
+.icon:before {
+	-webkit-font-smoothing: antialiased;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none !important;
+  		}
+.fa-github:before{
+  content: "\f09b";
+}
+dt {
+  float: left;
+  clear: left;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0px;
+}
