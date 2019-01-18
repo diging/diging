@@ -2627,7 +2627,7 @@ form input.error, form textarea.error {
   padding: 0.8rem;
   /*margin-bottom: 40px;*/
   text-transform: none;
-  background-color: #005DA5;
+  background-color: #eee;
   text-align: center;
 }
 .modDefaultSlider .sequence .small-title h2 {
@@ -3350,7 +3350,7 @@ body {
   width: 50%;
   margin: 0 auto;
   height: 4px;
-  background: #005CAA;
+  background: #ffc627;
   display: block;
 }
 
@@ -4043,7 +4043,7 @@ body {
 
 	a, .modBlogPost.big h3 a:hover, .pager a, .modIconText .icon-text-circle:hover i  {color: #005DA5; /*haufe blue*/}
 	.top-bar-section ul li > a {color: #33332E /*black*/}
-	.top-bar-section li.active:not(.has-form) a:not(.button) { color: #EB6005; background: none;  }
+	.top-bar-section li.active:not(.has-form) a:not(.button) { color: #8c1d40; background: none;  }
 	.top-bar-section ul li:hover:not(.has-form) > a, .top-bar-section li.active:not(.has-form) a:not(.button):hover {color: #005DA5; background: none;}
 
 	a:hover, .pager a:hover {color: #337DB7;}
@@ -4058,7 +4058,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
-  background: #EB6005;
+  background: #8c1d40;
   border:none;
 }
 
@@ -4071,7 +4071,7 @@ background-color: #EF8037;}
 
 .button.boxed {
   color: #fff;
-  border: 2px solid #EB6005;
+  border: 2px solid #8c1d40;
   background: none;
 }
 
