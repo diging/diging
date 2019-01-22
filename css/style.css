@@ -641,7 +641,7 @@ hr {
 }
 
 .full {
-  padding: 80px 0 0;
+  padding: 50px 0 0;
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -3378,6 +3378,7 @@ body {
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
+  text-align: center;
 }
 .modTeamMember ul {
   margin: 0;
@@ -3400,7 +3401,7 @@ body {
   line-height: 2.5rem;
 }
 .modTeamMember img {
-  width: 100%;
+  width: 80%;
 }
 .modTeamMember .overlay {
   opacity: 0;
@@ -4042,6 +4043,7 @@ body {
     font-weight: normal;}
 
 	a, .modBlogPost.big h3 a:hover, .pager a, .modIconText .icon-text-circle:hover i  {color: #005DA5; /*haufe blue*/}
+  h3 a {color: #F9CE06; /*haufe blue*/}
 	.top-bar-section ul li > a {color: #33332E /*black*/}
 	.top-bar-section li.active:not(.has-form) a:not(.button) { color: #8c1d40; background: none;  }
 	.top-bar-section ul li:hover:not(.has-form) > a, .top-bar-section li.active:not(.has-form) a:not(.button):hover {color: #005DA5; background: none;}

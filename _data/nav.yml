@@ -37,6 +37,6 @@
 - name: Opportunities
   path: opportunities.html
   section_id: opportunities
-- name: Contact
-  path: contact.html
-  section_id: contact
+#- name: Contact
+#  path: contact.html
+#  section_id: contact
