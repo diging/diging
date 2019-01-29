@@ -1,49 +1,16 @@
 ---
 layout: default
 title: About
-section_id: about
+
 ---
 
-<!--<div class='full parallax' style='background-image: url(images/@stock/about-us.jpg); color: #fff;'>
-  <div class='row'>
-    <div class='twelve columns'>
-      {% include section-header.html title="About us" color="#fff" tagline="Know something about our team" class="big" %}
-    </div>
-  </div>
-  <div class='four spacing'></div>
-</div>
-
-<div class='full'>
-  <div class='row'>
-    <div class='medium-6 columns'>
-      <h3>Our history</h3>
-      <p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
-    </div>
-    <div class='medium-6 columns'>
-      <h3>Our skills</h3>
-      <div class='mod modBarGraph'>
-        <ul class='bars'>
-          {% for skill in page.skills %}
-            <li>
-              <h4 style=''>
-                {{skill.title}}
-                <strong>{{skill.percentage}}%</strong>
-              </h4>
-              <p class='highlighted' data-percent='{{skill.percentage}}'></p>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </div>
-</div> -->
 
 <div class='full'>
   <div class="row">
     <div class="large-12 columns">
       <div class="mod modSectionHeader ">
         <div class="special-title centered-text">
+
           <a name = 'leadership'></a>
           <h2 style="color: ;">our leadership</h2>
           </div>
@@ -51,36 +18,104 @@ section_id: about
       <div class="spacing"></div>
     </div>
   </div>
-  <div class='row'>
 
-    {% for member in site.data.members %}
-      <div class='small-6 medium-3 large-3 columns'>
-        <div class='mod modTeamMember'>
-          <div class='member'>
-            <img class="avatar" alt="" src="{{ member.avatar }}" />
-            <div class='overlay'>
-              <div class='intro'>
-                <h3>{{member.name}}</h3>
-                <p>{{member.position}}</p>
-                <ul class='socials'>
-                  {% for social in member.socials %}
-                    <li>
-                      <a href='{{social.link}}'>
-                        <i class='fa fa-{{social.icon}}'></i>
-                      </a>
-                    </li>
-                  {% endfor %}
-                </ul>
+<a name="leadership"></a>
+
+    <div class='row'>
+        <div class='small-6 medium-3 large-3 columns'>
+          <div class='mod modTeamMember'>
+            <div class='member'>
+              <img class="avatar"  src="images/people/taylor.png" style="height: 266px; width: 250px;">
+              <div class='overlay'>
+                <div class='intro'>
+                  <h3>Taylor Quinn</h3>
+                  <p>Software Developer</p>
+                  <ul class='socials'>
+                      <li>
+                        <a href='www.facebook.com'><i class='fa fa-facebook'></i>
+                        </a>
+                      </li>
+                  </ul>
+                </div>
               </div>
             </div>
+            <p class='centered-text'> Taylor is a software develoer, and looks forward to developing innovation computing solutions upon graduating from ASU.</p>
+            <div class='two spacing'></div>
           </div>
-          <p class='centered-text'>{{member.desc}}</p>
-          <div class='two spacing'></div>
         </div>
-      </div>
-    {% endfor %}
+
+        <div class='small-6 medium-3 large-3 columns'>
+          <div class='mod modTeamMember'>
+            <div class='member'>
+              <img class="avatar" src="images/people/manfred.jpg"/>
+              <div class='overlay'>
+                <div class='intro'>
+                  <h3>Manfred Laubichler</h3>
+                  <p>Director</p>
+                  <ul class='socials'>
+                      <li>
+                        <a href='www.facebook.com'><i class='fa fa-facebook'></i>
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p class='centered-text'> Dr. Laubichler is Presidents Professor of Theoretical Biology and History of Biology at ASU.</p>
+            <div class='two spacing'></div>
+          </div>
+        </div>
+
+        <div class='small-6 medium-3 large-3 columns'>
+
+          <div class='mod modTeamMember'>
+            <div class='member'>
+              <img class="avatar" src="images/people/julia.jpg"/>
+              <div class='overlay'>
+                <div class='intro'>
+                  <h3>Julia Damerow</h3>
+                  <p>Head of Development</p>
+                  <ul class='socials'>
+                      <li>
+                        <a href='www.facebook.com'><i class='fa fa-facebook'></i>
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p class='centered-text'>    Julia is a software engineer focusing on the development of software for digital/computational history and philosophy of science and digital humanities.</p>
+            <div class='two spacing'></div>
+          </div>
+        </div>
+
+        <div class='small-6 medium-3 large-3 columns'>
+
+          <div class='mod modTeamMember'>
+            <div class='member'>
+              <img class="avatar" src="images/people/dirk.jpg"/>
+              <div class='overlay'>
+                <div class='intro'>
+                  <h3>Dirk Wintergrün</h3>
+                  <p>Department I MPIWG</p>
+                  <ul class='socials'>
+                      <li>
+                        <a href='www.facebook.com'><i class='fa fa-facebook'></i>
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p class='centered-text'>  Dirk is in charge of software and infrastructure projects in Department I of the Max Planck Institute for the History of Science.</p>
+            <div class='two spacing'></div>
+          </div>
+        </div>
+
+        </div>
+
   </div>
-</div>
+
 <div class='full'>
   <div class='row'>
     <div class='medium-6 columns'>
@@ -118,6 +153,8 @@ section_id: about
         {% endfor %}
       </div>
     </div>
+
+
     <div class='medium-6 columns'>
       <a name="researchers"></a>
       <h3 align = "center">Researchers</h3>
@@ -158,47 +195,3 @@ section_id: about
 
 {% include alumni.html %}
 <div class='two spacing'></div>
- <!--<div class='full' style='background: #f5f5f5'>
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="mod modSectionHeader ">
-        <div class="special-title centered-text">
-          <a name="trainees"></a>
-          <a name = 'trainees'></a>
-          <h2 style="color: ;">Trainees</h2>
-          </div>
-        </div>
-      <div class="spacing"></div>
-      <p>DigInG Trainees are graduate and undergraduate students who participate in our computational humanities workshops and training courses. Trainees come from a wide range of departments on the ASU Tempe campus, including the School of Life Sciences, the School of Computing, Informatics, and Decision Systems Engineering, the Center for Biology and Society, the Department of English, the ASU Library. <strong>DigInG Trainees have the opportunity to join the DigInG Research and Software Development teams.</strong></p>
-    		<a href="/opportunities/" class="button">Get Involved</a>
-    </div>
-  </div>
-
-</div>-->
-
-<!-- <div class='full' style='background: #F7F7F4'>
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="mod modSectionHeader ">
-        <div class="special-title centered-text">
-          <a name="alumni"></a>
-          <h2 style="color: ;">Alumni</h2>
-          </div>
-        </div>
-      <div class="spacing"></div>
-      {% for member in site.data.alumni %}
-      <p class='centered-text' style="margin-bottom: -0.2rem">{{member.name}}, {{member.position}}, {{member.desc}}</p>
-      {% endfor %}
-    </div>
-  </div>
-
-</div>
-  <div class='row'>
-    <div class='large-12 columns'>
-      <p class='centered-text'>
-        <i class='fa fa-quote-left' style='color: #F9CE06; font-size: 36px;'></i>
-      </p>
-    </div>
-  </div> -->
-
-<!--{% include our-customers.html %}-->

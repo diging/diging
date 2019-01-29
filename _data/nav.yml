@@ -11,21 +11,8 @@
       path: about.html/#developers
     - name: Researchers
       path: about.html/#researchers
-    - name: Trainees
-      path: about.html/#Trainees
     - name: Alumni
       path: about.html/#alumni
-#- name: Services
-#  path: services.html
-#  section_id: services
-#- name: Portfolio
-#  path: portfolio.html
-#  section_id: portfolio
-#  children:
-#    - name: Portfolio
-#      path: portfolio.html
-#    - name: Portfolio item
-#      path: portfolio-item.html
 - name: Our Projects
   path: projects.html
   section_id: projects
@@ -37,6 +24,16 @@
 - name: Opportunities
   path: opportunities.html
   section_id: opportunities
-#- name: Contact
-#  path: contact.html
-#  section_id: contact
+
+- name: Our People
+  path: people.html
+  section_id: people
+  children:
+    - name: leadership
+      path: people.html/#leadership
+    - name: Developers
+      path: people.html/#developers
+    - name: Researchers
+      path: people.html/#researchers
+    - name: Alumni
+      path: people.html/#alumni
