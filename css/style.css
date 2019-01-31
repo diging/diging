@@ -4065,11 +4065,11 @@ body {
 }
 
 .button:hover {
-  background-color: #EF8037;
+  background-color: #d23153;
 }
 
 .button:active {
-background-color: #EF8037;}
+background-color: #d23153;}
 
 .button.boxed {
   color: #fff;
@@ -4079,7 +4079,7 @@ background-color: #EF8037;}
 
 .button.boxed:hover {
   color: #fff;
-  border: 2px solid #EF8037;
+  border: 2px solid #d23153;
   background: none;
 }
 
