@@ -1550,7 +1550,7 @@ form input.error, form textarea.error {
   font-style: italic;
 }
 .modBlogPost img {
-  width: 50%;
+  width: 57%;
   padding: 0px 20px 0px 20px;
   vertical-align: baseline;
 }
@@ -4046,8 +4046,8 @@ body {
 	a, .modBlogPost.big h3 a:hover, .pager a, .modIconText .icon-text-circle:hover i  {color: #8c1d40; /*haufe blue*/}
   h3 a {color: #FFC627; /*haufe blue*/}
 	.top-bar-section ul li > a {color: #33332E /*black*/}
-	.top-bar-section li.active:not(.has-form) a:not(.button) { color: #8c1d40; background: none;  }
-	.top-bar-section ul li:hover:not(.has-form) > a, .top-bar-section li.active:not(.has-form) a:not(.button):hover {color: #8c1d40; background: none;}
+	.top-bar-section li.active:not(.has-form) a:not(.button) { color: #8c1d40; background:#F7F7F4;  }
+	.top-bar-section ul li:hover:not(.has-form) > a, .top-bar-section li.active:not(.has-form) a:not(.button):hover {color: #8c1d40; background: #F7F7F4;}
 
 	a:hover, .pager a:hover {color: #d23153;}
 	a:active {color: #d23153;}
@@ -4167,7 +4167,16 @@ p { line-height: 1.8; margin-bottom: 1.8rem;}
     padding: 0;
     list-style: none;
 }
+.separate{
+top: -0.65em; background-color: #f7f7f4; padding: 0 0.3em 0 0.3em; position: relative;
+}
+.separateline{
+  position: relative;
+  text-align: center;
+  border-top: solid 1px #ccc;
+  top: 1em;
 
+}
 
 /*--------
 list edits

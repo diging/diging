@@ -13,17 +13,6 @@
       path: people.html/#researchers
     - name: Alumni
       path: people.html/#alumni
-#- name: Our Team
-#  section_id: about
-#  children:
-#    - name: leadership
-#      path: about.html/#leadership
-#    - name: Developers
-#      path: about.html/#developers
-#    - name: Researchers
-#      path: about.html/#researchers
-#    - name: Alumni
-#      path: about.html/#alumni
 - name: Our Projects
   path: projects.html
   section_id: projects
