@@ -1834,7 +1834,7 @@
 
 				.box.post h2 {
 					font-size: 2.5em;
-					letter-spacing: -0.015em;
+					letter-`spacing`: -0.015em;
 				}
 
 				.box.post header > p {
@@ -2580,4 +2580,7 @@
 .border {
 	border: 1px solid #ccc;
 	border-radius: 5px;
+}
+.spacing {
+  height: 30px;
 }
