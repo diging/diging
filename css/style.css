@@ -1095,14 +1095,14 @@ form input.error, form textarea.error {
   margin: 0;
 }
 .links li {
-  list-style: none;
+  list-style: disc;
   line-height: 1.8em;
 }
 .links a {
   color: #999;
 }
 .links a:hover {
-  color: #333;
+  color: #d23153;
 }
 
 /*Footer */
@@ -1259,6 +1259,7 @@ form input.error, form textarea.error {
   float: right;
 }
 .slick-slide img {
+  padding-top: 20px;
   display: block;
 }
 .slick-slide.slick-loading img {
@@ -1577,7 +1578,7 @@ form input.error, form textarea.error {
 }
 .modBlogPost.big .content {
   padding: 10px 40px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 }
 .modBlogPost.big .info {
   font-size: 0.78571rem;
@@ -1699,6 +1700,7 @@ form input.error, form textarea.error {
   float: right;
 }
 .slick-slide img {
+  padding-top: 20px;
   display: block;
 }
 .slick-slide.slick-loading img {
@@ -1979,6 +1981,7 @@ form input.error, form textarea.error {
   float: right;
 }
 .slick-slide img {
+  padding-top: 20px;
   display: block;
 }
 .slick-slide.slick-loading img {
