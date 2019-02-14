@@ -1,8 +1,11 @@
 <div id ="asu_hdr">
   <div id = "asu_nav_menu" role ="navigation">
-  <div id ="asu_universal_nav">
 
-    <ul >
+  <div id ="asu_universal_nav">
+    <a href= "https://www.asu.edu" target="_top"><img  width="200px" src="/images/asu_full_logo.png"/></a>
+
+
+    <ul style = "float: right; padding-left: 733px;">
       <li>
       {% for item in site.data.asu_navigation %}
       <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
