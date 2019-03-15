@@ -19,7 +19,7 @@
   children:
     - name: Software
       path: projects.html/#software
-    - name: Researcher
+    - name: Research
       path: projects.html/#research
 - name: Opportunities
   path: opportunities.html
