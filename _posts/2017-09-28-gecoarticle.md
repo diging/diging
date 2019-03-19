@@ -8,7 +8,7 @@ images_caption: "The Giles Ecosystem Architecture"
 summary: "The paper <i>The Giles Ecosystem – Storage, Text Extraction, and OCR of Documents</i> was published in the Journal of Open Research Software on September 28, 2017 (<a href='http://doi.org/10.5334/jors.164'>check it out here</a>). The paper describes the Giles Ecosystem developed by the Digital Innovation Group."
 ---
 
-SEPTEMBER 28, 2017 — Check out our new paper: [http://doi.org/10.5334/jors.164](http://doi.org/10.5334/jors.164)!
+SEPTEMBER 28, 2017 — Check out our <a href = "http://doi.org/10.5334/jors.164" target = "_blank ">new paper</a>
 
 Damerow, J., Peirson, B.R.E. & Laubichler, M.D., (2017). The Giles Ecosystem – Storage, Text Extraction, and OCR of Documents. [Journal of Open Research Software](https://openresearchsoftware.metajnl.com/). 5(1), p.26. DOI: [http://doi.org/10.5334/jors.164](http://doi.org/10.5334/jors.164)
 
