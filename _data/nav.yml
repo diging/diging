@@ -6,21 +6,21 @@
   section_id: people
   children:
     - name: leadership
-      path: people/index.html/#leadership
+      path: people/index.html#leadership
     - name: Developers
-      path: people/index.html/#developers
+      path: people/index.html#developers
     - name: Researchers
-      path: people/index.html/#researchers
+      path: people/index.html#researchers
     - name: Alumni
-      path: people/index.html/#alumni
+      path: people/index.html#alumni
 - name: Our Projects
   path: projects/index.html
   section_id: projects
   children:
     - name: Software
-      path: projects/index.html/#software
+      path: projects/index.html#software
     - name: Research
-      path: projects/index.html/#research
+      path: projects/index.html#research
 - name: Opportunities
   path: opportunities/index.html
   section_id: opportunities
