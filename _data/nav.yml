@@ -2,17 +2,17 @@
   path: index.html
   section_id: home
 - name: Our Team
-  path: people.html
+  path: people/index.html
   section_id: people
   children:
     - name: leadership
-      path: people.html/#leadership
+      path: people/index.html/#leadership
     - name: Developers
-      path: people.html/#developers
+      path: people/index.html/#developers
     - name: Researchers
-      path: people.html/#researchers
+      path: people/index.html/#researchers
     - name: Alumni
-      path: people.html/#alumni
+      path: people/index.html/#alumni
 - name: Our Projects
   path: projects.html
   section_id: projects
@@ -22,5 +22,5 @@
     - name: Research
       path: projects.html/#research
 - name: Opportunities
-  path: opportunities.html
+  path: opportunities/index.html
   section_id: opportunities
