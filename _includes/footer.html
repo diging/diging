@@ -1,72 +1,94 @@
-<!-- Footer -->
-	<div id="footer-wrapper">
-		<section id="footer" class="container">
-			<div class="row">
-				<div class="fb-page 6u 12u(mobile)" data-href="https://www.facebook.com/digitalhps" data-height="700" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/digitalhps"><a href="https://www.facebook.com/digitalhps">ASU Digital Innovation Group</a></blockquote></div></div>
-				<div class="6u 12u(mobile)">
-					<section>
-						<header>
-							<h2>What's this all about?</h2>
-						</header>
-						<a href="#" class="image featured"><img src="/images/groupOdd.jpg" alt="" style="width:575px"/></a>
-						<p>
-							The Digital Innovation Group brings together students from the computer science and the history and philosophy of science to create new and innovative tools, infrastructure, and methods for computational HPS research and training.
-						</p>
-						<p>
-							The <strong>mission</strong> of the Digital Innovation Group is to develop new tools to support HPS researchers in processing and analyzing their data, to contribute to the development of a computational research system for history and philosophy of science, and to create new educational resources, opportunities, and experiences for students in computer science and the history and philosophy of science.
-						</p>
-						<p>
-							We are supported with an open-source license for <a href="https://www.atlassian.com/software/jira"><img style="vertical-align:middle; margin-bottom: 10px;" width="80px" src="/images/jira-white.png"></a> by <a href="https://www.atlassian.com/">Atlassian</a>.
-						</p>
-					</section>
-				</div>
-			</div>
-			<div class="row">
-				<div class="6u 12u(mobile)">
-					<section>
-						<header>
-							<h2>Our Partners</h2>
-						</header>
-						<ul class="divided">
-							<li><a href="http://devo-evo.lab.asu.edu">Laubichler Lab @ ASU</a></li>
-							<li><a href="http://digitalhps.org/">Digital HPS Consortium</a></li>
-							<li><a href="http://cbs.asu.edu/">Center for Biology and Society</a></li>
-						</ul>
-					</section>
-				</div>
-				<div class="6u 12u(mobile)">
-					<section>
-						<header>
-							<h2>We're Social</h2>
-						</header>
-						<ul class="social">
-							<li><a class="icon fa-facebook" href="https://www.facebook.com/digitalhps"><span class="label">Facebook</span></a></li>
-							<li><a class="icon fa-twitter" href="https://twitter.com/asudiging"><span class="label">Twitter</span></a></li>
-							<li><a class="icon fa-github" href="https://github.com/diging"><span class="label">GitHub</span></a></li>
+<div id='footer'>
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='large-3 medium-3 columns'>
+      <h3 style= "color: #FFC627;"><a href='index.html'>The Digital Innovation Group @ ASU</a></h3>
+      <p>©2019 DigInG. All rights reserved.</p>
 
-						</ul>
-						<ul class="contact">
-							<li>
-								<h3>Contact</h3>
-								<p><a href="mailto:jdamerow@asu.edu">jdamerow@asu.edu</a></p>
-							</li>
-						</ul>
-					</section>
-				</div>
-			</div>
-			<!-- <div class="row">
-				<div class="12u">
+      <h4>Contact us</h4>
+      <ul>
+        <!--<li>Phone: +86 (03) 9810 4612</li>-->
+        <li>Email: jdamerow@asu.edu</li>
+        <!--<li>Location: 41 Dean Street, London, UK</li>-->
+      </ul>
+      <div class='spacing'></div>
+      <ul class='socials'>
+        <li>
+          <a href="https://www.facebook.com/digitalhps">
+            <i class='fa fa-facebook'></i>
+          </a>
+        </li>
+        <!-- <li>
+          <a href='http://twitter.com/asudiging'>
+            <i class='fa fa-twitter'></i>
+          </a>
+        </li> -->
+        <li>
+          <a href='http://github.com/diging'>
+            <i class='fa fa-github'></i>
+          </a>
+        </li>
+
+      </ul>
+      <div class='spacing'></div>
+      <div class='spacing'></div>
+    </div>
+
+    <div class='large-3 medium-2 columns'>
+      <div class='spacing'></div>
+      <div class='links'>
+        <h4>WE ARE PART OF</h4>
+        <ul>
+          <li><a href="https://complexity.asu.edu/">Global Biosocial Complexity Initiative</a></li>
+        </ul>
+        <div class='spacing'></div>
+
+        <h4>Our Partners</h4>
+        <ul>
+          <li><a href="http://devo-evo.lab.asu.edu">Laubichler Lab @ ASU</a></li>
+					<li><a href="http://digitalhps.org/">Digital HPS Consortium</a></li>
+					<li><a href="http://cbs.asu.edu/">Center for Biology and Society</a></li>
+        </ul>
+      </div>
+      <div class='spacing'></div>
+    </div>
 
 
-						<div id="copyright">
-							<ul class="links">
-								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
+    <div class='large-3 medium-2 columns'>
+      <div class='spacing'></div>
+      <div class='links'>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/projects/index.html">Our Projects</a></li>
+          <li><a href="/blog/">Our Posts</a></li>
+          <li><a href="/people/index.html">Our Team</a></li>
+        </ul>
+      </div>
+      <div class='spacing'></div>
+    </div>
 
-				</div>
-			</div> -->
-		</section>
-	</div>
+    <div class='large-3 medium-2 columns'>
+      <div class='spacing'></div>
+      <div class='links'>
+        <h4>Recent posts</h4>
+        <ul>
+          {% for post in site.posts %}
+          {% if forloop.index > 3 %}
+            {% break %}
+          {% endif %}
+            <li><a href="{{post.url}}">{{post.title}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
 
+  </div>
+  <div class='spacing'></div>
 </div>
+<script src="{{ "/javascripts/jquery.countTo.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/javascripts/jquery.appear.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/javascripts/jquery.validate.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/javascripts/jquery.sequence-min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/javascripts/jquery.easing.1.3.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/javascripts/app.js" | prepend: site.baseurl }}" type="text/javascript"></script>

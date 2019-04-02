@@ -1,70 +1,67 @@
 ---
-title: Welcome
-header: The Digital Innovation Group @ ASU
-navcurrent: home
+layout: default
+section_id: home
 ---
-<!DOCTYPE HTML>
-<html>
-	{% include head.html %}
-	<body class="homepage">
-		<div id="page-wrapper">
-
-			<!-- Header -->
-				<div id="header-wrapper">
-					<div id="header">
-
-						{% include header.html %}
-
-						{% include banner.html %}
-
-						{% include intro.html %}
-
-					</div>
-				</div>
-                <div id="main-wrapper">
-                    <div class="row">
-                        <div class="12u">
-                            <section>
-                                <header class="major">
-                                    <h2>News</h2>
-                                </header>
-                                <div class="w3-content w3-display-container">
+<div class="full" style="background: #f5f5f5;">
+  <div class="row">
+    <div class="large-12 columns">
+      {% include section-header.html title="Our work" %}
+      <div class="spacing"></div>
+      <p><strong>DigInG Pioneering Computational Humanities.</strong> The Digital Innovation Group pushes the boundaries of computational analysis in the humanities by developing and deploying innovative research software and analytic methods.</p>
+      <p>The <strong>mission</strong> of the Digital Innovation Group is to develop new tools to support HPS researchers in processing and analyzing their data, to contribute to the development of a computational research system for history and philosophy of science, and to create new educational resources, opportunities, and experiences for students in computer science and the history and philosophy of science.
+						</p>
+    </div>
+  </div>
 
 
-                                    {% for post in site.posts %}
-                                    <div class="mySlides">
-                                        <section class="box">
-                                            <a href="{{ post.url }}" class="image-news featured"><img src="{{ post.feature_image }}" alt="" align="right"/></a>
-                                            <header>
-                                                <h3>{{ post.title }}</h3>
-                                                <h4 style="color: #555;">{{ post.subtitle }}</h4>
-                                                <p>{{ post.date | date: '%B %d, %Y' }}</p>
-                                            </header>
-                                            <p>{{ post.summary }}</p>
-                                            <footer>
-                                                <ul class="actions">
-                                                    <li><a href="{{ post.url }}" class="button icon fa-file-text">Continue Reading</a></li>
-                                                    <li><button class="w3-button w3-black " onclick="plusDivs(-1)">&#10094;</button></li>
-																										<li><button class="w3-button w3-black " onclick="plusDivs(1)">&#10095;</button></li>
+</div>
 
-																								</ul>
-                                            </footer>
-                                        </section>
-                                    </div>
-                                    {% endfor %}
+<div class='full' style='background: #f5f5f5'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Our recent posts" %}
+    </div>
+  </div>
 
-                                </div>
-                            </section>
+  <div class="spacing"></div>
 
-                        </div>
-                    </div>
-                </div>
+<div class='row'>
+  {% for post in site.posts %}
+  {% if forloop.index > 3 %}
+    {% break %}
+  {% endif %}
+    <div class='big mod modBlogPost'>
 
-				</div>
+      <div class='content'style="padding-bottom: 20px;">
+        <h4><a href="{{post.url}}">{{post.title}}</a></h4>
+        <p class='info'><span>{{post.date | date: "%B %d, %Y" }}</span> </p>
+        <p>{% for image in post.images %}<div class='image'><img style="padding:0 15px; float: left; width: 35%;" alt="" src="{{site.url}}/{{image}}" /></div>{% endfor %}</p>
+        <p style="margin-top: 20px;"></p>
+        <p>{{post.excerpt}}</p>
+        <div class='spacing'></div>
+        <a style=" margin-bottom: 45px;"class="button small" href="{{post.url}}">Read more</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
 
-		{% include footer.html %}
 
-		{% include scripts.html %}
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p class='centered-text'>
+        <a class='button' href='blog/'>See more posts</a>
+      </p>
+    </div>
+  </div>
+  <div class='spacing'></div>
 
-	</body>
-</html>
+</div>
+
+<!--<div class="tags">
+  {% for cat in post.categories %}
+  <a href="#">{{cat | capitalize}}</a>
+  {% unless forloop.last %}
+  ,
+  {% endunless %}
+  {% endfor %}
+</div>-->

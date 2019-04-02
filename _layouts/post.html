@@ -1,47 +1,31 @@
-<html>
-	{% include head.html %}
-	<body class="homepage">
-		<div id="page-wrapper">
+---
+layout: blog
+section_id: blog
+---
 
-			<!-- Header -->
-			<div id="header-wrapper">
-				<div id="header">
 
-					{% include header.html %}
-
-				</div>
-			</div>
-
-			<div id="main-wrapper">
-				<div class="container">
-					<section class="container">
-						<div class="row">
-							<div class="8u -2u 12u(mobile)">
-								<header>
-									<h2>{{ page.title }}</h2>
-                                    <h4 style="color: #555;">{{ page.subtitle }}</h4>
-                                    <h4>{{ page.date | date: '%B %d, %Y' }}</h4>
-								</header>
-                                {% if page.feature_image %}
-                                <div class="image" style="float:right; width: 50%; margin-left: 15px; margin-left: 15px; border 2px solid #555;">
-                                <img class="image"
-                                    src="{{ page.feature_image | prepend: site.baseurl }}">
-                                    <p style="font-size: 9pt; color: #555;">{{ page.feature_image_caption }}</p>
-                                </div>
-
-                                {% endif %}
-
-                                {{ content }}
-
-							</div>
-
-						</div>
-					</section>
-				</div>
-			</div>
-		</div>
-		{% include footer.html %}
-
-		{% include scripts.html %}
-	</body>
-</html>
+<div class='row'>
+  <div class='large-12 columns'>
+    <div class='mod modBlogPost big'>
+      <div class='images'>
+        {% for image in page.images %}
+          <div class='image'><img alt="" src="{{site.url}}/{{image}}" /></div>
+        {% endfor %}
+      </div>
+      <div class='content'>
+        <p class='info'>
+          <span>{{page.date | date: "%B %d, %Y" }}</span>
+          /
+          <span>
+            by {{page.author}}
+          </span>
+          /
+        
+        </p>
+        <h3><a href="{{page.url}}">{{page.title}}</a></h3>
+        {{ content }}
+      </div>
+    </div>
+    <div class='two spacing'></div>
+  </div>
+</div>

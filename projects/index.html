@@ -1,95 +1,104 @@
 ---
+layout: default
 title: Projects
-header: What We Do
-navcurrent: projects
+section_id: projects
 ---
 
-<html>
-	{% include head.html %}
-	<body class="homepage">
-		<div id="page-wrapper">
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<div id="header">
 
-						{% include header.html %}
+<div class='full' style='background: #f5f5f5'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Our Projects" %}
+      <div class='spacing'></div>
 
-					</div>
-				</div>
-
-				<div id="main-wrapper">
-
-					<div class="container">
-						<section class="container" style="  text-align: center;">
-							<footer>
-								<ul class="actions">
+      <footer>
+								<ul class="actions" style="text-align: center;">
 									<li><a href="#software" class="button small">Software</a></li>
 									<li><a href="#research" class="button alt small">Research</a></li>
 								</ul>
 							</footer>
-							<p>Contemporary research in the field of history and philosophy of science (HPS) makes extensive use of textual data, images, and videos in digital formats. The increasing availability of large volumes of digital data has created opportunities to ask new and transformative questions about the historical development and conceptual foundations of science. Yet tools that enable historians and philosophers of science to interact with these data lag behind those available in the natural sciences.</p>
-							<p>The future success of digital and computational approaches to the history and philosophy of science depends on forging links between computer science and the humanities. Most training programs in the history and philosophy of science do not impart the skills necessary to take advantage of these new modes of research. Similarly, computer scientists typically receive little training in the humanities, making it difficult to foster meaningful and productive collaborations with humanities scholars.</p>
-							<p>The Digital Innovation Group bridges the divide between computer science and digital HPS research through collaborative development, training, and cutting-edge interdisciplinary research that pushes the boundaries of digital and computational HPS, and fosters computational thinking in the humanities.</p>
-						</section>
-						<div class="row">
-							<div class="12u">
+      <p>Contemporary research in the field of history and philosophy of science (HPS) makes extensive use of textual data, images, and videos in digital formats. The increasing availability of large volumes of digital data has created opportunities to ask new and transformative questions about the historical development and conceptual foundations of science. Yet tools that enable historians and philosophers of science to interact with these data lag behind those available in the natural sciences.</p>
+			<p>The future success of digital and computational approaches to the history and philosophy of science depends on forging links between computer science and the humanities. Most training programs in the history and philosophy of science do not impart the skills necessary to take advantage of these new modes of research. Similarly, computer scientists typically receive little training in the humanities, making it difficult to foster meaningful and productive collaborations with humanities scholars.</p>
+			<p>The Digital Innovation Group bridges the divide between computer science and digital HPS research through collaborative development, training, and cutting-edge interdisciplinary research that pushes the boundaries of digital and computational HPS, and fosters computational thinking in the humanities.</p>
+      <div class='spacing'></div>
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='large-12 columns'>
 
 								<!-- Portfolio -->
 									<section>
-										<header class="major">
-											<h2>Our Projects</h2>
-										</header>
+
 										<header class="minor">
-											<a name="software"></a>
-											<h2>Software</h2>
+                      <a name="software">{% include section-header.html title="Software" %}	</a>
 										</header>
-										<section>
-											<p>DigInG is the foremost resource for computational humanities software and infrastructure development. In addition to developing and supporting the software listed below, DigInG programmers provide support to academic units and individual researchers seeking to extend their research into the computational realm.</p>
+
+                  	<section>
+											<p>DigInG provides services and resources for computational humanities software and infrastructure development. In addition to developing and supporting the software listed below, DigInG programmers provide support to academic units and individual researchers seeking to extend their research into the computational realm.</p>
 											<p>
 												All of our software is open source. Most projects are developed using the Mozilla Public License 2.0. We welcome any contributions and new users and use cases. Please get in touch with Julia (jdamerow@asu.edu) or Erick (erick.peirson@asu.edu) if you have any questions or comments.
 											</p>
 										</section>
-										<div class="row">
-											<div class="4u 12u(mobile)">
-												<section class="box">
-													<a href="http://diging.github.io/conceptpower/" class="image featured"><img src="/images/conceptpowerLogo - long.png" alt="" class="grayback" /></a>
-													<header>
-														<h3>Conceptpower</h3>
-													</header>
-													<p>Conceptpower is an extensible authority file service that supports many of the web and desktop applications in the DigInG universe. Conceptpower is a Java web application that can be deployed in a servlet container such as Apache Tomcat.</p>
-													<footer>
-														<a href="http://diging.github.io/conceptpower/" class="button alt"><span class="icon fa-github"></span> Read more on GitHub.io</a>
-													</footer>
-												</section>
-											</div>
-											<div class="4u 12u(mobile)">
-												<section class="box">
-													<a href="http://diging.github.io/quadriga/index.html" class="image featured"><img src="/images/QuadrigaLogo - long.png" alt="" class="grayback" /></a>
-													<header>
-														<h3>Quadriga</h3>
-													</header>
-													<p>Quadriga is a web-application that acts as a clearing-house for text annotations -- in the form of contextualized triples, or "<a href="http://diging.github.io/quadriga/quadruples.html">quadruples</a>," that form complex graphs -- generated with the Vogon desktop application, and as an environment for managing text-annotation projects.</p>
-													<footer>
-														<a href="http://diging.github.io/quadriga/index.html" class="button alt"><span class="icon fa-github"></span> Read more on GitHub.io</a>
-													</footer>
-												</section>
-											</div>
-											<div class="4u 12u(mobile)">
-												<section class="box">
-													<a href="http://diging.github.io/tethne/" class="image featured"><img src="/images/tethneLogo - long.png" alt="" class="grayback" /></a>
-													<header>
-														<h3>Tethne</h3>
-													</header>
-													<p>Tethne is a Python package for bibliographic data analysis. Use Tethne to parse and organize data from the ISI Web of Science, Scopus, and JSTOR Data-for-Research databases, and generate time-variant citation-based networks, corpus models, and social influence models.</p>
-													<footer>
-														<a href="http://diging.github.io/tethne/" class="button alt"><span class="icon fa-github"></span> Read more on GitHub.io</a>
-													</footer>
-												</section>
-											</div>
-										</div>
-										<div class="row">
-											<div class="4u 12u(mobile)">
+
+                    <div class="row">
+                      <div class='large-4 medium-4 columns'>
+                        <div class='mod modProjectPost'>
+                          <section class="box">
+                            <a href="http://diging.github.io/conceptpower/" class="image featured"><img src="/images/conceptpowerLogo - long.png" alt="" class="grayback" /></a>
+                            <header>
+                              <h3>Conceptpower</h3>
+                            </header>
+                            <p>Conceptpower is an extensible authority file service that supports many of the web and desktop applications in the DigInG universe. Conceptpower is a Java web application that can be deployed in a servlet container such as Apache Tomcat.</p>
+                            <footer>
+                              <a href="http://diging.github.io/conceptpower/" class="button alt"><span class="icon fa-github"></span> Read more on GitHub.io</a>
+                            </footer>
+                          </section>
+                        </div>
+                      </div>
+
+                      <div class='large-4 medium-4 columns' style="padding-bottom: 50px;">
+                          <div class='mod modProjectPost'>
+  												<section class="box">
+  													<a href="https://github.com/diging/citesphere" class="image featured"><img src="/images/citesphereLogo.png" alt="" class="grayback" /></a>
+  													<header>
+  														<h3>Citesphere</h3>
+  													</header>
+  													<p>Citesphere is a web application that sits on top of the reference managing service Zotero. It provides additional functionality not available in Zotero such as the ability to specify author affiliation or an author identifier.</p>
+  													<footer>
+  														<a href="https://github.com/diging/citesphere" class="button alt"><span class="icon fa-github"></span> Read more on GitHub.io</a>
+  													</footer>
+  												</section>
+  											</div>
+  										</div>
+
+
+                      <div class='large-4 medium-4 columns'>
+                        <div class='mod modProjectPost'>
+                          <section class="box">
+                            <a href="http://diging.github.io/quadriga/index.html" class="image featured"><img src="/images/QuadrigaLogo - long.png" alt="" class="grayback" /></a>
+                            <header>
+                              <h3>Quadriga</h3>
+                            </header>
+                            <p>Quadriga is a web-application that acts as a clearing-house for text annotations -- in the form of contextualized triples, or "<a href="http://diging.github.io/quadriga/quadruples.html">quadruples</a>," that form complex graphs -- generated with the Vogon desktop application, and as an environment for managing text-annotation projects.</p>
+                            <footer>
+                              <a href="http://diging.github.io/quadriga/index.html" class="button alt"><span class="icon fa-github"></span> Read more on GitHub.io</a>
+                            </footer>
+                          </section>
+                        </div>
+                      </div>
+
+
+
+                    </div>
+
+                    <div class="spacing"></div>
+
+        						<div class="row">
+											<div class='large-4 medium-4 columns'>
+                        <div class='mod modProjectPost'>
 												<section class="box">
 													<a href="https://github.com/diging/vogon-web" class="image featured"><img src="/images/vogonWeb - long.png" alt="" class="grayback" /></a>
 													<header>
@@ -100,20 +109,26 @@ navcurrent: projects
 														<a href="https://github.com/diging/vogon-web" class="button alt"><span class="icon fa-github"></span> Read more on GitHub.io</a>
 													</footer>
 												</section>
+                        	</div>
 											</div>
-											<div class="4u 12u(mobile)">
-												<section class="box">
-													<a href="http://diging.github.io/qstore4s/" class="image featured"><img src="/images/qstoreLogo - long.png" alt="" class="grayback" /></a>
-													<header>
-														<h3>QStore4s</h3>
-													</header>
-													<p>QStore4S uses the open-source graph database Neo4j to store quadruples. The application is implemented using the Spring MVC Framework. Cyper Query Language is being used to interact with Neo4j.</p>
-													<footer>
-														<a href="http://diging.github.io/qstore4s/" class="button alt"><span class="icon fa-github"></span> Read more on GitHub.io</a>
-													</footer>
-												</section>
-											</div>
-											<div class="4u 12u(mobile)">
+                      <div class='large-4 medium-4 columns'>
+                          <div class='mod modProjectPost'>
+  												  <section class="box">
+  													<a href="https://github.com/diging/virtual-spaces-2.0" class="image featured"><img src="/images/virtualSpacesLogo.png" alt="" class="grayback" /></a>
+  													<header>
+  														<h3>Virtual Spaces 2.0</h3>
+  													</header>
+  													<p>Virtual Spaces 2.0 is a web application to develop virtual exhibitions by creating virtual 2D tours through real or abstract spaces.</p>
+  													<footer>
+  														<a href="https://github.com/diging/virtual-spaces-2.0" class="button alt"><span class="icon fa-github"></span> Read more on GitHub.io</a>
+  													</footer>
+  												  </section>
+                          </div>
+  											</div>
+
+
+                      <div class='large-4 medium-4 columns'>
+                        <div class='mod modProjectPost'>
 												<section class="box">
 													<a href="https://github.com/diging/giles-eco-giles-web" class="image featured"><img src="/images/geco-logo-text-2.png" alt="" class="grayback" /></a>
 													<header>
@@ -124,10 +139,14 @@ navcurrent: projects
 														<a href="https://github.com/diging/giles-eco-giles-web" class="button alt"><span class="icon fa-github"></span> Check it out on GitHub.io</a>
 													</footer>
 												</section>
-											</div>
-										</div>
-										<div class="row">
-											<div class="4u 12u(mobile)">
+											  </div>
+                    	</div>
+
+                  	</div>
+
+            				<!-- <div class="row">
+											<div class='large-4 medium-4 columns'>
+                        <div class='mod modProjectPost'>
 												<section class="box">
 													<a href="https://github.com/diging/amphora" class="image featured"><img src="/images/jarsLogo - long.png" alt="" class="grayback" /></a>
 													<header>
@@ -138,8 +157,10 @@ navcurrent: projects
 														<a href="https://github.com/diging/amphora" class="button alt"><span class="icon fa-github"></span> Check it out on GitHub</a>
 													</footer>
 												</section>
+                        	</div>
 											</div>
-											<div class="4u 12u(mobile)">
+                    	<div class='large-4 medium-4 columns'>
+                        <div class='mod modProjectPost'>
 												<section class="box">
 													<a href="http://sourceforge.net/p/gobtan/currentcode/490/tree/trunk/server/WordPowerPlus/" class="image featured"><img src="/images/wordpowerLogo - long.png" alt="" class="grayback" /></a>
 													<header>
@@ -150,8 +171,10 @@ navcurrent: projects
 														<a href="http://sourceforge.net/p/gobtan/currentcode/490/tree/trunk/server/WordPowerPlus/" class="button alt"><span class="icon fa-code"></span> Code on SourceForge</a>
 													</footer>
 												</section>
+                        	</div>
 											</div>
-											<div class="4u 12u(mobile)">
+                      <div class='large-4 medium-4 columns'>
+                        <div class='mod modProjectPost'>
 												<section class="box">
 													<a href="https://diging.github.io/black-goat/" class="image featured"><img src="/images/black-goat.png" alt="" class="grayback" /></a>
 													<header>
@@ -162,19 +185,21 @@ navcurrent: projects
 														<a href="https://diging.github.io/black-goat/" class="button alt"><span class="icon fa-github"></span> Read more on GitHub.io</a>
 													</footer>
 												</section>
-											</div>
-										</div>
-									</section>
-									<section>
-										<header class="minor">
+											  </div>
+                      	</div>
+										</div> -->
+                  </section>
+
+              		<section>
 											<a name="research"></a>
-											<h2>Research</h2>
-										</header>
+											{% include section-header.html title="Research" %}
 										<section>
-											<p>DigInG research falls under the broader research efforts of the <a href="http://devo-evo.lab.asu.edu/">Laubichler Lab</a> at Arizona State University. Below are just a few of the many computational projects currently underway in DigInG. We are constantly looking for new and transformative research questions that can be addressed using computational methods.</p>
+											<p>DigInG research falls under the broader research efforts of the <a href="http://devo-evo.lab.asu.edu/">Laubichler Lab</a> at Arizona State University. We are constantly looking for new and transformative research questions that can be addressed using computational methods.</p>
 										</section>
-										<div class="row">
-											<div class="4u 12u(mobile)">
+
+  									<!-- <div class="row">
+											<div class='large-4 medium-4 columns'>
+                        <div class='mod modProjectPost'>
 												<section class="box">
 													<a href="http://devo-evo.lab.asu.edu/genecology-project" class="image featured"><img src="/images/genecologyLogo - long.png" alt="" class="grayback" /></a>
 													<header>
@@ -185,8 +210,10 @@ navcurrent: projects
 														<a href="http://devo-evo.lab.asu.edu/genecology-project" class="button alt">Find out more</a>
 													</footer>
 												</section>
+                        	</div>
 											</div>
-											<div class="4u 12u(mobile)">
+                    	<div class='large-4 medium-4 columns'>
+                        <div class='mod modProjectPost'>
 												<section class="box">
 													<a href="http://devo-evo.lab.asu.edu/investigative-pathways" class="image featured"><img src="/images/investigativePathway - long.png" alt="" class="grayback" /></a>
 													<header>
@@ -197,29 +224,25 @@ navcurrent: projects
 														<a href="http://devo-evo.lab.asu.edu/investigative-pathways" class="button alt">Find out more</a>
 													</footer>
 												</section>
+                        	</div>
 											</div>
-											<div class="4u 12u(mobile)">
-												<section class="box">
-													<a href="http://devo-evo.lab.asu.edu/history-developmental-evolution" class="image featured"><img src="/images/devoevo - long.png" alt="" /></a>
-													<header>
-														<h3>History of Developmental Evolution</h3>
-													</header>
-													<p>Developmental Evolution is a tradition within evolutionary biology with a very long history. It focuses on the mechanistic (cellular, developmental, genomic) causes that generate phenotypes and phenotypic variation. While it is often seen as an "alternative" to mainstream population genetics, it is in fact a complementary and necessary approach to theories of evolutionary dynamics. This project looks at the history of this tradition as a big data problem, combining the reconstruction of individual contributions and research programs with computational analysis of the conceptual dynamics of evolutionary biology at large.</p>
-													<footer>
-														<a href="http://devo-evo.lab.asu.edu/history-developmental-evolution" class="button alt">Find out more</a>
-													</footer>
-												</section>
-											</div>
-										</div>
-									</section>
+                    	<div class='large-4 medium-4 columns'>
+                          <div class='mod modProjectPost'>
+  												<section class="box">
+  													<a href="http://devo-evo.lab.asu.edu/history-developmental-evolution" class="image featured"><img src="/images/devoevo - long.png" alt="" /></a>
+  													<header>
+  														<h3>History of Developmental Evolution</h3>
+  													</header>
+  													<p>Developmental Evolution is a tradition within evolutionary biology with a very long history. It focuses on the mechanistic (cellular, developmental, genomic) causes that generate phenotypes and phenotypic variation. While it is often seen as an "alternative" to mainstream population genetics, it is in fact a complementary and necessary approach to theories of evolutionary dynamics. This project looks at the history of this tradition as a big data problem, combining the reconstruction of individual contributions and research programs with computational analysis of the conceptual dynamics of evolutionary biology at large.</p>
+  													<footer>
+  														<a href="http://devo-evo.lab.asu.edu/history-developmental-evolution" class="button alt">Find out more</a>
+  													</footer>
+  												</section>
+  											</div>
+                        </div>
+										</div> -->
+                      <p><strong>Check back later for updated information on our research projects.</strong></p>
+                  </section>
 
-							</div>
-						</div>
-				</div>
-
-		</div>
-		{% include footer.html %}
-
-		{% include scripts.html %}
-	</body>
-</html>
+   </div>
+  </div>
