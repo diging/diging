@@ -14,13 +14,13 @@
     - name: Alumni
       path: people/index.html/#alumni
 - name: Our Projects
-  path: projects.html
+  path: projects/index.html
   section_id: projects
   children:
     - name: Software
-      path: projects.html/#software
+      path: projects/index.html/#software
     - name: Research
-      path: projects.html/#research
+      path: projects/index.html/#research
 - name: Opportunities
   path: opportunities/index.html
   section_id: opportunities
