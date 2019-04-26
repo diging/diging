@@ -24,3 +24,11 @@
 - name: Opportunities
   path: opportunities/index.html
   section_id: opportunities
+- name: Gallery
+  path: gallery/portfolio.html
+  section_id: portfolio
+  children:
+    - name: Portfolio
+      path: gallery/portfolio.html
+    - name: Portfolio item
+      path: gallery/portfolio-item.html
