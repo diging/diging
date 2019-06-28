@@ -3,84 +3,21 @@ layout: default
 title: Portfolio
 section_id: portfolio
 works:
-  - image: /images/20160631
-    klass: graphic-design
-  - image: /images/black-goat.png
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: graphic-design
-    desc: Design &amp; Development
-  - image: /images/black-goat.png
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: graphic-design
-    desc: Design &amp; Development
-  - image: /images/black-goat.png
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: graphic-design
-    desc: Design &amp; Development
-  - image: /images/tethneLogo - long.png
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: web-design print
-    desc: Design &amp; Development
-  - image: /images/@stock/work-3.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: brand
-    desc: Design &amp; Development
-  - image: /images/@stock/work-4.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: development
-    desc: Design &amp; Development
-  - image:
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: print brand
-    desc: Design &amp; Development
-  - image: /images/tethneLogo - long.png
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: web-design
-    desc: Design &amp; Development
-  - image: /images/tethneLogo - long.png
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: web-design
-    desc: Design &amp; Development
-  - image: /images/@stock/work-1.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: development print
-    desc: Design &amp; Development
-  - image: /images/@stock/work-2.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: brand
-    desc: Design &amp; Development
-  - image: /images/tethneLogo - long.png
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: web-design
-    desc: Design &amp; Development
-  - image: /images/@stock/work-4.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: print
-    desc: Design &amp; Development
-  - image: /images/@stock/work-6.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: development
-    desc: Design &amp; Development
-  - image: /images/@stock/work-7.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: print
-    desc: Design &amp; Development
-
+  - image: /images/groupOdd.jpg
+    title: Funny Face!
+    klass: Team
+  - image: /images/homeBanner.jpg
+    title: The Team
+    klass: Team
+  - image: /images/work.png
+    title: Serious Work
+    klass: Work
+  - image: /images/work2.png
+    title: Teamwork
+    klass: Work
+  - image: /images/team.jpg
+    title: The Pros
+    klass: Team
 ---
 
 
@@ -90,7 +27,7 @@ works:
       {% include section-header.html title="Our Gallery" class="big" %}
     </div>
   </div>
-  <!-- <div class='two spacing'></div> -->
+  <div class='two spacing'></div>
 </div>
 
 
@@ -103,12 +40,12 @@ works:
             <a data-cat='all' href='#'>All</a>
           </li>
           <li>
-            <a data-cat='graphic-design' href='#'>Graphic Design</a>
+            <a data-cat='Team' href='#'>Team</a>
           </li>
           <li>
-            <a data-cat='web-design' href='#'>Web Design</a>
+            <a data-cat='Work' href='#'>Work</a>
           </li>
-          <li>
+          <!-- <li>
             <a data-cat='brand' href='#'>Brand</a>
           </li>
           <li>
@@ -116,25 +53,28 @@ works:
           </li>
           <li>
             <a data-cat='print' href='#'>Print</a>
-          </li>
+          </li> -->
         </ul>
       </div>
 
-      <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'>
+      <ul class='gallery medium-block-grid-3'>
 
         {% for work in page.works %}
-          <li class="{{ work.klass }}">
+
+          <li style = "padding: 25px;" class="{{ work.klass }}">
             <a href='{{ work.link_to }}'>
               <img alt="" src="{{ work.image }}" />
-              <!-- <div class='overlay'> -->
-                <!-- <div class='thumb-info'>
+              <div class='overlay'>
+                <div class='thumb-info'>
                   <h3>{{ work.title }}</h3>
                   <p>{{ work.desc }}</p>
-                </div> -->
+                </div>
                 <br></br>
-              <!-- </div> -->
+              </div>
             </a>
           </li>
+
+
         {% endfor %}
 
       </ul>
