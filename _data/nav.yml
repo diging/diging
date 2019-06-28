@@ -27,6 +27,3 @@
 - name: Gallery
   path: gallery/portfolio.html
   section_id: portfolio
-  children:
-    - name: Portfolio
-      path: gallery/portfolio.html
