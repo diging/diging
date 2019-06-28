@@ -3,12 +3,24 @@ layout: default
 title: Portfolio
 section_id: portfolio
 works:
-  - image: /images/@stock/work-1.jpg
-    title: Beautiful Girl
+  - image: /images/20160631
+    klass: graphic-design
+  - image: /images/black-goat.png
+    title: Ian
     link_to: portfolio-item.html
     klass: graphic-design
     desc: Design &amp; Development
-  - image: /images/@stock/work-2.jpg
+  - image: /images/black-goat.png
+    title: Ian
+    link_to: portfolio-item.html
+    klass: graphic-design
+    desc: Design &amp; Development
+  - image: /images/black-goat.png
+    title: Ian
+    link_to: portfolio-item.html
+    klass: graphic-design
+    desc: Design &amp; Development
+  - image: /images/tethneLogo - long.png
     title: Beautiful Girl
     link_to: portfolio-item.html
     klass: web-design print
@@ -23,25 +35,20 @@ works:
     link_to: portfolio-item.html
     klass: development
     desc: Design &amp; Development
-  - image: /images/asu_sun.png
+  - image:
     title: Beautiful Girl
     link_to: portfolio-item.html
     klass: print brand
     desc: Design &amp; Development
-  - image: /images/@stock/work-6.jpg
+  - image: /images/tethneLogo - long.png
     title: Beautiful Girl
     link_to: portfolio-item.html
     klass: web-design
     desc: Design &amp; Development
-  - image: /images/@stock/work-7.jpg
+  - image: /images/tethneLogo - long.png
     title: Beautiful Girl
     link_to: portfolio-item.html
     klass: web-design
-    desc: Design &amp; Development
-  - image: /images/@stock/work-8.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: graphic-design
     desc: Design &amp; Development
   - image: /images/@stock/work-1.jpg
     title: Beautiful Girl
@@ -53,7 +60,7 @@ works:
     link_to: portfolio-item.html
     klass: brand
     desc: Design &amp; Development
-  - image: /images/@stock/work-3.jpg
+  - image: /images/tethneLogo - long.png
     title: Beautiful Girl
     link_to: portfolio-item.html
     klass: web-design
@@ -62,11 +69,6 @@ works:
     title: Beautiful Girl
     link_to: portfolio-item.html
     klass: print
-    desc: Design &amp; Development
-  - image: /images/@stock/work-5.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: graphic-design
     desc: Design &amp; Development
   - image: /images/@stock/work-6.jpg
     title: Beautiful Girl
@@ -78,21 +80,17 @@ works:
     link_to: portfolio-item.html
     klass: print
     desc: Design &amp; Development
-  - image: /images/@stock/work-8.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: graphic-design
-    desc: Design &amp; Development
+
 ---
 
 
 <div class='full parallax' style='background-image: url(/images/@stock/portfolio-header-bg.jpg); color: #fff;'>
   <div class='row'>
     <div class='large-12 columns'>
-      {% include section-header.html title="Our Gallery" tagline="Have a look at our works"  class="big" %}
+      {% include section-header.html title="Our Gallery" class="big" %}
     </div>
   </div>
-  <div class='four spacing'></div>
+  <!-- <div class='two spacing'></div> -->
 </div>
 
 
@@ -128,12 +126,13 @@ works:
           <li class="{{ work.klass }}">
             <a href='{{ work.link_to }}'>
               <img alt="" src="{{ work.image }}" />
-              <div class='overlay'>
-                <div class='thumb-info'>
+              <!-- <div class='overlay'> -->
+                <!-- <div class='thumb-info'>
                   <h3>{{ work.title }}</h3>
                   <p>{{ work.desc }}</p>
-                </div>
-              </div>
+                </div> -->
+                <br></br>
+              <!-- </div> -->
             </a>
           </li>
         {% endfor %}
