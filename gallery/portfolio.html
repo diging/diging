@@ -3,25 +3,25 @@ layout: default
 title: Portfolio
 section_id: portfolio
 works:
-  - image: /images/groupOdd.jpg
-    title: Funny Face!
-    klass: Team
-  - image: /images/homeBanner.jpg
-    title: The Team
-    klass: Team
-  - image: /images/work.png
-    title: Serious Work
-    klass: Work
-  - image: /images/work2.png
-    title: Teamwork
-    klass: Work
-  - image: /images/team.jpg
-    title: The Pros
-    klass: Team
+- image: /images/groupOdd.jpg
+title: Funny Face!
+klass: Team
+- image: /images/homeBanner.jpg
+title: The Team
+klass: Team
+- image: /images/work.png
+title: Serious Work
+klass: Work
+- image: /images/work2.png
+title: Teamwork
+klass: Work
+- image: /images/team.jpg
+title: The Pros
+klass: Team
 ---
 
 
-<div class='full parallax' style='background-image: url(/images/@stock/portfolio-header-bg.jpg); color: #fff;'>
+<div class='full parallax' style='color: #fff;'>
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html title="Our Gallery" class="big" %}
@@ -45,15 +45,6 @@ works:
           <li>
             <a data-cat='Work' href='#'>Work</a>
           </li>
-          <!-- <li>
-            <a data-cat='brand' href='#'>Brand</a>
-          </li>
-          <li>
-            <a data-cat='development' href='#'>Development</a>
-          </li>
-          <li>
-            <a data-cat='print' href='#'>Print</a>
-          </li> -->
         </ul>
       </div>
 
@@ -61,20 +52,18 @@ works:
 
         {% for work in page.works %}
 
-          <li style = "padding: 25px;" class="{{ work.klass }}">
-            <a href='{{ work.link_to }}'>
-              <img alt="" src="{{ work.image }}" />
-              <div class='overlay'>
-                <div class='thumb-info'>
-                  <h3>{{ work.title }}</h3>
-                  <p>{{ work.desc }}</p>
-                </div>
-                <br></br>
+        <li style="padding: 25px;" class="{{ work.klass }}">
+          <a href='{{ work.image }}' target="_blank">
+            <img alt="" src="{{ work.image }}" />
+            <div class='overlay'>
+              <div class='thumb-info'>
+                <h3>{{ work.title }}</h3>
+                <p>{{ work.desc }}</p>
               </div>
-            </a>
-          </li>
-
-
+              <br></br>
+            </div>
+          </a>
+        </li>
         {% endfor %}
 
       </ul>
