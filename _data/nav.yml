@@ -30,5 +30,3 @@
   children:
     - name: Portfolio
       path: gallery/portfolio.html
-    - name: Portfolio item
-      path: gallery/portfolio-item.html
