@@ -2,3 +2,5 @@ _site/
 .sass-cache/
 Gemfile.lock
 Canvas
+.DS_Store
+/images/.DS_Store
