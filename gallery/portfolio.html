@@ -11,53 +11,173 @@ works:
   klass: Work
 - image: /images/work2.png
   klass: Work
-- image: /images/team.jpg
+- image: /images/team2.jpg
   klass: Team
 ---
+<style>
+
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 225px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+.modal-content {
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+  }
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+</style>
 
 
-<div class='full parallax' style='color: #fff;'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="Our Gallery" class="big" %}
+    <div class='full parallax' style='color: #fff;'>
+      <div class='row'>
+        <div class='large-12 columns'>
+          {% include section-header.html title="Our Gallery" class="big" %}
+        </div>
+      </div>
     </div>
-  </div>
-  <div class='two spacing'></div>
-</div>
+
+    <div class='full' >
+      <div class='row'>
+        <div class='mod modGallery' >
+          <div class='gallery-nav'>
+            <ul>
+              <li class='current'>
+                <a data-cat='all' href='#'>All</a>
+              </li>
+              <li>
+                <a data-cat='Team' href='#'>Team</a>
+              </li>
+              <li>
+                <a data-cat='Work' href='#'>Work</a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class='gallery medium-block-grid-3' >
+
+            <li style="padding: 25px;" class="Team"  >
+
+                <img src="/images/groupOdd.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow"/>
+
+            </li>
+
+            <li style="padding: 25px;" class="Team"  >
+
+                <img src="/images/homeBanner.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"/>
+
+            </li>
+
+            <li style="padding: 25px;" class="Work"  >
+
+                <img src="/images/work.png" onclick="openModal();currentSlide(3)" class="hover-shadow"/>
+
+            </li>
+
+            <li style="padding: 25px;" class="Work"  >
+
+                <img src="/images/work2.png" onclick="openModal();currentSlide(4)" class="hover-shadow"/>
+
+            </li>
+
+            <li style="padding: 25px;" class="Team"  >
+
+                <img src="/images/team2.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow"/>
+
+            </li>
+
+          </ul>
 
 
-<div class='full'>
-  <div class='row'>
-    <div class='mod modGallery'>
-      <div class='gallery-nav'>
-        <ul>
-          <li class='current'>
-            <a data-cat='all' href='#'>All</a>
-          </li>
-          <li>
-            <a data-cat='Team' href='#'>Team</a>
-          </li>
-          <li>
-            <a data-cat='Work' href='#'>Work</a>
-          </li>
-        </ul>
+        </div>
       </div>
 
-      <ul class='gallery medium-block-grid-3'>
-
-        {% for work in page.works %}
-
-        <li style="padding: 25px;" class="{{ work.klass }}">
-          <a href='{{ work.image }}'>
-            <img alt="" src="{{ work.image }}" />
-          </a>
-        </li>
-        {% endfor %}
-
-      </ul>
-
+      <div class='four spacing'></div>
     </div>
-  </div>
 
-  <div class='four spacing'></div>
-</div>
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <img src="/images/groupOdd.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="/images/homeBanner.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="/images/work.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="/images/work2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="/images/team2.jpg" style="width:100%">
+        </div>
+
+
+      </div>
+    </div>
+
+<script type="text/javascript">
+  function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+
+</script>
