@@ -47,6 +47,7 @@ works:
   color: #999;
   text-decoration: none;
   cursor: pointer;
+
 }
 
 </style>
@@ -122,6 +123,17 @@ works:
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
 
+
+        <div style="float: left; width: 100px;">
+          <a style="font-size:75px;" onclick="plusSlides(-1)">&#10094;</a>
+        </div>
+
+        <div style="float: right; width: 39px;">
+          <a style="font-size:75px;  "onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+
+
         <div class="mySlides">
           <img src="/images/groupOdd.jpg" style="width:100%">
         </div>
@@ -143,11 +155,15 @@ works:
         </div>
 
 
+
       </div>
+
+
+
     </div>
 
 <script type="text/javascript">
-  function openModal() {
+function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
 
