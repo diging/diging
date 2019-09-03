@@ -25,6 +25,7 @@ works:
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
   }
 
 .modal-content {
@@ -48,6 +49,28 @@ works:
   text-decoration: none;
   cursor: pointer;
 
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 </style>
@@ -125,14 +148,12 @@ works:
 
 
         <div style="float: left; width: 100px;">
-          <a style="font-size:75px;" onclick="plusSlides(-1)">&#10094;</a>
+          <a class = "prev" style="font-size:75px;" onclick="plusSlides(-1)">&#10094;</a>
         </div>
 
-        <div style="float: right; width: 39px;">
-          <a style="font-size:75px;  "onclick="plusSlides(1)">&#10095;</a>
+        <div style="float: right; width: 70px;">
+        <a class = "next" style="font-size:75px;" onclick="plusSlides(1)">&#10095;</a>
         </div>
-
-
 
         <div class="mySlides">
           <img src="/images/groupOdd.jpg" style="width:100%">
@@ -147,11 +168,11 @@ works:
         </div>
 
         <div class="mySlides">
-          <img src="/images/work2.png" style="width:100%">
+          <img src="/images/work2copy.png" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <img src="/images/team2.jpg" style="width:100%">
+          <img src="/images/team2copy.jpg" style="width:100%">
         </div>
 
 
