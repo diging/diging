@@ -3,3 +3,4 @@ _site/
 Gemfile.lock
 Canvas
 .DS_Store
+/images/.DS_Store
