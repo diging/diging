@@ -24,3 +24,6 @@
 - name: Opportunities
   path: opportunities/index.html
   section_id: opportunities
+- name: Gallery
+  path: gallery/portfolio.html
+  section_id: portfolio

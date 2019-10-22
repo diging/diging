@@ -788,9 +788,9 @@ ul.shortcode-list i {
 */
 
 /*Top bar */
-.top-bar {
+/* .top-bar {
   z-index: 100;
-}
+} */
 .top-bar .title-area .name h1 a {
   font-size: 2.57143rem;
   color: #333;
@@ -4126,7 +4126,7 @@ p { line-height: 1.8; margin-bottom: 1.8rem;}
   .f_adapt{font-size:2.4vw;}
 }
 @media only screen and (min-width: 960px) {
-  .f_adapt{font-size:1.0vw;}
+  .f_adapt{font-size:0.8vw;}
 }
 /* @media only screen and (max-width: 656px) { <<<medium
   .image1{display: block;}
@@ -4139,7 +4139,9 @@ p { line-height: 1.8; margin-bottom: 1.8rem;}
 
 @media screen and (min-width: 1140px) {
   ul.example {
-    padding-left: 840px;
+
+    padding-left: 837px;
+
   }
 }
 @media screen and (min-width: 401px) and (max-width: 1139px) {
