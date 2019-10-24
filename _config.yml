@@ -15,7 +15,19 @@ markdown: kramdown
 paginate: 3
 paginate_path: "blog/page:num"
 
-plugins: [jekyll-paginate]
+plugins: 
+  - jekyll-paginate
+  - jekyll-get-json
+
+jekyll_get_json:
+  - data: conceptpower
+    json: 'https://api.github.com/repos/diging/conceptpower/commits'
+  - data: citesphere
+    json: 'https://api.github.com/repos/diging/citesphere/commits'
+  - data: virtual
+    json: 'https://api.github.com/repos/diging/virtual-spaces-2.0/commits'
+  - data: giles
+    json: 'https://api.github.com/repos/diging/giles-eco-giles-web/commits'
 
 # Google Analytics
 google_analytics: UA-44225403-5
