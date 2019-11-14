@@ -28,6 +28,10 @@ jekyll_get_json:
     json: 'https://api.github.com/repos/diging/virtual-spaces-2.0/commits'
   - data: giles
     json: 'https://api.github.com/repos/diging/giles-eco-giles-web/commits'
+  - data: vogon
+    json: 'https://api.github.com/repos/diging/vogon-web/commits'
+  - data: quadriga
+    json: 'https://api.github.com/repos/diging/quadriga/commits'
 
 # Google Analytics
 google_analytics: UA-44225403-5

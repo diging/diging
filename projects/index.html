@@ -291,64 +291,114 @@ section_id: projects
 		<section>
 			{% include section-header.html title="Recent Github Commits" %}
 
-			<!-- Table markup-->
+			<div style="display: flex; justify-content: space-between;">
 
-			<table align="center">
+				<div>
+					<h4>{{site.data.conceptpower[0]["author"]["login"]}}</h4>
+				</div>
 
-    			<!-- Table header -->
+				<div>
+					{% assign str = site.data.conceptpower[0]["commit"]["message"] %}
+					{% assign a = str | newline_to_br | split: '<br />' %}
+					<h4>{{ a[0] }}</h4>
+				</div>
 
-				<thead>
-					<tr>
-						<th>Commiter</th>
-						<th>Message</th>
-						<th>Link</th>
-						
-					</tr>
-				</thead>
+				<div><a style="margin-right:0;" href='{{ site.data.conceptpower[0]["html_url"] }}'
+						target="_blank">conceptpower</a><br>
+				</div>
+			</div>
 
-				<!-- Table body -->
 
-					<tbody>
-						<tr>
-							<td>{{site.data.conceptpower[0]["author"]["login"]}}</td>
-							
-							{% assign str = site.data.conceptpower[0]["commit"]["message"] %}
-							{% assign a = str | split: '*' %}
-							<td>{{ a[0] }}</td>
+			<div style="display: flex; justify-content: space-between;">
 
-							<td><a href= '{{ site.data.conceptpower[0]["html_url"] }}' target="_blank">conceptpower</a></td>
-						<tr>
-						<tr>							
-							<td>{{site.data.citesphere[0]["author"]["login"]}}</td>
-							
-							{% assign str = site.data.citesphere[0]["commit"]["message"] %}
-							{% assign a = str | split: '*' %}
-							<td>{{ a[0] }}</td>
+				<div>
+					<h4 style="float:left">{{site.data.citesphere[0]["author"]["login"]}}</h4>
+				</div>
 
-							<td><a href= '{{ site.data.citesphere[0]["html_url"] }}' target="_blank">citesphere</a></td>
-						<tr>
-						<tr>
-							<td>{{site.data.virtual[0]["author"]["login"]}}</td>
-							
-							{% assign str = site.data.virtual[0]["commit"]["message"] %}
-							{% assign a = str | split: '*' %}
-							<td>{{ a[0] }}</td>
+				<div>
+					{% assign str = site.data.citesphere[0]["commit"]["message"] %}
+					{% assign a = str | newline_to_br | split: '<br />' %}
+					<h4 style="float:right">{{ a[0] }}</h4>
+				</div>
 
-							<td><a href= '{{ site.data.virtual[0]["html_url"] }}' target="_blank">virtual-spaces-2.0</a></td>
-						<tr>
-						<tr>
-							<td>{{site.data.giles[0]["author"]["login"]}}</td>
-							
-							{% assign str = site.data.giles[0]["commit"]["message"] %}
-							{% assign a = str | split: '*' %}
-							<td>{{ a[0] }}</td>
+				<div><a style="margin-right:0;" href='{{ site.data.citesphere[0]["html_url"] }}'
+						target="_blank">citesphere</a><br>
+				</div>
 
-							<td><a href= '{{ site.data.giles[0]["html_url"] }}' target="_blank">giles</a></td>
+			</div>
 
-						</tr>
-					</tbody>
+			<div style="display: flex; justify-content: space-between;">
 
-			</table>
+				<div>
+					<h4 style="float:left">{{site.data.quadriga[0]["author"]["login"]}}</h4>
+				</div>
+
+				<div>
+					{% assign str = site.data.quadriga[0]["commit"]["message"] %}
+					{% assign a = str | newline_to_br | split: '<br />' %}
+					<h4 style="float:right">{{ a[0] }}</h4>
+				</div>
+
+				<div><a style="margin-right:0;" href='{{ site.data.quadriga[0]["html_url"] }}'
+						target="_blank">quadriga</a><br>
+				</div>
+
+			</div>
+
+			<div style="display: flex; justify-content: space-between;">
+
+				<div>
+					<h4 style="float:left">{{site.data.vogon[0]["author"]["login"]}}</h4>
+				</div>
+
+				<div>
+					{% assign str = site.data.vogon[0]["commit"]["message"] %}
+					{% assign a = str | newline_to_br | split: '<br />' %}
+					<h4 style="float:right">{{ a[0] }}</h4>
+				</div>
+
+				<div><a style="margin-right:0;" href='{{ site.data.vogon[0]["html_url"] }}'
+						target="_blank">vogon</a><br>
+				</div>
+
+			</div>						
+
+
+			<div style="display: flex; justify-content: space-between;">
+
+				<div>
+					<h4 style="float:left">{{site.data.virtual[0]["author"]["login"]}}</h4>
+				</div>
+
+				<div>
+					{% assign str = site.data.virtual[0]["commit"]["message"] %}
+					{% assign a = str | newline_to_br | split: '<br />' %}
+					<h4 style="float:right">{{ a[0] }}</h4>
+				</div>
+
+				<div><a style="margin-right:0;" href='{{ site.data.virtual[0]["html_url"] }}'
+						target="_blank">virtual-spaces-2.0</a><br>
+				</div>
+
+			</div>
+
+
+			<div style="display: flex; justify-content: space-between;">
+
+				<div>
+					<h4 style="float:left">{{site.data.giles[0]["author"]["login"]}}</h4>
+				</div>
+
+				<div>
+					{% assign str = site.data.giles[0]["commit"]["message"] %}
+					{% assign a = str | newline_to_br | split: '<br />' %}
+					<h4 style="float:right">{{ a[0] }}</h4>
+				</div>
+
+				<div><a style="margin-right:0;" href='{{ site.data.giles[0]["html_url"] }}'
+						target="_blank">giles</a><br>
+				</div>
+			</div>
 
 		</section>
 
