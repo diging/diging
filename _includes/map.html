@@ -1,22 +1,79 @@
-<div class='full' style='background: #F7F7F4; padding-top: 0px;'>
-  <div class="row">
-    <div class="large-12 columns">
+<!DOCTYPE html>
+<html>
 
-      <div class="mod modSectionHeader ">
-        <div class="special-title centered-text separateline">
-          <a name="alumni"></a>
-          <h2 class="separate" style="color:">Where we are from</h2>
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+
+  <style>
+    #mapid {
+      height: 480px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class='full' style='background: #F7F7F4; padding-top: 0px;'>
+    <div class="row">
+      <div class="large-12 columns">
+
+        <div class="mod modSectionHeader ">
+          <div class="special-title centered-text separateline">
+            <a name="alumni"></a>
+            <h2 class="separate" style="color:">Where we are from</h2>
+          </div>
+
+
+          <div id="mapid"></div>
+
+
         </div>
 
-        <div style="height:420px; overflow:hidden;">
-          <iframe style="position:relative; top:-46px; border:none;" src="https://www.google.com/maps/d/embed?mid=1blontcPuFDDdssAujS91Y-w3d0eN486Z" width="1100" height="480"></iframe>
-        </div>
+        <div class="spacing"></div>
 
       </div>
-
-      <div class="spacing"></div>
-
     </div>
-  </div>
 
-</div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  var mymap = L.map('mapid').setView([35.735456, 4.40495], 2);
+  
+  L.tileLayer('https://api.mapbox.com/styles/v1/diginggroup/ck36f392i03rl1cmqrzgiczhx/tiles/256/{z}/{x}/{y}@2x?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.pirates',
+    accessToken: 'pk.eyJ1IjoiZGlnaW5nZ3JvdXAiLCJhIjoiY2syemJxNjlrMGg4bTNubzg0b254bW9tbCJ9.MgjW6NsPmtafhhs9wofDBA'
+  }).addTo(mymap);
+
+  //mapbox://styles/diginggroup/ck36f392i03rl1cmqrzgiczhx
+
+  let coords = [
+    ["Taylor Quinn", 42.36008, -71.05888],
+    ["Ian Lobo", 29.37585, 47.9774],
+    ["Neeharika Dasari", 17.38504, 78.48667],
+    ["Ryan Cheney", 33.35282, -111.78902],
+    ["Ashmi Chheda", 19.07598, 72.87765],
+    ["Navaneesh K. Bajakudlu", 12.508, 74.98821],
+    ["Sumukha Radhakrishna, Namratha O. Venkatesh", 12.97159, 77.59456],
+    ["Keerthivasan Krishnamurthy", 11.66432, 78.14601],
+    ["Julia Damerow, Dirk Wintergrün", 52.52, 13.40495],
+    ["Matt Nunez", 33.42551, -111.94],
+    ["Adhvik M. Yeleswarapu", 28.45949, 77.02663],
+    ["Yuva V.S.P Kurakula", 16.50617, 80.64801],
+    ["Radhika Nyati", 25.21381, 75.86475]        
+  ];
+
+  for (var i = 0; i < coords.length; i++) {
+			 marker = new L.marker([coords[i][1],coords[i][2]])
+				.bindPopup(coords[i][0])
+				.addTo(mymap);
+	}
+
+
+</script>
