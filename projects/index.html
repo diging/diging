@@ -307,72 +307,13 @@ section_id: projects
 
 			{% include section-header.html title="Recent Github Commits" %}
 
-			<table>
+			<table id="#dtBasicExample">
 				<tr>
 					<td>
 						<a style="margin-right:0;" href='{{ site.data.conceptpower[0]["html_url"] }}'
 							target="_blank">conceptpower</a>
 					</td>
 					{% assign obj = site.data.conceptpower %}
-					<td>
-						<ol>
-							{% for item in obj limit:10 %}
-							{% assign message = item["commit"]["message"] %}
-							{% assign display = message | newline_to_br | split: '<br />' %}
-							{% assign author = item["author"]["login"] %}
-							{% assign display2 = author | newline_to_br | split: '<br />' %}
-							<li>
-								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
-							</li>
-							{% endfor %}
-						</ol>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a style="margin-right:0;" href='{{ site.data.citesphere[0]["html_url"] }}'
-							target="_blank">citesphere</a>
-					</td>
-					{% assign obj = site.data.citesphere %}
-					<td>
-						<ol>
-							{% for item in obj limit:10 %}
-							{% assign message = item["commit"]["message"] %}
-							{% assign display = message | newline_to_br | split: '<br />' %}
-							{% assign author = item["author"]["login"] %}
-							{% assign display2 = author | newline_to_br | split: '<br />' %}
-							<li>
-								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
-							</li>
-							{% endfor %}
-						</ol>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a style="margin-right:0;" href='{{ site.data.quadriga[0]["html_url"] }}'
-							target="_blank">quadriga</a>
-					</td>
-					{% assign obj = site.data.quadriga %}
-					<td>
-						<ol>
-							{% for item in obj limit:10 %}
-							{% assign message = item["commit"]["message"] %}
-							{% assign display = message | newline_to_br | split: '<br />' %}
-							{% assign author = item["author"]["login"] %}
-							{% assign display2 = author | newline_to_br | split: '<br />' %}
-							<li>
-								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
-							</li>
-							{% endfor %}
-						</ol>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a style="margin-right:0;" href='{{ site.data.vogon[0]["html_url"] }}' target="_blank">vogon</a>
-					</td>
-					{% assign obj = site.data.vogon %}
 					<td>
 						<ol>
 							{% for item in obj limit:10 %}
@@ -409,9 +350,10 @@ section_id: projects
 				</tr>
 				<tr>
 					<td>
-						<a style="margin-right:0;" href='{{ site.data.giles[0]["html_url"] }}' target="_blank">giles</a>
+						<a style="margin-right:0;" href='{{ site.data.vogon-web-client[0]["html_url"] }}'
+							target="_blank">vogon-web-client</a>
 					</td>
-					{% assign obj = site.data.giles %}
+					{% assign obj = site.data.vogon-web-client %}
 					<td>
 						<ol>
 							{% for item in obj limit:10 %}
@@ -426,6 +368,1007 @@ section_id: projects
 						</ol>
 					</td>
 				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.vogon-web[0]["html_url"] }}'
+							target="_blank">vogon-web</a>
+					</td>
+					{% assign obj = site.data.vogon-web %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.utilities[0]["html_url"] }}'
+							target="_blank">utilities</a>
+					</td>
+					{% assign obj = site.data.utilities %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.simple-users[0]["html_url"] }}'
+							target="_blank">simple-users</a>
+					</td>
+					{% assign obj = site.data.simple-users %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.citesphere[0]["html_url"] }}'
+							target="_blank">citesphere</a>
+					</td>
+					{% assign obj = site.data.citesphere %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.citesphere-model[0]["html_url"] }}'
+							target="_blank">citesphere-model</a>
+					</td>
+					{% assign obj = site.data.citesphere-model %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.citesphere-exporter[0]["html_url"] }}'
+							target="_blank">citesphere-exporter</a>
+					</td>
+					{% assign obj = site.data.citesphere-exporter %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.citesphere-importer[0]["html_url"] }}'
+							target="_blank">citesphere-importer</a>
+					</td>
+					{% assign obj = site.data.citesphere-importer %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.python-apps-docker[0]["html_url"] }}'
+							target="_blank">python-apps-docker</a>
+					</td>
+					{% assign obj = site.data.python-apps-docker %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.black-goat[0]["html_url"] }}'
+							target="_blank">black-goat</a>
+					</td>
+					{% assign obj = site.data.black-goat %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.citesphere-messages[0]["html_url"] }}'
+							target="_blank">citesphere-messages</a>
+					</td>
+					{% assign obj = site.data.citesphere-messages %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.spring-social-zotero[0]["html_url"] }}'
+							target="_blank">spring-social-zotero</a>
+					</td>
+					{% assign obj = site.data.spring-social-zotero %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.giles-eco-requests[0]["html_url"] }}'
+							target="_blank">giles-eco-requests</a>
+					</td>
+					{% assign obj = site.data.giles-eco-requests %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.rcn-matching-engine[0]["html_url"] }}'
+							target="_blank">rcn-matching-engine</a>
+					</td>
+					{% assign obj = site.data.rcn-matching-engine %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.rcn-matching-matcher[0]["html_url"] }}'
+							target="_blank">rcn-matching-matcher</a>
+					</td>
+					{% assign obj = site.data.rcn-matching-matcher %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.rcn-uploader[0]["html_url"] }}'
+							target="_blank">rcn-uploader</a>
+					</td>
+					{% assign obj = site.data.rcn-uploader %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.rcn-eaccpf-model[0]["html_url"] }}'
+							target="_blank">rcn-eaccpf-model</a>
+					</td>
+					{% assign obj = site.data.rcn-eaccpf-model %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.rcn-eaccpf-model[0]["html_url"] }}'
+							target="_blank">rcn-eaccpf-model</a>
+					</td>
+					{% assign obj = site.data.rcn-eaccpf-model %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.mbl-browser[0]["html_url"] }}'
+							target="_blank">mbl-browser</a>
+					</td>
+					{% assign obj = site.data.mbl-browser %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.giles-eco-util[0]["html_url"] }}'
+							target="_blank">giles-eco-util</a>
+					</td>
+					{% assign obj = site.data.giles-eco-util %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.rcn-kafka-messages[0]["html_url"] }}'
+							target="_blank">rcn-kafka-messages</a>
+					</td>
+					{% assign obj = site.data.rcn-kafka-messages %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.oauth-tokens[0]["html_url"] }}'
+							target="_blank">oauth-tokens</a>
+					</td>
+					{% assign obj = site.data.oauth-tokens %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.amphora[0]["html_url"] }}'
+							target="_blank">amphora</a>
+					</td>
+					{% assign obj = site.data.amphora %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.conceptpower-api[0]["html_url"] }}'
+							target="_blank">conceptpower-api</a>
+					</td>
+					{% assign obj = site.data.conceptpower-api %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.giles-eco-docker[0]["html_url"] }}'
+							target="_blank">giles-eco-docker</a>
+					</td>
+					{% assign obj = site.data.giles-eco-docker %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.giles-eco-september-util[0]["html_url"] }}'
+							target="_blank">giles-eco-september-util</a>
+					</td>
+					{% assign obj = site.data.giles-eco-september-util %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.amphora-ipython-notebooks[0]["html_url"] }}'
+							target="_blank">amphora-ipython-notebooks</a>
+					</td>
+					{% assign obj = site.data.amphora-ipython-notebooks %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+							{% assign message = item["commit"]["message"] %}
+							{% assign display = message | newline_to_br | split: '<br />' %}
+							{% assign author = item["author"]["login"] %}
+							{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.spring-thymeleaf-archetype[0]["html_url"] }}'
+							target="_blank">spring-thymeleaf-archetype</a>
+					</td>
+					{% assign obj = site.data.spring-thymeleaf-archetype %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.spring-thymeleaf-base-project[0]["html_url"] }}'
+							target="_blank">spring-thymeleaf-base-project</a>
+					</td>
+					{% assign obj = site.data.spring-thymeleaf-base-project %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.jupyter-notebooks[0]["html_url"] }}'
+							target="_blank">jupyter-notebooks</a>
+					</td>
+					{% assign obj = site.data.jupyter-notebooks %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.women-in-computer-science[0]["html_url"] }}'
+							target="_blank">women-in-computer-science</a>
+					</td>
+					{% assign obj = site.data.women-in-computer-science %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.sustainability-db[0]["html_url"] }}'
+							target="_blank">sustainability-db</a>
+					</td>
+					{% assign obj = site.data.sustainability-db %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.giles-eco-cassiopeia[0]["html_url"] }}'
+							target="_blank">giles-eco-cassiopeia</a>
+					</td>
+					{% assign obj = site.data.giles-eco-cassiopeia %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.giles-eco-andromeda[0]["html_url"] }}'
+							target="_blank">giles-eco-andromeda</a>
+					</td>
+					{% assign obj = site.data.giles-eco-andromeda %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.giles-eco-cepheus[0]["html_url"] }}'
+							target="_blank">giles-eco-cepheus</a>
+					</td>
+					{% assign obj = site.data.giles-eco-cepheus %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.giles-eco-nepomuk[0]["html_url"] }}'
+							target="_blank">giles-eco-nepomuk</a>
+					</td>
+					{% assign obj = site.data.giles-eco-nepomuk %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.giles-eco-kafka-util[0]["html_url"] }}'
+							target="_blank">giles-eco-kafka-util</a>
+					</td>
+					{% assign obj = site.data.giles-eco-kafka-util %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.giles-eco-september[0]["html_url"] }}'
+							target="_blank">giles-eco-september</a>
+					</td>
+					{% assign obj = site.data.giles-eco-september %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.giles-eco-nereid[0]["html_url"] }}'
+							target="_blank">giles-eco-nereid</a>
+					</td>
+					{% assign obj = site.data.giles-eco-nereid %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.quadriga[0]["html_url"] }}'
+							target="_blank">quadriga</a>
+					</td>
+					{% assign obj = site.data.quadriga %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.grazer-ep[0]["html_url"] }}'
+							target="_blank">grazer-ep</a>
+					</td>
+					{% assign obj = site.data.grazer-ep %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.giles-eco-freddie[0]["html_url"] }}'
+							target="_blank">giles-eco-freddie</a>
+					</td>
+					{% assign obj = site.data.giles-eco-freddie %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.django-pg-fts[0]["html_url"] }}'
+							target="_blank">django-pg-fts</a>
+					</td>
+					{% assign obj = site.data.django-pg-fts %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.giles-eco-carolus[0]["html_url"] }}'
+							target="_blank">giles-eco-carolus</a>
+					</td>
+					{% assign obj = site.data.giles-eco-carolus %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.ansible-amphora-role[0]["html_url"] }}'
+							target="_blank">ansible-amphora-role</a>
+					</td>
+					{% assign obj = site.data.ansible-amphora-role %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.cidoc-crm-neo4j[0]["html_url"] }}'
+							target="_blank">cidoc-crm-neo4j</a>
+					</td>
+					{% assign obj = site.data.cidoc-crm-neo4j %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.ansible-vogon-role[0]["html_url"] }}'
+							target="_blank">ansible-vogon-role</a>
+					</td>
+					{% assign obj = site.data.ansible-vogon-role %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.qstore4s[0]["html_url"] }}'
+							target="_blank">qstore4s</a>
+					</td>
+					{% assign obj = site.data.qstore4s %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.jstor-import[0]["html_url"] }}'
+							target="_blank">jstor-import</a>
+					</td>
+					{% assign obj = site.data.jstor-import %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.monitor[0]["html_url"] }}'
+							target="_blank">monitor</a>
+					</td>
+					{% assign obj = site.data.monitor %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a style="margin-right:0;" href='{{ site.data.tethne[0]["html_url"] }}'
+							target="_blank">tethne</a>
+					</td>
+					{% assign obj = site.data.tethne %}
+					<td>
+						<ol>
+							{% for item in obj limit:10 %}
+								{% assign message = item["commit"]["message"] %}
+								{% assign display = message | newline_to_br | split: '<br />' %}
+								{% assign author = item["author"]["login"] %}
+								{% assign display2 = author | newline_to_br | split: '<br />' %}
+							<li>
+								{{ display[0] }} by <strong>{{ display2[0] }}</strong><br>
+							</li>
+							{% endfor %}
+						</ol>
+					</td>
+				</tr>
+
 			</table>
 
 		</section>

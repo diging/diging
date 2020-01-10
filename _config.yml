@@ -22,16 +22,110 @@ plugins:
 jekyll_get_json:
   - data: conceptpower
     json: 'https://api.github.com/repos/diging/conceptpower/commits'
+  - data: virtual
+    json: 'https://api.github.com/repos/diging/virtual-spaces-2.0/commits'    
+  - data: vogon-web-client
+    json: 'https://api.github.com/repos/diging/vogon-web-client/commits'    
+  - data: vogon-web
+    json: 'https://api.github.com/repos/diging/vogon-web/commits'    
+  - data: utilities
+    json: 'https://api.github.com/repos/diging/utilities/commits'
+  - data: simple-users
+    json: 'https://api.github.com/repos/diging/simple-users/commits'        
   - data: citesphere
     json: 'https://api.github.com/repos/diging/citesphere/commits'
-  - data: virtual
-    json: 'https://api.github.com/repos/diging/virtual-spaces-2.0/commits'
-  - data: giles
-    json: 'https://api.github.com/repos/diging/giles-eco-giles-web/commits'
-  - data: vogon
-    json: 'https://api.github.com/repos/diging/vogon-web/commits'
+  - data: citesphere-model
+    json: 'https://api.github.com/repos/diging/citesphere-model/commits'
+  - data: citesphere-exporter
+    json: 'https://api.github.com/repos/diging/citesphere-exporter/commits'    
+  - data: citesphere-importer
+    json: 'https://api.github.com/repos/diging/citesphere-importer/commits'   
+  - data: python-apps-docker
+    json: 'https://api.github.com/repos/diging/python-apps-docker/commits'       
+  - data: black-goat
+    json: 'https://api.github.com/repos/diging/black-goat/commits'   
+  - data: citesphere-messages
+    json: 'https://api.github.com/repos/diging/citesphere-messages/commits'   
+  - data: spring-social-zotero
+    json: 'https://api.github.com/repos/diging/spring-social-zotero/commits'   
+  - data: giles-eco-requests
+    json: 'https://api.github.com/repos/diging/giles-eco-requests/commits'   
+  - data: rcn-matching-engine
+    json: 'https://api.github.com/repos/diging/rcn-matching-engine/commits'   
+  - data: rcn-authority-matcher
+    json: 'https://api.github.com/repos/diging/rcn-authority-matcher/commits'   
+  - data: rcn-uploader
+    json: 'https://api.github.com/repos/diging/rcn-uploader/commits'   
+  - data: rcn-eaccpf-model
+    json: 'https://api.github.com/repos/diging/rcn-eaccpf-model/commits'   
+  - data: mbl-browser
+    json: 'https://api.github.com/repos/diging/mbl-browser/commits'   
+  - data: giles-eco-util
+    json: 'https://api.github.com/repos/diging/giles-eco-util/commits'   
+  - data: rcn-kafka-messages
+    json: 'https://api.github.com/repos/diging/rcn-kafka-messages/commits'   
+  - data: oauth-tokens
+    json: 'https://api.github.com/repos/diging/oauth-tokens/commits'   
+  - data: giles-eco-giles-web
+    json: 'https://api.github.com/repos/diging/giles-eco-giles-web/commits'            
+  - data: amphora
+    json: 'https://api.github.com/repos/diging/amphora/commits'   
+  - data: conceptpower-api
+    json: 'https://api.github.com/repos/diging/Conceptpower-API/commits'   
+  - data: giles-eco-docker
+    json: 'https://api.github.com/repos/diging/giles-eco-docker/commits'   
+  - data: giles-eco-september-util
+    json: 'https://api.github.com/repos/diging/giles-eco-september-util/commits'   
+  - data: amphora-ipython-notebooks
+    json: 'https://api.github.com/repos/diging/amphora-ipython-notebooks/commits'   
+  - data: spring-thymeleaf-archetype
+    json: 'https://api.github.com/repos/diging/spring-thymeleaf-archetype/commits'   
+  - data: spring-thymeleaf-base-project
+    json: 'https://api.github.com/repos/diging/spring-thymeleaf-base-project/commits'   
+  - data: jupyter-notebooks
+    json: 'https://api.github.com/repos/diging/jupyter-notebooks/commits'   
+  - data: women-in-computer-science
+    json: 'https://api.github.com/repos/diging/women-in-computer-science/commits'   
+  - data: sustainability-db
+    json: 'https://api.github.com/repos/diging/sustainability-db/commits'   
+  - data: giles-eco-cassiopeia
+    json: 'https://api.github.com/repos/diging/giles-eco-cassiopeia/commits'   
+  - data: giles-eco-andromeda
+    json: 'https://api.github.com/repos/diging/giles-eco-andromeda/commits'   
+  - data: giles-eco-cepheus
+    json: 'https://api.github.com/repos/diging/giles-eco-cepheus/commits'   
+  - data: giles-eco-nepomuk
+    json: 'https://api.github.com/repos/diging/giles-eco-nepomuk/commits'   
+  - data: giles-eco-kafka-util
+    json: 'https://api.github.com/repos/diging/giles-eco-kafka-util/commits'   
+  - data: giles-eco-september
+    json: 'https://api.github.com/repos/diging/giles-eco-september/commits'   
+  - data: giles-eco-nereid
+    json: 'https://api.github.com/repos/diging/giles-eco-nereid/commits'   
   - data: quadriga
-    json: 'https://api.github.com/repos/diging/quadriga/commits'
-
+    json: 'https://api.github.com/repos/diging/quadriga/commits'    
+  - data: grazer-ep
+    json: 'https://api.github.com/repos/diging/grazer-ep/commits'   
+  - data: giles-eco-freddie
+    json: 'https://api.github.com/repos/diging/giles-eco-freddie/commits'   
+  - data: django-pg-fts
+    json: 'https://api.github.com/repos/diging/django-pg-fts/commits'   
+  - data: giles-eco-carolus
+    json: 'https://api.github.com/repos/diging/giles-eco-carolus/commits'   
+  - data: ansible-amphora-role
+    json: 'https://api.github.com/repos/diging/ansible-amphora-role/commits'   
+  - data: cidoc-crm-neo4j
+    json: 'https://api.github.com/repos/diging/cidoc-crm-neo4j/commits'   
+  - data: ansible-vogon-role
+    json: 'https://api.github.com/repos/diging/ansible-vogon-role/commits'   
+  - data: qstore4s
+    json: 'https://api.github.com/repos/diging/qstore4s/commits'   
+  - data: jstor-import
+    json: 'https://api.github.com/repos/diging/jstor-import/commits'   
+  - data: monitor
+    json: 'https://api.github.com/repos/diging/monitor/commits'   
+  - data: tethne
+    json: 'https://api.github.com/repos/diging/tethne/commits'   
+    
 # Google Analytics
 google_analytics: UA-44225403-5
