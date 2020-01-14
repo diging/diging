@@ -42,38 +42,122 @@
 </html>
 
 <script>
-  var mymap = L.map('mapid').setView([35.735456, 4.40495], 2);
-  
-  L.tileLayer('https://api.mapbox.com/styles/v1/diginggroup/ck36f392i03rl1cmqrzgiczhx/tiles/256/{z}/{x}/{y}@2x?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.pirates',
-    accessToken: 'pk.eyJ1IjoiZGlnaW5nZ3JvdXAiLCJhIjoiY2syemJxNjlrMGg4bTNubzg0b254bW9tbCJ9.MgjW6NsPmtafhhs9wofDBA'
-  }).addTo(mymap);
+  var map = L.map('mapid').setView([35.735456, 4.40495], 2);
 
-  //mapbox://styles/diginggroup/ck36f392i03rl1cmqrzgiczhx
+  L.tileLayer(
+    'https://api.mapbox.com/styles/v1/diginggroup/ck36f392i03rl1cmqrzgiczhx/tiles/256/{z}/{x}/{y}@2x?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox.pirates',
+      accessToken: 'pk.eyJ1IjoiZGlnaW5nZ3JvdXAiLCJhIjoiY2syemJxNjlrMGg4bTNubzg0b254bW9tbCJ9.MgjW6NsPmtafhhs9wofDBA'
+    }).addTo(map);
 
-  let coords = [
+  let labMembers = [
     ["Taylor Quinn", 42.36008, -71.05888],
     ["Ian Lobo", 29.37585, 47.9774],
-    ["Neeharika Dasari", 17.38504, 78.48667],
-    ["Ryan Cheney", 33.35282, -111.78902],
     ["Ashmi Chheda", 19.07598, 72.87765],
     ["Navaneesh K. Bajakudlu", 12.508, 74.98821],
-    ["Sumukha Radhakrishna, Namratha O. Venkatesh", 12.97159, 77.59456],
+    ["Sumukha Radhakrishna", 12.97159, 77.59456],
     ["Keerthivasan Krishnamurthy", 11.66432, 78.14601],
     ["Julia Damerow, Dirk Wintergrün", 52.52, 13.40495],
     ["Matt Nunez", 33.42551, -111.94],
     ["Adhvik M. Yeleswarapu", 28.45949, 77.02663],
     ["Yuva V.S.P Kurakula", 16.50617, 80.64801],
-    ["Radhika Nyati", 25.21381, 75.86475]        
+    ["Radhika Nyati", 25.21381, 75.86475],
+    ["Manfred Laubichler", 47.8095, 13.0550],
+    ["Erick Peirson", 47.7511, -120.7401]
   ];
 
-  for (var i = 0; i < coords.length; i++) {
-			 marker = new L.marker([coords[i][1],coords[i][2]])
-				.bindPopup(coords[i][0])
-				.addTo(mymap);
-	}
+  let alumni = [
+    ["Neeharika Dasari", 17.38504, 78.48667],
+    ["Ryan Cheney", 33.35282, -111.78902],
+    ["Namratha O. Venkatesh", 12.97159, 77.59456],
+    ["Pranav Sharan", 22.3072, 73.1812],
+    ["Supraj Kolluri ", 17.3850, 78.4867],
+    ["Nischal Samji", 14.4673, 78.8242]
+  ];
+
+  let formerStudents = [
+    ["Vineel Vutukuri", 16.5062, 80.6480],
+    ["Tamalika Mukherjee", 22.5726, 88.3639]
+  ];
+
+  let redIcon = new L.icon({
+    iconUrl: '/images/icons/marker-icon-2x-red.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 40],
+    popupAnchor: [-3, -76],
+    shadowUrl: '/images/icons/marker-shadow.png',
+    shadowSize: [55, 41],
+    shadowAnchor: [16, 40]
+  });
+
+  let goldIcon = new L.icon({
+    iconUrl: '/images/icons/marker-icon-2x-gold.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 40],
+    popupAnchor: [-3, -76],
+    shadowUrl: '/images/icons/marker-shadow.png',
+    shadowSize: [55, 41],
+    shadowAnchor: [16, 40]
+  });
+
+  for (var i = 0; i < labMembers.length; i++) {
+    marker = new L.marker([labMembers[i][1], labMembers[i][2]], {
+        icon: redIcon
+      })
+      .bindPopup(labMembers[i][0])
+      .addTo(map);
+  }
+
+  for (var i = 0; i < alumni.length; i++) {
+    marker = new L.marker([alumni[i][1], alumni[i][2]], {
+        icon: goldIcon
+      })
+      .bindPopup(alumni[i][0])
+      .addTo(map);
+  }
+
+  for (var i = 0; i < formerStudents.length; i++) {
+    marker = new L.marker([formerStudents[i][1], formerStudents[i][2]])
+      .bindPopup(formerStudents[i][0])
+      .addTo(map);
+  }
 
 
+
+  function getColor(d) {
+    return d > 2 ? '#800026' :
+      d > 1.5 ? '#BD0026' :
+      d > 1.2 ? '#E31A1C' :
+      d > 1.1 ? '#FC4E2A' :
+      d > 1.5 ? '#FD8D3C' :
+      d > 1.2 ? '#FEB24C' :
+      d > 1.1 ? '#FED976' :
+      '#FFEDA0';
+  }
+
+  var legend = L.control({
+    position: 'bottomleft'
+  });
+
+  legend.onAdd = function (map) {
+    var div = L.DomUtil.create('div', 'info legend'),
+      labels = [];
+
+    labels.push(
+      '<span style="background:' + "#c92539" + '">Current Lab Members</span> ');
+
+    labels.push(
+      '<span style="background:' + "#ffd326" + '">Alumni Members</span> ');
+
+    labels.push(
+      '<span style="background:' + "#2780c9" + '">Former Students of DigInG courses</span> ');
+
+    div.innerHTML = labels.join('<br>');
+    return div;
+  };
+
+  // Do not forget to add your control to the map?
+  legend.addTo(map);
 </script>
