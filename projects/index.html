@@ -315,14 +315,19 @@ section_id: projects
 
 						{% if item["type"] == "PushEvent" %}
 
+							{% capture newLine %}
+							{% endcapture %}
+
 							{% assign url = item["repo"]["url"] %}
 							{% assign repo = url | remove: 'https://api.github.com/repos/diging/' %}
 							{% assign author = item["actor"]["login"] %}
-							{% assign message = item["payload"]["commits"][0]["message"] %}
-
+							{% assign message = item["payload"]["commits"][0]["message"] | split: "*" %}
+							{% assign timestamp = item["created_at"] | replace: "T", newLine | remove: "Z" %}
+							
 							<td>{{repo}}</td>
 							<td>{{author}}</td>
-							<td>{{message}}</td>							
+							<td>{{message[0]}}</td>			
+							<td style="width: 120px;">{{timestamp}} UTC</td>				
 					
 						{% endif %}
 					</tr>
