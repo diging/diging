@@ -19,9 +19,5 @@ plugins:
   - jekyll-paginate
   - jekyll-get-json
 
-jekyll_get_json: 
-  - data: events
-    json: 'https://api.github.com/orgs/diging/events'  
-    
 # Google Analytics
 google_analytics: UA-44225403-5
