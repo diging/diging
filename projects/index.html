@@ -308,33 +308,8 @@ section_id: projects
 			{% include section-header.html title="Recent Github Commits" %}
 
 			<table id="#dtBasicExample" style="border-collapse: collapse;">
-				{% assign obj = site.data.events %}
 
-				{% for item in obj offset:1 %}
-					<tr>
-
-						{% if item["type"] == "PushEvent" %}
-
-							{% capture newLine %}
-							{% endcapture %}
-
-							{% assign url = item["repo"]["url"] %}
-							{% assign repo = url | remove: 'https://api.github.com/repos/diging/' %}
-							{% assign author = item["actor"]["login"] %}
-							{% assign message = item["payload"]["commits"][0]["message"] | split: "*" %}
-							{% assign timestamp = item["created_at"] | replace: "T", newLine | remove: "Z" %}
-							
-							<td>{{repo}}</td>
-							<td>{{author}}</td>
-							<td>{{message[0]}}</td>			
-							<td style="width: 120px;">{{timestamp}} UTC</td>				
-					
-						{% endif %}
-					</tr>
-
-
-				{% endfor %}
-
+				<p id="paragraph"></p>
 
 			</table>
 
@@ -343,3 +318,79 @@ section_id: projects
 
 	</div>
 </div>
+
+<script>
+
+	axios.get('https://api.github.com/orgs/diging/events')
+	.then((response) => {
+		data = response.data;
+		console.log(data);
+		
+		for(let i = 0; i < Object.keys(data).length; i++)
+		{
+			
+			if("PushEvent".localeCompare(Object.values(data)[i]["type"]) == 0)
+			{
+
+				let rowAttr = "myTr" + i.toString();
+
+				let row = document.createElement("TR");
+				row.setAttribute("id", rowAttr);
+				document.getElementById("#dtBasicExample").appendChild(row);
+
+				for(let j = 0; j < 4; j++)
+				{
+					let cell = document.createElement("TD");
+
+					switch(j) 
+					{
+						case 0:
+							let repo = Object.values(data)[i]["repo"]["name"];
+							repo = repo.substring(7);
+							cell.appendChild(document.createTextNode(repo));
+							cell.style.width = "155px";
+							document.getElementById(rowAttr).appendChild(cell);
+							break;
+						case 1:
+							let author = Object.values(data)[i]["payload"]["commits"][0]["author"]["name"];
+							cell.appendChild(document.createTextNode(author));
+							document.getElementById(rowAttr).appendChild(cell);
+							break;
+						case 2:
+							let message = Object.values(data)[i]["payload"]["commits"][0]["message"];
+							let asterisk = message.indexOf("\n*");
+							
+							if(asterisk > -1)
+							{
+								message = message.substring(0, asterisk);
+								// document.getElementById("paragraph").innerHTML += message + '<br>';
+								cell.appendChild(document.createTextNode(message));
+							}
+							else
+							{
+								// document.getElementById("paragraph").innerHTML += message + '<br>';
+								cell.appendChild(document.createTextNode(message));
+							}
+							document.getElementById(rowAttr).appendChild(cell);
+							break;
+						case 3:
+							let timeStamp = Object.values(data)[i]["created_at"];
+							timeStamp = timeStamp.substring(0,10) + "\n" + timeStamp.substring(11, 19) + " UTC";
+							cell.appendChild(document.createTextNode(timeStamp));
+							cell.style.width = "120px";
+							document.getElementById(rowAttr).appendChild(cell);
+							break;
+					}
+				}
+
+				// document.getElementById(rowAttr).appendChild(cell);
+				
+			}
+		}
+		
+	}).catch((error) =>{
+		console.log("error");
+	});
+
+
+</script>
