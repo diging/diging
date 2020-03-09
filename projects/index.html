@@ -316,13 +316,7 @@ section_id: projects
 			{% include section-header.html title="Recent Github Commits" %}
 
 			<table id="githubTable" style="border-collapse: collapse; background-color:rgba(0, 0, 0, 0);">
-				<tr>
-					<th >Event Type</th>
-					<th>Repository</th>
-					<th>Author</th>
-					<th>Message</th>
-					<th>Timestamp</th>
-				</tr>
+
 			</table>
 			
 
@@ -339,6 +333,16 @@ section_id: projects
 		data = response.data;
 
 		$(document).ready(function() {
+
+			let headerRow = $("<tr />")
+			$("#githubTable").append(headerRow);
+
+			headerRow.append($("<th>" + "Event Type" + "</th>"));
+			headerRow.append($("<th>" + "Repository" + "</th>"));
+			headerRow.append($("<th>" + "Author" + "</th>"));
+			headerRow.append($("<th>" + "Message" + "</th>"));
+			headerRow.append($("<th>" + "Timestamp" + "</th>"));
+
 
 			for(let i = 0; i < Object.keys(data).length; i++)
 			{
@@ -439,7 +443,8 @@ section_id: projects
 		
 		
 	}).catch((error) =>{
-		alert("We're sorry, but GitHub events could not be loaded.");
+		$("#githubTable").append("We're sorry, but GitHub events could not be loaded.");
+		
 	});
 
 
