@@ -419,7 +419,6 @@ section_id: projects
 					row.append($("<td>" + author + "</td>"));
 		
 					let message = Object.values(data)[i]["payload"]["comment"]["body"];
-					console.log(message);
 					if(message == null)
 					{
 						row.append($("<td>" + "Not available." + "</td>"));
@@ -439,7 +438,7 @@ section_id: projects
 		
 		
 	}).catch((error) =>{
-		console.log("We're sorry, but GitHub events could not be loaded.");
+		alert("We're sorry, but GitHub events could not be loaded.");
 	});
 
 
