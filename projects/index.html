@@ -6,6 +6,7 @@ section_id: projects
 <style>
 	table tr td{
 		color: black;
+		font-size: 13px;
 	}
 
 	td {
@@ -316,7 +317,6 @@ section_id: projects
 			{% include section-header.html title="Recent Github Commits" %}
 
 			<table id="githubTable" style="border-collapse: collapse; background-color:rgba(0, 0, 0, 0);">
-
 			</table>
 			
 
@@ -337,7 +337,6 @@ section_id: projects
 			let headerRow = $("<tr />")
 			$("#githubTable").append(headerRow);
 
-			headerRow.append($("<th>" + "Event Type" + "</th>"));
 			headerRow.append($("<th>" + "Repository" + "</th>"));
 			headerRow.append($("<th>" + "Author" + "</th>"));
 			headerRow.append($("<th>" + "Message" + "</th>"));
@@ -352,11 +351,13 @@ section_id: projects
 					let row = $("<tr />")
 					$("#githubTable").append(row);
 
-					row.append($("<td>" + "PushEvent" + "</td>"))
-
 					let repo = Object.values(data)[i]["repo"]["name"];
 					repo = repo.substring(7);
-					row.append($("<td>" + repo + "</td>"));
+					
+					let link = Object.values(data)[i]["repo"]["url"];
+					link = link.substring(0,8) + link.substring(12, 23) + link.substring(29);
+					
+					row.append($('<td><a href="'+ link +'">' + repo + '</a></td>'));
 					
 					let author = Object.values(data)[i]["payload"]["commits"][0]["author"]["name"];
 					row.append($("<td>" + author + "</td>"));
@@ -374,9 +375,8 @@ section_id: projects
 						row.append($("<td>" + message + "</td>"));
 					}
 					
-					let timeStamp = Object.values(data)[i]["created_at"];
-					timeStamp = timeStamp.substring(0,10) + "\n" + timeStamp.substring(11, 19) + " UTC";
-					row.append($("<td>" + timeStamp + "</td>"));
+					let timeStamp = new Date(Object.values(data)[i]["created_at"]);
+					row.append($("<td>" + timeStamp.toString().substring(0, 24)+ "</td>"));
 
 				}
 				
@@ -385,66 +385,32 @@ section_id: projects
 					let row = $("<tr />")
 					$("#githubTable").append(row);
 
-					row.append($("<td>" + "PullRequestEvent" + "</td>"))
-
 					let repo = Object.values(data)[i]["repo"]["name"];
 					repo = repo.substring(7);
-					row.append($("<td>" + repo + "</td>"));
+
+					let link = Object.values(data)[i]["repo"]["url"];
+					link = link.substring(0,8) + link.substring(12, 23) + link.substring(29);
+					
+					row.append($('<td><a href="'+ link +'">' + repo + '</a></td>'));
 					
 					let author = Object.values(data)[i]["payload"]["pull_request"]["user"]["login"];
 					row.append($("<td>" + author + "</td>"));
 		
-					let message = Object.values(data)[i]["payload"]["body"];
-					if(message == null)
-					{
-						row.append($("<td>" + "Not available." + "</td>"));
-					}
-					else
-					{
-						row.append($("<td>" + message + "</td>"));
-					}
+					let message = "Pull request " + Object.values(data)[i]["payload"]["number"] + " opened by " + author;
+					row.append($("<td>" + message + "</td>"));
 					
-					let timeStamp = Object.values(data)[i]["created_at"];
-					timeStamp = timeStamp.substring(0,10) + "\n" + timeStamp.substring(11, 19) + " UTC";
-					row.append($("<td>" + timeStamp + "</td>"));
+					let timeStamp = new Date(Object.values(data)[i]["created_at"]);
+					row.append($("<td>" + timeStamp.toString().substring(0, 24)+ "</td>"));
 				}
 			
-				if("PullRequestReviewCommentEvent".localeCompare(Object.values(data)[i]["type"]) == 0)
-				{
-					let row = $("<tr />")
-					$("#githubTable").append(row);
-
-					row.append($("<td>" + "PullRequestReviewCommentEvent" + "</td>"))
-
-					let repo = Object.values(data)[i]["repo"]["name"];
-					repo = repo.substring(7);
-					row.append($("<td>" + repo + "</td>"));
-					
-					let author = Object.values(data)[i]["payload"]["comment"]["user"]["login"];
-					row.append($("<td>" + author + "</td>"));
-		
-					let message = Object.values(data)[i]["payload"]["comment"]["body"];
-					if(message == null)
-					{
-						row.append($("<td>" + "Not available." + "</td>"));
-					}
-					else
-					{
-						row.append($("<td>" + message + "</td>"));
-					}
-					
-					let timeStamp = Object.values(data)[i]["created_at"];
-					timeStamp = timeStamp.substring(0,10) + "\n" + timeStamp.substring(11, 19) + " UTC";
-					row.append($("<td>" + timeStamp + "</td>"));
+				
 				}
-			}
 
 		});
 		
 		
 	}).catch((error) =>{
-		$("#githubTable").append("We're sorry, but GitHub events could not be loaded.");
-		
+		$("#githubTable").append("We're sorry, but GitHub events could not be loaded.");å
 	});
 
 
