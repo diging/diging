@@ -4,15 +4,22 @@ title: Projects
 section_id: projects
 ---
 <style>
-	table tr td {
+	table tr td{
 		color: black;
-		text-align: left;
-		background: #F7F7F3;
+	}
+
+	td {
+    	border: solid 2px black;
+		color: black;
+		background-color: #f7f7f3;
 	}
 
 	table {
 		border-collapse: separate;
 		border: none;
+		margin-top: auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	#cell {
@@ -307,11 +314,16 @@ section_id: projects
 
 			{% include section-header.html title="Recent Github Commits" %}
 
-			<table id="#dtBasicExample" style="border-collapse: collapse;">
-
-				<p id="paragraph"></p>
-
+			<table id="githubTable" style="border-collapse: collapse; background-color:rgba(0, 0, 0, 0);">
+				<tr>
+					<th >Event Type</th>
+					<th>Repository</th>
+					<th>Author</th>
+					<th>Message</th>
+					<th>Timestamp</th>
+				</tr>
 			</table>
+			
 
 
 		</section>
@@ -324,72 +336,110 @@ section_id: projects
 	axios.get('https://api.github.com/orgs/diging/events')
 	.then((response) => {
 		data = response.data;
-		console.log(data);
-		
-		for(let i = 0; i < Object.keys(data).length; i++)
-		{
-			
-			if("PushEvent".localeCompare(Object.values(data)[i]["type"]) == 0)
+
+		$(document).ready(function() {
+
+			for(let i = 0; i < Object.keys(data).length; i++)
 			{
-
-				let rowAttr = "myTr" + i.toString();
-
-				let row = document.createElement("TR");
-				row.setAttribute("id", rowAttr);
-				document.getElementById("#dtBasicExample").appendChild(row);
-
-				for(let j = 0; j < 4; j++)
+			
+				if("PushEvent".localeCompare(Object.values(data)[i]["type"]) == 0)
 				{
-					let cell = document.createElement("TD");
+					let row = $("<tr />")
+					$("#githubTable").append(row);
 
-					switch(j) 
+					row.append($("<td>" + "PushEvent" + "</td>"))
+
+					let repo = Object.values(data)[i]["repo"]["name"];
+					repo = repo.substring(7);
+					row.append($("<td>" + repo + "</td>"));
+					
+					let author = Object.values(data)[i]["payload"]["commits"][0]["author"]["name"];
+					row.append($("<td>" + author + "</td>"));
+		
+					let message = Object.values(data)[i]["payload"]["commits"][0]["message"];
+					let asterisk = message.indexOf("\n*");
+					
+					if(asterisk > -1)
 					{
-						case 0:
-							let repo = Object.values(data)[i]["repo"]["name"];
-							repo = repo.substring(7);
-							cell.appendChild(document.createTextNode(repo));
-							cell.style.width = "155px";
-							document.getElementById(rowAttr).appendChild(cell);
-							break;
-						case 1:
-							let author = Object.values(data)[i]["payload"]["commits"][0]["author"]["name"];
-							cell.appendChild(document.createTextNode(author));
-							document.getElementById(rowAttr).appendChild(cell);
-							break;
-						case 2:
-							let message = Object.values(data)[i]["payload"]["commits"][0]["message"];
-							let asterisk = message.indexOf("\n*");
-							
-							if(asterisk > -1)
-							{
-								message = message.substring(0, asterisk);
-								// document.getElementById("paragraph").innerHTML += message + '<br>';
-								cell.appendChild(document.createTextNode(message));
-							}
-							else
-							{
-								// document.getElementById("paragraph").innerHTML += message + '<br>';
-								cell.appendChild(document.createTextNode(message));
-							}
-							document.getElementById(rowAttr).appendChild(cell);
-							break;
-						case 3:
-							let timeStamp = Object.values(data)[i]["created_at"];
-							timeStamp = timeStamp.substring(0,10) + "\n" + timeStamp.substring(11, 19) + " UTC";
-							cell.appendChild(document.createTextNode(timeStamp));
-							cell.style.width = "120px";
-							document.getElementById(rowAttr).appendChild(cell);
-							break;
+						message = message.substring(0, asterisk);
+						row.append($("<td>" + message + "</td>"));
 					}
-				}
+					else
+					{
+						row.append($("<td>" + message + "</td>"));
+					}
+					
+					let timeStamp = Object.values(data)[i]["created_at"];
+					timeStamp = timeStamp.substring(0,10) + "\n" + timeStamp.substring(11, 19) + " UTC";
+					row.append($("<td>" + timeStamp + "</td>"));
 
-				// document.getElementById(rowAttr).appendChild(cell);
+				}
 				
+				if("PullRequestEvent".localeCompare(Object.values(data)[i]["type"]) == 0)
+				{
+					let row = $("<tr />")
+					$("#githubTable").append(row);
+
+					row.append($("<td>" + "PullRequestEvent" + "</td>"))
+
+					let repo = Object.values(data)[i]["repo"]["name"];
+					repo = repo.substring(7);
+					row.append($("<td>" + repo + "</td>"));
+					
+					let author = Object.values(data)[i]["payload"]["pull_request"]["user"]["login"];
+					row.append($("<td>" + author + "</td>"));
+		
+					let message = Object.values(data)[i]["payload"]["body"];
+					if(message == null)
+					{
+						row.append($("<td>" + "Not available." + "</td>"));
+					}
+					else
+					{
+						row.append($("<td>" + message + "</td>"));
+					}
+					
+					let timeStamp = Object.values(data)[i]["created_at"];
+					timeStamp = timeStamp.substring(0,10) + "\n" + timeStamp.substring(11, 19) + " UTC";
+					row.append($("<td>" + timeStamp + "</td>"));
+				}
+			
+				if("PullRequestReviewCommentEvent".localeCompare(Object.values(data)[i]["type"]) == 0)
+				{
+					let row = $("<tr />")
+					$("#githubTable").append(row);
+
+					row.append($("<td>" + "PullRequestReviewCommentEvent" + "</td>"))
+
+					let repo = Object.values(data)[i]["repo"]["name"];
+					repo = repo.substring(7);
+					row.append($("<td>" + repo + "</td>"));
+					
+					let author = Object.values(data)[i]["payload"]["comment"]["user"]["login"];
+					row.append($("<td>" + author + "</td>"));
+		
+					let message = Object.values(data)[i]["payload"]["comment"]["body"];
+					console.log(message);
+					if(message == null)
+					{
+						row.append($("<td>" + "Not available." + "</td>"));
+					}
+					else
+					{
+						row.append($("<td>" + message + "</td>"));
+					}
+					
+					let timeStamp = Object.values(data)[i]["created_at"];
+					timeStamp = timeStamp.substring(0,10) + "\n" + timeStamp.substring(11, 19) + " UTC";
+					row.append($("<td>" + timeStamp + "</td>"));
+				}
 			}
-		}
+
+		});
+		
 		
 	}).catch((error) =>{
-		console.log("error");
+		console.log("We're sorry, but GitHub events could not be loaded.");
 	});
 
 

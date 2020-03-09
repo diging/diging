@@ -6,4 +6,3 @@ gem 'github-pages'#, group: :jekyll_plugins
 #gem 'github-pages'
 gem 'therubyracer'
 
-gem "jekyll-get-json", "~> 0.0.1"
