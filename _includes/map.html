@@ -46,31 +46,31 @@
 
   L.tileLayer(
     'https://api.mapbox.com/styles/v1/diginggroup/ck36f392i03rl1cmqrzgiczhx/tiles/256/{z}/{x}/{y}@2x?access_token={accessToken}', {
-      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-      maxZoom: 18,
-      id: 'mapbox.pirates',
-      accessToken: 'pk.eyJ1IjoiZGlnaW5nZ3JvdXAiLCJhIjoiY2syemJxNjlrMGg4bTNubzg0b254bW9tbCJ9.MgjW6NsPmtafhhs9wofDBA'
-    }).addTo(map);
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.pirates',
+    accessToken: 'pk.eyJ1IjoiZGlnaW5nZ3JvdXAiLCJhIjoiY2syemJxNjlrMGg4bTNubzg0b254bW9tbCJ9.MgjW6NsPmtafhhs9wofDBA'
+  }).addTo(map);
 
   let labMembers = [
     ["Taylor Quinn", 42.36008, -71.05888],
     ["Ian Lobo", 29.37585, 47.9774],
     ["Ashmi Chheda", 19.07598, 72.87765],
     ["Navaneesh K. Bajakudlu", 12.508, 74.98821],
-    ["Sumukha Radhakrishna", 12.97159, 77.59456],
     ["Keerthivasan Krishnamurthy", 11.66432, 78.14601],
     ["Julia Damerow, Dirk Wintergrün", 52.52, 13.40495],
-    ["Matt Nunez", 33.42551, -111.94],
     ["Adhvik M. Yeleswarapu", 28.45949, 77.02663],
     ["Yuva V.S.P Kurakula", 16.50617, 80.64801],
     ["Radhika Nyati", 25.21381, 75.86475],
+    ["Prashant Jadhav", 18.5204, 73.8567],
     ["Manfred Laubichler", 47.8095, 13.0550]
   ];
 
   let alumni = [
     ["Neeharika Dasari", 17.38504, 78.48667],
     ["Ryan Cheney", 33.35282, -111.78902],
-    ["Namratha O. Venkatesh", 12.97159, 77.59456],
+    ["Sumukha Radhakrishnam, Namratha O. Venkatesh", 12.97159, 77.59456],
+    ["Matt Nunez", 33.42551, -111.94],
     ["Pranav Sharan", 22.3072, 73.1812],
     ["Supraj Kolluri ", 17.3850, 78.4867],
     ["Nischal Samji", 14.4673, 78.8242],
@@ -105,16 +105,16 @@
 
   for (var i = 0; i < labMembers.length; i++) {
     marker = new L.marker([labMembers[i][1], labMembers[i][2]], {
-        icon: redIcon
-      })
+      icon: redIcon
+    })
       .bindPopup(labMembers[i][0])
       .addTo(map);
   }
 
   for (var i = 0; i < alumni.length; i++) {
     marker = new L.marker([alumni[i][1], alumni[i][2]], {
-        icon: goldIcon
-      })
+      icon: goldIcon
+    })
       .bindPopup(alumni[i][0])
       .addTo(map);
   }
@@ -130,12 +130,12 @@
   function getColor(d) {
     return d > 2 ? '#800026' :
       d > 1.5 ? '#BD0026' :
-      d > 1.2 ? '#E31A1C' :
-      d > 1.1 ? '#FC4E2A' :
-      d > 1.5 ? '#FD8D3C' :
-      d > 1.2 ? '#FEB24C' :
-      d > 1.1 ? '#FED976' :
-      '#FFEDA0';
+        d > 1.2 ? '#E31A1C' :
+          d > 1.1 ? '#FC4E2A' :
+            d > 1.5 ? '#FD8D3C' :
+              d > 1.2 ? '#FEB24C' :
+                d > 1.1 ? '#FED976' :
+                  '#FFEDA0';
   }
 
   var legend = L.control({
