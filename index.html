@@ -7,11 +7,84 @@ section_id: home
     <div class="large-12 columns">
       {% include section-header.html title="Our work" %}
       <div class="spacing"></div>
-      <p><strong>DigInG Pioneering Computational Humanities.</strong> The Digital Innovation Group pushes the boundaries of computational analysis in the humanities by developing and deploying innovative research software and analytic methods.</p>
-      <p>The <strong>mission</strong> of the Digital Innovation Group is to develop new tools to support HPS researchers in processing and analyzing their data, to contribute to the development of a computational research system for history and philosophy of science, and to create new educational resources, opportunities, and experiences for students in computer science and the history and philosophy of science.
-						</p>
+      <p><strong>DigInG Pioneering Computational Humanities.</strong> The Digital Innovation Group pushes the boundaries
+        of computational analysis in the humanities by developing and deploying innovative research software and
+        analytic methods.</p>
+      <p>The <strong>mission</strong> of the Digital Innovation Group is to develop new tools to support HPS researchers
+        in processing and analyzing their data, to contribute to the development of a computational research system for
+        history and philosophy of science, and to create new educational resources, opportunities, and experiences for
+        students in computer science and the history and philosophy of science.
+      </p>
     </div>
   </div>
+
+
+</div>
+
+<div class="row">
+  <div class='large-12 medium-12 columns'>
+    <div class='mod modProjectPost'>
+      <section class="box">
+        <a href="https://github.com/diging/citesphere" class="image featured"><img src="/images/citesphereLogo.png"
+            alt="" class="grayback" /></a>
+        <header>
+          <h3>Citesphere</h3>
+        </header>
+        <p>Citesphere is a web application that sits on top of the reference managing service
+          Zotero. It provides additional functionality not available in Zotero such as the ability
+          to specify author affiliation or an author identifier.</p>
+        <footer>
+          <a href="https://github.com/diging/citesphere" class="button alt"><span class="icon fa-github"></span> Read
+            more on GitHub.io</a>
+        </footer>
+      </section>
+    </div>
+  </div>
+
+
+  <!-- <div class='large-6 medium-6 columns'>
+    <div class='mod modProjectPost'>
+      <section class="box">
+        <a href="https://github.com/diging/virtual-spaces-2.0" class="image featured"><img
+            src="/images/virtualSpacesLogo.png" alt="" class="grayback" style="width: 280px; height: 280px;" /></a>
+        <header>
+          <h3>Virtual Spaces 2.0</h3>
+        </header>
+        <p>Virtual Spaces 2.0 is a web application to develop virtual exhibitions by creating
+          virtual 2D tours through real or abstract spaces.</p>
+        <footer>
+          <a href="https://github.com/diging/virtual-spaces-2.0" class="button alt"><span class="icon fa-github"></span>
+            Read more on GitHub.io</a>
+        </footer>
+      </section>
+    </div>
+  </div> -->
+
+
+
+</div>
+
+<div class="row">
+
+
+  <div class='large-12 medium-12 columns'>
+    <div class='mod modProjectPost'>
+      <section class="box">
+        <a href="https://github.com/diging/virtual-spaces-2.0" class="image featured"><img
+            src="/images/virtualSpacesLogo.png" alt="" class="grayback" style="width: 280px; height: 280px;" /></a>
+        <header>
+          <h3>Virtual Spaces 2.0</h3>
+        </header>
+        <p>Virtual Spaces 2.0 is a web application to develop virtual exhibitions by creating
+          virtual 2D tours through real or abstract spaces.</p>
+        <footer>
+          <a href="https://github.com/diging/virtual-spaces-2.0" class="button alt"><span class="icon fa-github"></span>
+            Read more on GitHub.io</a>
+        </footer>
+      </section>
+    </div>
+  </div>
+
 
 
 </div>
@@ -25,25 +98,27 @@ section_id: home
 
   <div class="spacing"></div>
 
-<div class='row'>
-  {% for post in site.posts %}
-  {% if forloop.index > 3 %}
+  <div class='row'>
+    {% for post in site.posts %}
+    {% if forloop.index > 1 %}
     {% break %}
-  {% endif %}
+    {% endif %}
     <div class='big mod modBlogPost' style="min-height: 380px;">
 
       <div class='content' style="padding-bottom: 20px;">
         <h4><a href="{{post.url}}">{{post.title}}</a></h4>
         <p class='info'><span>{{post.date | date: "%B %d, %Y" }}</span> </p>
-        <p>{% for image in post.images %}<div class='image' ><img style="max-height: 250px; width: auto; padding:0 15px; float: left; " alt="" src="{{site.url}}/{{image}}" /></div>{% endfor %}</p>
+        <p>{% for image in post.images %}<div class='image'><img
+              style="max-height: 250px; width: auto; padding:0 15px; float: left; " alt=""
+              src="{{site.url}}/{{image}}" /></div>{% endfor %}</p>
         <p style="margin-top: 20px;"></p>
         <p>{{post.excerpt}}</p>
         <div class='spacing'></div>
-        <a style=" margin-bottom: 45px;"class="button small" href="{{post.url}}">Read more</a>
+        <a style=" margin-bottom: 45px;" class="button small" href="{{post.url}}">Read more</a>
       </div>
     </div>
-  {% endfor %}
-</div>
+    {% endfor %}
+  </div>
 
 
   <div class='row'>
