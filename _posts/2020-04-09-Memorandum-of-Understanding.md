@@ -37,3 +37,5 @@ Working with DigInG should first of all be understood as a collaboration rather 
 <h4 style="font-family:Garamond; text-transform: none;">Financial contributions</h4>
 While DigInG provides some services free of charge, especially in cases of close collaboration between external projects and DigInG, we will require some financial contributions in certain cases such as “buying” time of a developer or student worker. We welcome joint grant proposals and generally recommend consulting with us before and during the grant writing phase if a collaboration with DigInG is being considered. Since requirements, expectations, and scope of work vary on a case-by-case basis, please contact us to discuss this matter in detail. We welcome students interested in computational humanities work to contact us for guidance and consultation free of charge.  
 
+<a href="DigInG-MoU-2020.pdf" download>Download a copy of the Memorandum</a>
+
