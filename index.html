@@ -3,10 +3,6 @@ layout: default
 section_id: home
 ---
 <style>
-  /* .transparency:hover {
-    opacity: 0.5;
-  } */
-
   .container {
     position: relative;
     width: 50%;
@@ -31,7 +27,7 @@ section_id: home
   }
 
   .container:hover .image {
-    opacity: 0.3;
+    opacity: .2;
   }
 
   .container:hover .middle {
@@ -84,7 +80,7 @@ section_id: home
 <div class="full" style="background: #f5f5f5;">
   <div class="row">
     <div class="large-12 columns">
-      {% include section-header.html title="Our Projects" %}
+      {% include section-header.html title="Main Projects" %}
     </div>
   </div>
 </div>
@@ -93,11 +89,12 @@ section_id: home
 
   <div class="container" style="display: inline;" class='mod '>
 
-    <a href="https://github.com/diging/citesphere" class="image featured"><img class="" src="/images/citesphereLogo.png"
-        alt="" class="grayback" /></a>
+    <a href="https://github.com/diging/citesphere" target="_blank" class="image featured"><img class=""
+        src="/images/citesphereLogo.png" alt="" class="grayback" /></a>
 
-    <div class="middle">
-      <div class="text">Test</div>
+    <div class="middle" style="width: 300px;">
+      <div>Citesphere is a web application that sits on top of Zotero and allows users to manage their Zotero citations.
+      </div>
     </div>
 
   </div>
@@ -106,12 +103,12 @@ section_id: home
 
   <div class="container" style="display: inline; padding-left: 100px;" class='mod '>
 
-    <a href="https://github.com/diging/virtual-spaces-2.0" class="image featured"><img class=""
-        src="/images/virtualSpacesLogo.png" alt="" class="grayback" style="width: 280px; height: 280px;" /></a>
+    <a href="https://github.com/diging/virtual-spaces-2.0" target="_blank" class="image featured"><img class=""
+        src="/images/virtualSpacesLogo.png" alt="" class="grayback" style="width: 230px; height: 230px;" /></a>
 
 
-    <div class="middle" style="padding-left: 100px;">
-      <div class="text">Test</div>
+    <div class="middle" style="padding-left: 100px; width: 400px;">
+      <div>Virtual Spaces 2.0 let's you build virtual exhibitions through a web application.</div>
     </div>
   </div>
 
