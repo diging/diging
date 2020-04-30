@@ -5,7 +5,7 @@ title: DigInG in Times of the Pandemic
 subtitle:
 images: images/20200430/DigInGZoom.png
 images_caption: "DigInG on Zoom"
-permalink: "digingpandemic"
+permalink: /digingpandemic/
 author: jdamerow
 ---
 
