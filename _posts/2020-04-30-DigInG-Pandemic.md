@@ -18,3 +18,4 @@ Of course, there have also been challenges. Slow internet connections can make i
 <div class="pull-right">Julia for the Digital Innovation Group</div>
 
 <div class="clear">&nbsp;</div>
+<div>&nbsp;</div>
