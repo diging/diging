@@ -3,7 +3,7 @@
 
   <div id ="asu_universal_nav">
 
-    <a href= "https://www.asu.edu" target="_blank"><img  width="160px" src="/images/asu_university_full_maroon.png"/></a>
+    <a href= "https://www.asu.edu" target="_blank"><img  width="160px" id="asu-logo" src="/images/asu_university_full_maroon.png"/></a>
 
     <ul class="example">
       <li>
@@ -13,9 +13,54 @@
 
     </li>
     <li>
-      <i class="fa fa-adjust" style="font-size: 25px !important"></i>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <i class="fa fa-adjust" style="font-size: 25px !important; margin-right: -120px; color: var(--headings);"></i>
+            <input type="checkbox" id="checkbox" style="visibility: hidden;"/>
+            <div class="slider round"></div>
+        </label>
+      </div>
     </li>
     </ul>
   </div>
 </div>
 </div>
+
+<script>
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+$(document).ready(function(){
+  var status= $('html').attr('data-theme')
+  console.log(status);
+});
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        $("#asu-logo").attr('src',"/images/asu_university_full_white.png")
+        localStorage.setItem('theme', 'dark'); //add this
+
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        $("#asu-logo").attr('src',"/images/asu_university_full_maroon.png")
+        localStorage.setItem('theme', 'light'); //add this
+    }    
+    window.location.reload(true);
+}
+
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+        $("#asu-logo").attr('src',"/images/asu_university_full_white.png")
+    }
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+</script>

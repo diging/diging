@@ -6,6 +6,7 @@ subtitle:
 images: images/foto.jpg
 images_caption: "The graduates of the Python Workshop"
 permalink: "pythongraduates"
+excerpt: On May 8-9, 2019, we’ve hosted our first “Intro to Python”-workshop. On the first day, Taylor Quinn talked about the basics of programming with Python such as variables, loops, functions, and how to use Jupyter Notebooks to run Python code.
 ---
 
 Looking back: <a href= "http://localhost:4000/2019/05/02/rse2017.html" target= "_blank">“Intro to Python”</a>

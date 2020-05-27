@@ -783,7 +783,7 @@ ul.shortcode-list i {
 }
 
 .button.boxed:hover {
-  color: #333;
+  color: var(--headings);
   background: #fff;
 }
 */
@@ -794,7 +794,7 @@ ul.shortcode-list i {
 } */
 .top-bar .title-area .name h1 a {
   font-size: 2.57143rem;
-  color: #333;
+  color: var(--headings);
 }
 .top-bar .title-area .name h2 a {
   font-weight: bold;
@@ -827,6 +827,7 @@ ul.shortcode-list i {
 
 .contain-to-grid {
   height: 100px;
+  background: var(--header);
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;
@@ -841,6 +842,7 @@ ul.shortcode-list i {
   -o-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
+  background: transparent;
 }
 .contain-to-grid .top-bar .top-bar-section li:not(.has-form) a:not(.button) {
   -moz-transition-property: all;
@@ -933,11 +935,11 @@ ul.shortcode-list i {
 }
 
 .contain-to-grid.alt .top-bar-section ul li > a {
-  color: #333;
+  color: var(--headings);
   font-weight: bold;
 }
 .contain-to-grid.alt .top-bar-section .has-dropdown > a:after {
-  border-top-color: #333;
+  border-top-color: var(--headings);
 }
 .contain-to-grid.alt .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
   background: #444;
@@ -959,14 +961,14 @@ ul.shortcode-list i {
   background: transparent;
 }
 .contain-to-grid.transparent .top-bar-section li:not(.has-form) a:not(.button) {
-  color: #333;
+  color: var(--headings);
   background: transparent;
 }
 .contain-to-grid.transparent .top-bar-section ul li.has-dropdown .dropdown li a {
   color: #fff;
 }
 .contain-to-grid.transparent .top-bar-section .has-dropdown > a:after {
-  border-top-color: #333;
+  border-top-color: var(--headings);
 }
 .contain-to-grid.transparent .top-bar-section ul li.has-dropdown .dropdown li {
   background-color: rgba(0, 0, 0, 0.8);
@@ -1143,7 +1145,7 @@ form input.error, form textarea.error {
   -webkit-border-radius: 20px;
   border-radius: 20px;
   background: #eee;
-  color: #333;
+  color: var(--headings);
   text-align: center;
   font-size: 1.25rem;
   line-height: 3rem;
@@ -1427,7 +1429,7 @@ form input.error, form textarea.error {
   padding: 30px 20px 0px 20px;
 }
 .modProjectPost h4 a {
-  color: #333;
+  color: var(--headings);
 }
 .modProjectPost h4 a:hover {
   color: #d23153;
@@ -1484,7 +1486,7 @@ form input.error, form textarea.error {
   font-size: 2.5rem;
 }
 .modProjectPost.big h3 a {
-  color: #33332E;
+  color: var(--headings)32E;
 }
 .modProjectPost.big h3 a:hover {
   color: #d23153;
@@ -1534,7 +1536,7 @@ form input.error, form textarea.error {
   padding: 30px 20px 0px 20px;
 }
 .modBlogPost h4 a {
-  color: #333;
+  color: var(--headings);
 }
 .modBlogPost h4 a:hover {
   color: #d23153;
@@ -1592,7 +1594,7 @@ form input.error, form textarea.error {
   font-size: 2.5rem;
 }
 .modBlogPost.big h3 a {
-  color: #33332E;
+  color: var(--headings)32E;
 }
 .modBlogPost.big h3 a:hover {
   color: #d23153;
@@ -3110,7 +3112,7 @@ form input.error, form textarea.error {
   font-size: 3.42857rem;
   width: 3.42857rem;
   height: 3.42857rem;
-  color: #333;
+  color: var(--headings);
   border: 3px solid #eee;
   display: inline-block;
   padding: 30px;
@@ -3249,7 +3251,7 @@ body {
 }
 .modMilestone i {
   font-size: 36px;
-  color: #333;
+  color: var(--headings);
   background: #d23153;
   width: 90px;
   height: 90px;
@@ -3320,14 +3322,14 @@ body {
 }
 .modPriceBox p.price .dollar {
   font-size: 30px;
-  color: #333;
+  color: var(--headings);
   font-style: normal;
   position: relative;
   top: -30px;
 }
 .modPriceBox p.price .number {
   font-size: 70px;
-  color: #333;
+  color: var(--headings);
   font-style: normal;
 }
 .modPriceBox .features {
@@ -3356,7 +3358,7 @@ body {
     width: 90%;
     margin: 0 auto;
     height: 10px;
-    background: #ffc627;
+    background: var(--secondary-color);
     display: block;
     margin: -10px 0px 20px 30px;
 }
@@ -3711,7 +3713,7 @@ body {
   padding-top: 30px;
 }
 .modTestimonials.simple .author .author-name strong {
-  color: #333;
+  color: var(--headings);
 }
 .modTestimonials.simple .slick-slider {
   margin-bottom: 10px;
@@ -4039,7 +4041,7 @@ body {
 
 
 	body {font-family: 'HaufeMerriweather', serif;     font-style: normal;
-    font-weight: normal; color: #33332E; background-color: #F7F7F4;}
+    font-weight: normal; color: var(--headings)32E; background-color: var(--bg-color);}
 
 	h1, h2, h3, h4, h5, h6 {
     font-family: 'HaufeMerriweatherSans', sans-serif;
@@ -4050,10 +4052,11 @@ body {
     font-weight: normal;}
 
 	a, .modBlogPost.big h3 a:hover, .pager a, .modIconText .icon-text-circle:hover i  {color: #8c1d40; /*haufe blue*/}
-  h3 a {color: #FFC627; /*haufe blue*/}
-	.top-bar-section ul li > a {color: #33332E /*black*/}
-	.top-bar-section li.active:not(.has-form) a:not(.button) { color: #4E84C3; background:#F7F7F4;  }
-	.top-bar-section ul li:hover:not(.has-form) > a, .top-bar-section li.active:not(.has-form) a:not(.button):hover {color: #4E84C3; background: #F7F7F4;}
+  h3 a {color: var(--secondary-color); /*haufe blue*/}
+	.top-bar-section ul li > a {color: var(--headings); /*black*/}
+	.top-bar-section li.active:not(.has-form) a:not(.button) { color: var(--headings); background: var(--bg-color);  }
+	.top-bar-section ul li:hover:not(.has-form) > a, .top-bar-section li.active:not(.has-form) a:not(.button):hover {color: var(--primary-color); background: var(--bg-color);}
+  
 
 	a:hover, .pager a:hover {color: #d23153;}
 	a:active {color: #d23153;}
@@ -4197,7 +4200,7 @@ p { line-height: 1.8; margin-bottom: 1.8rem;}
 }
 #asu_universal_nav ul a{
     display: inline-block;
-    color: #000;
+    color: var(--headings);
     text-decoration: none;
     padding: 0px 15px;
 }
@@ -4214,7 +4217,7 @@ p { line-height: 1.8; margin-bottom: 1.8rem;}
 }
 .separate{
   top: -0.65em;
-  background-color: #f7f7f4;
+  background-color: var(--bg-color);
   padding: 0 0.3em 0 0.3em;
   position: relative;
   font-size: 25px;
@@ -4270,29 +4273,123 @@ padding: .75em .75em 1.75em .75em
 }
 
 .secondary-btn {
-  border: 2px solid #4E84C3;
+  border: 2px solid var(--primary-color);
   border-radius: 5px;
-  color: #4E84C3;
+  color: var(--primary-color);
   background: none;
   font-weight: 600;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 .secondary-btn:hover {
-  border: 2px solid #4E84C3;
+  border: 2px solid var(--primary-color);
   border-radius: 5px;
   color: white;
-  background: #4E84C3;
+  background: var(--primary-color);
 }
 
 .hero {
-  margin: -50px -180px 0 0;
+  margin: -50px -85px 0 0;
 }
 
-.grid-container {
+.grid-mission {
   display: grid;
   grid-template-columns: auto auto auto;
   margin-top: 40px;
   text-align: center;
 }
 
+.grid-projects {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 40px 0 60px 0; 
+  text-align: center;
+}
+
+.project-tile {
+  width: 250px;
+  height: 250px;
+  background-color: var(--cards);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0 auto;
+  transition-timing-function: ease-in-out;
+  transition: width 0.6s, height 0.6s, box-shadow 0.6s;
+}
+
+.project-tile:hover {
+  width: 275px;
+  height: 275px;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  transition-timing-function: ease-in-out;
+  transition: width 0.6s, height 0.6s, box-shadow 0.6s;
+}
+
+.grid-posts {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 40px 0;
+}
+
+.post-card {
+  background-color: var(--cards);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 15px;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.read-more {
+  float: right;
+  color: var(--primary-color);
+}
+
+.post-image {
+    height: 200px;
+    margin: -15px -15px 20px -15px;
+    overflow: hidden;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+    padding: 0 1.4285714286rem;
+    line-height: 7.1428571429rem;
+    background: transparent;
+}
+
+p {
+  color: var(--paragraphs);
+}
+
+h2 {
+  color: var(--headings);
+  font-size: 24px;
+}
+
+h3 {
+  color: var(--headings);
+  font-size: 20px;
+  height: 60px;
+}
+
+:root {
+    --primary-color: #2E629F;
+    --secondary-color: #ffc627;
+    --headings: #333;
+    --secondary-headings: #9D9D9D;
+    --paragraphs: #5E5E5E;
+    --bg-color: #F7F7F4;
+    --cards: #FFF;
+    --header: #FFF;
+}
+
+[data-theme="dark"] {
+    --primary-color: #4E84C3;
+    --secondary-color: #F25774;
+    --headings: #FFF;
+    --secondary-headings: rgba(255,255,255,0.60);
+    --paragraphs: rgba(255,255,255,0.87);
+    --bg-color: #121212;
+    --cards: rgba(255,255,255,0.13);
+    --header: rgba(255,255,255,0.25);
+}

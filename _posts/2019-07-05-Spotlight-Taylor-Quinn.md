@@ -5,6 +5,7 @@ title: Spotlight&#58; Taylor Quinn
 subtitle:
 permalink: "spotlightTQ"
 images: images/people/TaylorQuinn.png
+excerpt: Earlier this year, Taylor Quinn joined DigInG as a full-time Software Engineer after being a student worker for the past 1.5 years. We are excited to have him on board and it’s time for a short introduction!
 ---
 
 Earlier this year, Taylor Quinn joined DigInG as a full-time Software Engineer after being a student worker for the past 1.5 years. We are excited to have him on board and it’s time for a short introduction!
