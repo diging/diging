@@ -1,9 +1,10 @@
 
-- image: images/Icon awesome-tools.png
+- image-light: images/Icon awesome-tools (2).png
+  image-dark: images/Icon awesome-tools.png
   description: To develop new tools to support HPS researchers in processing and analyzing their data.
 
-- image: images/Icon awesome-landmark.png
+- image-light: images/Icon awesome-landmark.png
   description: To contribute to the development of a computational research system for history and philosophy of science.
 
-- image: images/laptop-code-solid.png
+- image-light: images/laptop-code-solid.png
   description: To create new educational resources, opportunities, and experiences for students in computer science and the history and philosophy of science.

@@ -30,24 +30,35 @@
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
-$(document).ready(function(){
-  var status= $('html').attr('data-theme')
-  console.log(status);
+$(document).ready(function() {
+  console.log($('html').attr('data-theme'));
 });
 
 function switchTheme(e) {
     if (e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
-        $("#asu-logo").attr('src',"/images/asu_university_full_white.png")
+        $("#asu-logo").attr('src',"/images/asu_university_full_white.png");
+        $("#diging-logo").attr('src',"/images/DigInG logo_final-white.png");
+        $(".hero").attr('src',"/images/Hero image – 1.png");
+        $("#mission-image").attr('src',"/images/Icon awesome-tools.png");
+        {% for item in site.data.projects %}
+         $("#{{ item.id }}").attr('src',"{{ item.image-white }}")
+        {% endfor %}
         localStorage.setItem('theme', 'dark'); //add this
 
     }
     else {
         document.documentElement.setAttribute('data-theme', 'light');
-        $("#asu-logo").attr('src',"/images/asu_university_full_maroon.png")
+        $("#asu-logo").attr('src',"/images/asu_university_full_maroon.png");
+        $("#diging-logo").attr('src',"/images/DigInG logo_final-color.png");
+        $(".hero").attr('src',"/images/Hero image.png");
+        $("#mission-image").attr('src',"/images/Icon awesome-tools (2).png");
+        {% for item in site.data.projects %}
+          $("#{{ item.id }}").attr('src',"{{ item.image-color }}")
+        {% endfor %}
         localStorage.setItem('theme', 'light'); //add this
     }    
-    window.location.reload(true);
+    //window.location.reload(true);
 }
 
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
@@ -57,7 +68,7 @@ if (currentTheme) {
 
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
-        $("#asu-logo").attr('src',"/images/asu_university_full_white.png")
+        $("#asu-logo").attr('src',"/images/asu_university_full_white.png");
     }
 }
 

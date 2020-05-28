@@ -24,7 +24,7 @@ section_id: home
       <div class="grid-mission">
         {% for item in site.data.mission %}
         <div>
-          <img src="{{ item.image }}">
+          <img id="mission-image" src="{{ item.image-light }}">
           <p style="margin: 20px 15px;">{{ item.description }}</p>
         </div>
         {% endfor %}
@@ -41,7 +41,7 @@ section_id: home
         {% for item in site.data.projects %}
         <a href="{{ item.url }}" target="_blank">
           <div class="project-tile">
-            <img src="{{ item.image-color }}">
+            <img id="{{ item.id }}" src="{{ item.image-color }}">
           </div>
         </a>
         {% endfor %}
@@ -90,3 +90,17 @@ section_id: home
   {% endunless %}
   {% endfor %}
 </div>-->
+
+<script>
+  //# sourceURL=theme.js
+  var Theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+  if (Theme === 'dark') {
+      $(".hero").attr('src',"/images/Hero image – 1.png");
+      $("#mission-image").attr('src',"/images/Icon awesome-tools.png");
+      {% for item in site.data.projects %}
+        $("#{{ item.id }}").attr('src',"{{ item.image-white }}")
+      {% endfor %}
+
+  }
+</script>

@@ -4054,7 +4054,7 @@ body {
 	a, .modBlogPost.big h3 a:hover, .pager a, .modIconText .icon-text-circle:hover i  {color: #8c1d40; /*haufe blue*/}
   h3 a {color: var(--secondary-color); /*haufe blue*/}
 	.top-bar-section ul li > a {color: var(--headings); /*black*/}
-	.top-bar-section li.active:not(.has-form) a:not(.button) { color: var(--headings); background: var(--bg-color);  }
+	.top-bar-section li.active:not(.has-form) a:not(.button) { color: var(--headings); background: var(--active-links);  }
 	.top-bar-section ul li:hover:not(.has-form) > a, .top-bar-section li.active:not(.has-form) a:not(.button):hover {color: var(--primary-color); background: var(--bg-color);}
   
 
@@ -4289,7 +4289,7 @@ padding: .75em .75em 1.75em .75em
 }
 
 .hero {
-  margin: -50px -85px 0 0;
+  margin: -50px -88px 0 0;
 }
 
 .grid-mission {
@@ -4381,6 +4381,7 @@ h3 {
     --bg-color: #F7F7F4;
     --cards: #FFF;
     --header: #FFF;
+    --active-links: #F7F7F4;
 }
 
 [data-theme="dark"] {
@@ -4392,4 +4393,5 @@ h3 {
     --bg-color: #121212;
     --cards: rgba(255,255,255,0.13);
     --header: rgba(255,255,255,0.25);
+    --active-links: #4E84C3;
 }

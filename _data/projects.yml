@@ -2,15 +2,19 @@
 - image-color: images/projects/citesphere-color.png
   image-white: images/projects/citesphere-white.png
   url: https://github.com/diging/citesphere
+  id: citesphere-img
 
 - image-color: images/projects/conceptpower-color.png
   image-white: images/projects/conceptpower-white.png
   url: https://diging.github.io/conceptpower/
+  id: conceptpower-img
 
 - image-color: images/projects/virtualspaces-color.png
   image-white: images/projects/virtualspaces-white.png
   url: https://github.com/diging/virtual-spaces-2.0
+  id: virtualspaces-img
 
 - image-color: images/projects/vogonweb-color.png
   image-white: images/projects/vogonweb-white.png
   url: https://github.com/diging/vogon-web
+  id: vogonweb-img

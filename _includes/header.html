@@ -49,6 +49,9 @@
 
 
 <script>
-  let theme=localStorage.getItem('theme'); 
-  console.log(theme)
+  var Theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+  if (Theme === 'dark') {
+    $("#diging-logo").attr('src',"/images/DigInG logo_final-white.png");      
+  }
 </script>
