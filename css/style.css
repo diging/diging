@@ -3383,6 +3383,12 @@ body {
   background: currentColor;
   display: block;
 }
+
+.modTeamMember {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
 .modTeamMember .member {
   position: relative;
   overflow: hidden;
@@ -3410,7 +3416,9 @@ body {
   line-height: 2.5rem;
 }
 .modTeamMember img {
-  width: 50%;
+  width: 70%;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 .modTeamMember .overlay {
   opacity: 0;
@@ -4372,6 +4380,19 @@ h3 {
   height: 60px;
 }
 
+dt {
+  color: var(--headings);
+}
+
+dd {
+  color: var(--p2s);
+}
+
+.member-name {
+  margin-top: 15px;
+  color: var(--headings);
+}
+
 :root {
     --primary-color: #2E629F;
     --secondary-color: #ffc627;
@@ -4382,6 +4403,7 @@ h3 {
     --cards: #FFF;
     --header: #FFF;
     --active-links: #F7F7F4;
+    --p2s: #4E84C3;
 }
 
 [data-theme="dark"] {
@@ -4394,4 +4416,5 @@ h3 {
     --cards: rgba(255,255,255,0.13);
     --header: rgba(255,255,255,0.25);
     --active-links: #4E84C3;
+    --p2s: #F25774;
 }
