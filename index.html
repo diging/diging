@@ -39,6 +39,9 @@ section_id: home
       {% include section-header.html title="Our projects" %}
       <div class="grid-projects">
         {% for item in site.data.projects %}
+        {% if forloop.index > 4 %}
+          {% break %}
+        {% endif %}
         <a href="{{ item.url }}" target="_blank">
           <div class="project-tile">
             <img id="{{ item.id }}" src="{{ item.image-color }}">

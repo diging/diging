@@ -1423,7 +1423,9 @@ form input.error, form textarea.error {
 
 .modProjectPost {
   margin-bottom: 40px;
-  background: #fff;
+  background: var(--cards);
+  padding: 15px;
+  border-radius: 15px;
 }
 .modProjectPost .content {
   padding: 30px 20px 0px 20px;
@@ -3012,6 +3014,7 @@ form input.error, form textarea.error {
 .modGallery .gallery-nav {
   margin: 0 auto 30px;
   text-align: center;
+
 }
 .modGallery .gallery-nav li {
   float: none;
@@ -3040,6 +3043,7 @@ form input.error, form textarea.error {
   -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
+  border-radius: 15px;
 }
 .modGallery ul.gallery li {
   -moz-transition: all 0.4s linear;
@@ -3363,9 +3367,7 @@ body {
     margin: -10px 0px 20px 30px;
 }
 
-.modSectionHeader.big h2 {
-  font-size: 4rem;
-}
+
 .modSectionHeader.big h3 {
   font-weight: normal;
   letter-spacing: 3px;
@@ -4078,7 +4080,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
-  background: #8c1d40;
+  background: var(--primary-color);
   border:none;
 }
 
@@ -4391,6 +4393,11 @@ dd {
 .member-name {
   margin-top: 15px;
   color: var(--headings);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
 :root {

@@ -5,34 +5,34 @@
     - name: "Radhika Nyati"
       img: "/images/people/radhika.jpg"
 
-      name: "Ashmi Chheda"
+    - name: "Ashmi Chheda"
       img: "/images/people/ashmi.jpg"
 
-      name: "Keerthivasan Krishnamurthy"
+    - name: "Keerthivasan Krishnamurthy"
       img: "/images/people/keerthivasan.jpg"
 
-      name: "Navaneesh Kumar Bajakudlu"
+    - name: "Navaneesh Kumar Bajakudlu"
       img: "/images/people/navaneesh.jpg"
 
-      name: "Adhvik Madhav Yeleswarapu <br /> (UX Designer)"
+    - name: "Adhvik Madhav Yeleswarapu <br /> (UX Designer)"
       img: "/images/people/adhvik.jpg"
 
-      name: "Prashant Jadhav"
+    - name: "Prashant Jadhav"
       img: "/images/people/prashant.jpg"
 
-      name: "Zachary Rudebeck"
+    - name: "Zachary Rudebeck"
       img: "/images/people/zach.jpg"
 
-      name: "Sagar Khar"
+    - name: "Sagar Khar"
       img: "/images/people/sagar.jpg"
 
-      name: "Aakash Kumar"
+    - name: "Aakash Kumar"
       img: "/images/people/Aakash.jpg"
 
-      name: "Akhil Reddy Katpally"
+    - name: "Akhil Reddy Katpally"
       img: "/images/people/akhil.jpg"
 
-      name: "Chandana Tarur Veerabhadraiah"
+    - name: "Chandana Tarur Veerabhadraiah"
       img: ""
 
 - group: "Researchers"
@@ -41,8 +41,8 @@
     - name: "Ian Lobo"
       img: "/images/people/ian.jpg"
 
-      name: "Yuva Venkata Sai Priyanka Kurakula"
+    - name: "Yuva Venkata Sai Priyanka Kurakula"
       img: "/images/people/yuva.jpg"
 
-      name: "Megan Bromley"
+    - name: "Megan Bromley"
       img: "/images/people/Megan.png"

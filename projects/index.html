@@ -30,7 +30,7 @@ section_id: projects
 </style>
 
 
-<div class='full' style='background: #f5f5f5'>
+<div class='full'>
 	<div class='row'>
 		<div class='large-12 columns'>
 			{% include section-header.html title="Our Projects" %}
@@ -85,128 +85,19 @@ section_id: projects
 
 			<div class="row">
 				<div class='large-4 medium-4 columns'>
+					{% for item in site.data.AllProjects %}
 					<div class='mod modProjectPost'>
 						<section class="box">
-							<a href="http://diging.github.io/conceptpower/" class="image featured"><img
-									src="/images/conceptpowerLogo - long.png" alt="" class="grayback" /></a>
-							<header>
-								<h3>Conceptpower</h3>
-							</header>
-							<p>Conceptpower is an extensible authority file service that supports many of the web and
-								desktop applications in the DigInG universe. Conceptpower is a Java web application that
-								can be deployed in a servlet container such as Apache Tomcat.</p>
+							<img id="{{ item.id }}" src="{{ item.image-color }}" />
+							<p>{{ item.description }}</p>
 							<footer>
-								<a href="http://diging.github.io/conceptpower/" class="button alt"><span
+								<a href="{{ item.url }}"><span
 										class="icon fa-github"></span> Read more on GitHub.io</a>
 							</footer>
 						</section>
 					</div>
-				</div>
-
-				<div class='large-4 medium-4 columns' style="padding-bottom: 50px;">
-					<div class='mod modProjectPost'>
-						<section class="box">
-							<a href="https://github.com/diging/citesphere" class="image featured"><img
-									src="/images/citesphereLogo.png" alt="" class="grayback" /></a>
-							<header>
-								<h3>Citesphere</h3>
-							</header>
-							<p>Citesphere is a web application that sits on top of the reference managing service
-								Zotero. It provides additional functionality not available in Zotero such as the ability
-								to specify author affiliation or an author identifier.</p>
-							<footer>
-								<a href="https://github.com/diging/citesphere" class="button alt"><span
-										class="icon fa-github"></span> Read more on GitHub.io</a>
-							</footer>
-						</section>
-					</div>
-				</div>
-
-
-				<div class='large-4 medium-4 columns'>
-					<div class='mod modProjectPost'>
-						<section class="box">
-							<a href="http://diging.github.io/quadriga/index.html" class="image featured"><img
-									src="/images/QuadrigaLogo - long.png" alt="" class="grayback" /></a>
-							<header>
-								<h3>Quadriga</h3>
-							</header>
-							<p>Quadriga is a web-application that acts as a clearing-house for text annotations -- in
-								the form of contextualized triples, or "<a
-									href="http://diging.github.io/quadriga/quadruples.html">quadruples</a>," that form
-								complex graphs -- generated with the Vogon desktop application, and as an environment
-								for managing text-annotation projects.</p>
-							<footer>
-								<a href="http://diging.github.io/quadriga/index.html" class="button alt"><span
-										class="icon fa-github"></span> Read more on GitHub.io</a>
-							</footer>
-						</section>
-					</div>
-				</div>
-
-
-
-			</div>
-
-			<div class="spacing"></div>
-
-			<div class="row">
-				<div class='large-4 medium-4 columns'>
-					<div class='mod modProjectPost'>
-						<section class="box">
-							<a href="https://github.com/diging/vogon-web" class="image featured"><img
-									src="/images/vogonWeb - long.png" alt="" class="grayback" /></a>
-							<header>
-								<h3>Vogon Web</h3>
-							</header>
-							<p>Vogon Web is a web application designed for rapid collaborative graph-based annotation of
-								online texts with so-called “quadruples.” Quadruples form semantic networks that when
-								uploaded to a repository can be used to for example develop advanced search engines.</p>
-							<footer>
-								<a href="https://github.com/diging/vogon-web" class="button alt"><span
-										class="icon fa-github"></span> Read more on GitHub.io</a>
-							</footer>
-						</section>
-					</div>
-				</div>
-				<div class='large-4 medium-4 columns'>
-					<div class='mod modProjectPost'>
-						<section class="box">
-							<a href="https://github.com/diging/virtual-spaces-2.0" class="image featured"><img
-									src="/images/virtualSpacesLogo.png" alt="" class="grayback" /></a>
-							<header>
-								<h3>Virtual Spaces 2.0</h3>
-							</header>
-							<p>Virtual Spaces 2.0 is a web application to develop virtual exhibitions by creating
-								virtual 2D tours through real or abstract spaces.</p>
-							<footer>
-								<a href="https://github.com/diging/virtual-spaces-2.0" class="button alt"><span
-										class="icon fa-github"></span> Read more on GitHub.io</a>
-							</footer>
-						</section>
-					</div>
-				</div>
-
-
-				<div class='large-4 medium-4 columns'>
-					<div class='mod modProjectPost'>
-						<section class="box">
-							<a href="https://github.com/diging/giles-eco-giles-web" class="image featured"><img
-									src="/images/geco-logo-text-2.png" alt="" class="grayback" /></a>
-							<header>
-								<h3>Giles Ecosystem</h3>
-							</header>
-							<p>The Giles Ecosystem (GEco) is a distributed system based on Apache Kafka that allows
-								users to upload documents for text and image extraction. GEco creates images for each
-								page of a PDF document and runs OCR (Tesseract) on submitted and extracted images.</p>
-							<footer>
-								<a href="https://github.com/diging/giles-eco-giles-web" class="button alt"><span
-										class="icon fa-github"></span> Check it out on GitHub.io</a>
-							</footer>
-						</section>
-					</div>
-				</div>
-
+					{% endfor %}
+				</div>		
 			</div>
 
 			<!-- <div class="row">
@@ -412,6 +303,16 @@ section_id: projects
 	}).catch((error) =>{
 		$("#githubTable").append("We're sorry, but GitHub events could not be loaded.");å
 	});
+
+  //# sourceURL=theme.js
+	  var Theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+	  if (Theme === 'dark') {
+	      {% for item in site.data.projects %}
+	        $("#{{ item.id }}").attr('src',"{{ item.image-white }}")
+	      {% endfor %}
+
+	  }
 
 
 </script>

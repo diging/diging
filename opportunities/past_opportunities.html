@@ -3,7 +3,7 @@ layout: default
 section_id: past opportunities
 ---
 
-<div class='full' style='background: #f5f5f5'>
+<div class='full'>
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html title="Past Opportunities" %}
@@ -17,7 +17,7 @@ section_id: past opportunities
     <div class='mod modProjectPost'>
       <section class="box">
         <header>
-          <h3 style="color: #8c1d40;">Fall 2019 - CDH 580: Computational Humanities Lab</h3>
+          <h3 style="color: var(--primary-color);">Fall 2019 - CDH 580: Computational Humanities Lab</h3>
         </header>
 
       <p>
@@ -31,7 +31,7 @@ section_id: past opportunities
     <div class='mod modProjectPost'>
       <section class="box">
         <header>
-          <h3 style="color: #8c1d40;">May 23-26, 2017: Webapp Development with Spring</h3>
+          <h3 style="color: var(--primary-color);">May 23-26, 2017: Webapp Development with Spring</h3>
         </header>
 
       <p>
@@ -46,9 +46,11 @@ section_id: past opportunities
     <div class='mod modProjectPost'>
       <section class="box">
         <header>
-          <h3 style="color: #8c1d40;">Spring 2017: Interdisciplinary Analytics and Application Development Seminar</h3>
+          <h3 style="color: var(--primary-color);">Spring 2017: Interdisciplinary Analytics and Application Development Seminar</h3>
+        <p>
           The Data Science and Analytics division at ASU Libraries and the Digital Innovation Group will offer a <b>weekly meeting of 2 hours</b>, and parallel tracks that focus on either <b>1) analytics and visualization</b>; <b>2) software development for web applications</b>.  The groups will alternatively meet together and separately, and the desired outcome is an application that groups will collaborate to produce. There is an option to take this series as a 1-credit course.
-        </p><p>
+        </p>
+        <p>
           Participants will use technologies such as <b>R, D3.js, Tableau, Maven, Jira and GitHub</b>, you will employ Git concepts such as branching and pull requests, you will employ your interdisciplinary communication skills, and your code will be improved through continuous code reviews.
         </p>
         <p>
@@ -65,7 +67,7 @@ section_id: past opportunities
   <div class='large-12 medium-12 columns'>
     <div class='mod modProjectPost'>
       <section class="box">
-        <h3 style="color: #8c1d40;">Compete in the First Semi-Annual DigInG Hackathon! 23-24 January, 2016</h3>
+        <h3 style="color: var(--primary-color);">Compete in the First Semi-Annual DigInG Hackathon! 23-24 January, 2016</h3>
         <p>
 
             Grab three of your brightest friends, and join us for a weekend of competetive software development!
@@ -92,7 +94,7 @@ section_id: past opportunities
   <div class='large-12 medium-12 columns'>
     <div class='mod modProjectPost'>
       <section class="box">
-        <h3 style="color: #8c1d40;">Spring 2016: Research Methods and Software Engineering Workshop for Computational Humanities and Knowledge Systems</h3>
+        <h3 style="color: var(--primary-color);">Spring 2016: Research Methods and Software Engineering Workshop for Computational Humanities and Knowledge Systems</h3>
         <h4>BIO/HPS 498/591</h4>
         <p>We’re looking for motivated undergraduate and early Masters/PhD students to participate in a 3-credit computational humanities research and software development workshop this fall. If you’re interested in doing research at the interface of computer science and the humanities (especially history and philosophy of science), this is a great way to get training and hands-on experience in both new and established projects. We’re especially eager to recruit students who wish to develop their own projects over several semesters, e.g. as part of a thesis or chapter. This course is somewhat unusual: instead of exams, reading, or any other homework, we’ll meet for 9 hours each week for a mix of instruction and team-based workshop activities. This course will bring together computer science (see below) and humanities students to work on software development and research projects. If you have any questions about the course, or other ways to get involved with computational humanities research at ASU, please don’t hesitate to contact us!
         </p>
@@ -105,29 +107,32 @@ section_id: past opportunities
         <h4>Course Objective &amp; Goals</h4>
         <p>This course is designed to provide hands­-on interdisciplinary research and software development experience for graduate and advanced undergraduate students in computer science and the humanities. Students will gain experience conducting team­based interdisciplinary research and software development. Graduate students will explore and develop an in­depth knowledge of a specific topic  (e.g. NoSQL databases, semantic web, network analysis/visualization), which will prepare them to carry out independent research in computer science or computational humanities. Humanities students will gain knowledge regarding the design and execution of digital humanities research projects, as well as experience in the software development process. Computer science students will work on bigger software development projects that consist of several parts. They will gain hands­-on experience in an agile software development environment, and will learn technologies such as software frameworks (e.g. Django or Spring) and Continuous Integration software (e.g. Jenkins or Travis CI). We will conduct continuous code reviews to ensure high code quality and improve the students’ coding skills. Instruction will be tailored to the interests and goals of the students as the semester progresses.
         </p>
-        <h4>Covered Topics</h4>
-        <ul class="default">
-          <li>Agile Software Development (especially Scrum)</li>
-          <li>Version Control Systems (especially GitHub)</li>
-          <li>Documentation</li>
-        </ul>
-        <i>Computer Science Specific</i>
-        <ul class="default">
-          <li>Object-­Oriented Programming and Design</li>
-          <li>Software Design Patterns</li>
-          <li>Software Architecture</li>
-          <li>Software Testing</li>
-          <li>Continue Integration</li>
-          <li>Software Frameworks (Spring, Django)</li>
-        </ul>
-        <i>Digital Humanities Specific</i>
-        <ul class="default">
-          <li>Digital Collections, Repositories, &amp; Metadata</li>
-          <li>Introduction to Text Mining</li>
-          <li>Digital Data Management</li>
-          <li>Network Analysis &amp; Visualization</li>
-          <li>Intro to Scripting Languages (e.g. Python, Ruby)</li>
-        </ul>
+
+        <div style="color: var(--headings)">
+          <h4 style="color: var(--headings)">Covered Topics</h4>
+          <ul>
+            <li>Agile Software Development (especially Scrum)</li>
+            <li>Version Control Systems (especially GitHub)</li>
+            <li>Documentation</li>
+          </ul>
+          <i>Computer Science Specific</i>
+          <ul>
+            <li>Object-­Oriented Programming and Design</li>
+            <li>Software Design Patterns</li>
+            <li>Software Architecture</li>
+            <li>Software Testing</li>
+            <li>Continue Integration</li>
+            <li>Software Frameworks (Spring, Django)</li>
+          </ul>
+          <i>Digital Humanities Specific</i>
+          <ul>
+            <li>Digital Collections, Repositories, &amp; Metadata</li>
+            <li>Introduction to Text Mining</li>
+            <li>Digital Data Management</li>
+            <li>Network Analysis &amp; Visualization</li>
+            <li>Intro to Scripting Languages (e.g. Python, Ruby)</li>
+          </ul>
+        </div>
 
       </section>
     </div>
@@ -137,7 +142,7 @@ section_id: past opportunities
   <div class='large-12 medium-12 columns'>
     <div class='mod modProjectPost'>
       <section class="box">
-        <h3 style="color: #8c1d40;">Fall 2015: Research Methods and Software Engineering Workshop for Computational Humanities and Knowledge Systems</h3>
+        <h3 style="color: var(--primary-color);">Fall 2015: Research Methods and Software Engineering Workshop for Computational Humanities and Knowledge Systems</h3>
       </header>
       <h4>BIO/HPS 498/591, CSE 598</h4>
       <p>We’re looking for motivated undergraduate and early Masters/PhD students to participate in a 3-credit computational humanities research and software development workshop this fall. If you’re interested in doing research at the interface of computer science and the humanities (especially history and philosophy of science), this is a great way to get training and hands-on experience in both new and established projects. We’re especially eager to recruit students who wish to develop their own projects over several semesters, e.g. as part of a thesis or chapter. This course is somewhat unusual: instead of exams, reading, or any other homework, we’ll meet for 9 hours each week for a mix of instruction and team-based workshop activities. This course will bring together computer science and humanities students to work on software development and research projects. If you have any questions about the course, or other ways to get involved with computational humanities research at ASU, please don’t hesitate to contact us!
