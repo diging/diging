@@ -853,6 +853,7 @@ ul.shortcode-list i {
   -o-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
+  border-color: var(--headings) transparent transparent transparent;
 }
 .contain-to-grid .top-bar-section li:not(.has-form) a:not(.button) {
   height: 100px;
@@ -1422,7 +1423,7 @@ form input.error, form textarea.error {
 }
 
 .modProjectPost {
-  margin-bottom: 40px;
+  margin: 0px 15px 40px 15px;
   background: var(--cards);
   padding: 15px;
   border-radius: 15px;
@@ -4061,7 +4062,7 @@ body {
 	.button, .button.boxed, nav, .top-bar-section ul li > a, .info  {font-family: 'HaufeMerriweatherSans', sans-serif;     font-style: normal;
     font-weight: normal;}
 
-	a, .modBlogPost.big h3 a:hover, .pager a, .modIconText .icon-text-circle:hover i  {color: #8c1d40; /*haufe blue*/}
+	a, .modBlogPost.big h3 a:hover, .pager a, .modIconText .icon-text-circle:hover i  {color: var(--primary-color); /*haufe blue*/}
   h3 a {color: var(--secondary-color); /*haufe blue*/}
 	.top-bar-section ul li > a {color: var(--headings); /*black*/}
 	.top-bar-section li.active:not(.has-form) a:not(.button) { color: var(--headings); background: var(--active-links);  }
@@ -4272,8 +4273,10 @@ dt {
 dd {
   margin-left: 0px;
 }
+
 .box{
-padding: .75em .75em 1.75em .75em
+  padding: .75em .75em 0em .75em;
+  text-align: center;
 }
 
 .label{ display: none;}
@@ -4398,6 +4401,10 @@ dd {
 .grid-2 {
   display: grid;
   grid-template-columns: auto auto auto auto;
+}
+
+table tr:nth-of-type(even) {
+    background: unset; 
 }
 
 :root {

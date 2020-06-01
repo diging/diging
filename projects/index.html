@@ -5,14 +5,14 @@ section_id: projects
 ---
 <style>
 	table tr td{
-		color: black;
+		color: var(--headings);
 		font-size: 13px;
+		background-color: var(--cards)
 	}
 
 	td {
     	border: solid 2px black;
 		color: black;
-		background-color: #f7f7f3;
 	}
 
 	table {
@@ -84,15 +84,15 @@ section_id: projects
 			</section>
 
 			<div class="row">
-				<div class='large-4 medium-4 columns'>
-					{% for item in site.data.AllProjects %}
+				<div class="grid-posts">
+					{% for item in site.data.projects %}
 					<div class='mod modProjectPost'>
 						<section class="box">
-							<img id="{{ item.id }}" src="{{ item.image-color }}" />
-							<p>{{ item.description }}</p>
+							<img id="{{ item.id }}" src="{{ item.image-color }}"  style="height: 225px; margin-bottom: 15px"/>
+							<p style="height: 175px; text-align: left">{{ item.description }}</p>
 							<footer>
-								<a href="{{ item.url }}"><span
-										class="icon fa-github"></span> Read more on GitHub.io</a>
+								<a href="{{ item.url }}"><button style="border-radius: 5px">
+									<i class="icon fa-github"></i> Read more on GitHub.io</button></a>
 							</footer>
 						</section>
 					</div>
@@ -207,7 +207,7 @@ section_id: projects
 
 			{% include section-header.html title="Recent GitHub Activity" %}
 
-			<table id="githubTable" style="border-collapse: collapse; background-color:rgba(0, 0, 0, 0);">
+			<table id="githubTable" style="border-collapse: collapse; background-color: var(--cards);">
 			</table>
 			
 
@@ -305,14 +305,14 @@ section_id: projects
 	});
 
   //# sourceURL=theme.js
-	  var Theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+  var Theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
-	  if (Theme === 'dark') {
-	      {% for item in site.data.projects %}
-	        $("#{{ item.id }}").attr('src',"{{ item.image-white }}")
-	      {% endfor %}
+  if (Theme === 'dark') {
+      {% for item in site.data.projects %}
+        $("#{{ item.id }}").attr('src',"{{ item.image-white }}")
+      {% endfor %}
 
-	  }
+  }
 
 
 </script>

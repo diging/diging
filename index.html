@@ -38,7 +38,7 @@ section_id: home
     <div class='large-12 columns'>
       {% include section-header.html title="Our projects" %}
       <div class="grid-projects">
-        {% for item in site.data.projects %}
+        {% for item in site.data.mini-projects %}
         {% if forloop.index > 4 %}
           {% break %}
         {% endif %}
@@ -101,7 +101,7 @@ section_id: home
   if (Theme === 'dark') {
       $(".hero").attr('src',"/images/Hero image – 1.png");
       $("#mission-image").attr('src',"/images/Icon awesome-tools.png");
-      {% for item in site.data.projects %}
+      {% for item in site.data.mini-projects %}
         $("#{{ item.id }}").attr('src',"{{ item.image-white }}")
       {% endfor %}
 

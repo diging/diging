@@ -44,6 +44,9 @@ function switchTheme(e) {
         {% for item in site.data.projects %}
          $("#{{ item.id }}").attr('src',"{{ item.image-white }}")
         {% endfor %}
+        {% for items in site.data.mini-projects %}
+         $("#{{ items.id }}").attr('src',"{{ items.image-white }}")
+        {% endfor %}
         localStorage.setItem('theme', 'dark'); //add this
 
     }
@@ -55,6 +58,9 @@ function switchTheme(e) {
         $("#mission-image").attr('src',"/images/Icon awesome-tools (2).png");
         {% for item in site.data.projects %}
           $("#{{ item.id }}").attr('src',"{{ item.image-color }}")
+        {% endfor %}
+        {% for items in site.data.mini-projects %}
+          $("#{{ items.id }}").attr('src',"{{ items.image-color }}")
         {% endfor %}
         localStorage.setItem('theme', 'light'); //add this
     }    
