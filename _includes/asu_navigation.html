@@ -30,9 +30,6 @@
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
-$(document).ready(function() {
-  console.log($('html').attr('data-theme'));
-});
 
 function switchTheme(e) {
     if (e.target.checked) {
@@ -67,16 +64,16 @@ function switchTheme(e) {
     //window.location.reload(true);
 }
 
-const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
-if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
+  if (currentTheme) {
+      document.documentElement.setAttribute('data-theme', currentTheme);
 
-    if (currentTheme === 'dark') {
-        toggleSwitch.checked = true;
-        $("#asu-logo").attr('src',"/images/asu_university_full_white.png");
-    }
-}
+      if (currentTheme === 'dark') {
+          toggleSwitch.checked = true;
+          $("#asu-logo").attr('src',"/images/asu_university_full_white.png");
+      }
+  }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
 

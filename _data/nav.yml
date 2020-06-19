@@ -27,3 +27,6 @@
 - name: Gallery
   path: gallery/portfolio.html
   section_id: portfolio
+- name: MoU
+  path: mou
+  section_id: mou

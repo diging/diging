@@ -1097,6 +1097,7 @@ form input.error, form textarea.error {
 }
 .links ul {
   margin: 0;
+  color: var(--headings);
 }
 .links li {
   list-style: disc;
@@ -1533,7 +1534,8 @@ form input.error, form textarea.error {
 
 .modBlogPost {
   margin-bottom: 40px;
-  background: #fff;
+  background: var(--cards);
+  border-radius: 15px;
 }
 .modBlogPost .content {
   padding: 30px 20px 0px 20px;
@@ -1559,7 +1561,7 @@ form input.error, form textarea.error {
 }
 .modBlogPost img {
   width: 57%;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 30px 0px 0px;
   vertical-align: baseline;
 }
 .modBlogPost a:hover img {
@@ -1584,8 +1586,7 @@ form input.error, form textarea.error {
   width: 97%;
 }
 .modBlogPost.big .content {
-  padding: 10px 40px;
-  padding-bottom: 10px;
+  padding: 40px;
 }
 .modBlogPost.big .info {
   font-size: 0.78571rem;
@@ -4057,7 +4058,9 @@ body {
 	h1, h2, h3, h4, h5, h6 {
     font-family: 'HaufeMerriweatherSans', sans-serif;
     font-style: normal;
-    font-weight: bold;}
+    font-weight: bold;
+    color: var(--headings);
+  }
 
 	.button, .button.boxed, nav, .top-bar-section ul li > a, .info  {font-family: 'HaufeMerriweatherSans', sans-serif;     font-style: normal;
     font-weight: normal;}
@@ -4276,7 +4279,7 @@ dd {
 
 .box{
   padding: .75em .75em 0em .75em;
-  text-align: center;
+  text-align: left;
 }
 
 .label{ display: none;}
@@ -4379,7 +4382,7 @@ h2 {
   font-size: 24px;
 }
 
-h3 {
+.post-title {
   color: var(--headings);
   font-size: 20px;
   height: 60px;
@@ -4403,12 +4406,17 @@ dd {
   grid-template-columns: auto auto auto auto;
 }
 
+.pull-right {
+  float: right;
+  color: var(--p2s);
+}
+
 table tr:nth-of-type(even) {
     background: unset; 
 }
 
 :root {
-    --primary-color: #2E629F;
+    --primary-color: #19b1d4;
     --secondary-color: #ffc627;
     --headings: #333;
     --secondary-headings: #9D9D9D;
@@ -4417,11 +4425,11 @@ table tr:nth-of-type(even) {
     --cards: #FFF;
     --header: #FFF;
     --active-links: #F7F7F4;
-    --p2s: #4E84C3;
+    --p2s: #19b1d4;
 }
 
 [data-theme="dark"] {
-    --primary-color: #4E84C3;
+    --primary-color: #19b1d4;
     --secondary-color: #F25774;
     --headings: #FFF;
     --secondary-headings: rgba(255,255,255,0.60);
@@ -4429,6 +4437,6 @@ table tr:nth-of-type(even) {
     --bg-color: #121212;
     --cards: rgba(255,255,255,0.13);
     --header: rgba(255,255,255,0.25);
-    --active-links: #4E84C3;
+    --active-links:#19b1d4;
     --p2s: #F25774;
 }
