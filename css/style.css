@@ -3420,7 +3420,7 @@ body {
   line-height: 2.5rem;
 }
 .modTeamMember img {
-  width: 70%;
+  height: 260px;
   border-radius: 15px;
   margin-bottom: 15px;
 }
@@ -4279,7 +4279,7 @@ dd {
 
 .box{
   padding: .75em .75em 0em .75em;
-  text-align: left;
+  text-align: center;
 }
 
 .label{ display: none;}
@@ -4388,12 +4388,8 @@ h2 {
   height: 60px;
 }
 
-dt {
+dt,dd {
   color: var(--headings);
-}
-
-dd {
-  color: var(--p2s);
 }
 
 .member-name {
@@ -4404,11 +4400,20 @@ dd {
 .grid-2 {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  margin-bottom: 120px;
 }
 
 .pull-right {
   float: right;
   color: var(--p2s);
+}
+
+.member-img {
+  width: 200px;
+  height: 160px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 5px;
 }
 
 table tr:nth-of-type(even) {

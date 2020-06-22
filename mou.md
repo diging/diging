@@ -15,7 +15,7 @@ layout: MoU
 <p>One way DigInG realizes the third goal is to employ student workers that help developing software and working on other research related tasks. Students are mentored by staff members to improve skills and foster an understanding of employed methods and research software. This means, however, that progress on projects is often slower than would be expected of a full-time professional software developer or data professional. DigInG will always try to meet deadlines and fulfil its promises, but this structure needs to be taken into account when working with DigInG.</p>
 
 <h3>Scope of Expertise and Services</h3>
-<p>There are several ways third parties can work with DigInG. In the simplest case, DigInG’s cyber infrastructure can be used for projects. The different elements of the infrastructure will not be listed here and instead we refer to the DigInG website (http://diging.asu.edu/). We will provide training in the different applications we host and users are invited to submit feature requests for applications to better address their research needs.
+<p>There are several ways third parties can work with DigInG. In the simplest case, DigInG’s cyber infrastructure can be used for projects. The different elements of the infrastructure will not be listed here and instead we refer to the <a href="http://diging.asu.edu/" target="_blank">DigInG website</a>. We will provide training in the different applications we host and users are invited to submit feature requests for applications to better address their research needs.
 
 Beyond that, we also offer consultation for computational and digital research projects. When using DigInG’s consulting services, we can make recommendations regarding tool and method usage, data collection and cleaning processes, and staffing requirements. We recommend using our consulting services as early as the planning stage of new computational research projects to ensure grant proposals include all necessary considerations regarding computational work.
 
@@ -32,3 +32,6 @@ If specific expertise is needed to implement a project, we do, however, offer ou
 
 <h3>Financial contributions</h3>
 <p>While DigInG provides some services free of charge, especially in cases of close collaboration between external projects and DigInG, we will require some financial contributions in certain cases such as “buying” time of a developer or student worker. We welcome joint grant proposals and generally recommend consulting with us before and during the grant writing phase if a collaboration with DigInG is being considered. Since requirements, expectations, and scope of work vary on a case-by-case basis, please contact us to discuss this matter in detail. We welcome students interested in computational humanities work to contact us for guidance and consultation free of charge. </p> 
+
+<h3>Contact</h3>
+<p>Please send an email to <a href="mailto: diging@asu.edu">diging@asu.edu</a> if you have any questions or would like to discuss a potential collaboration.</p>
