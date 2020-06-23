@@ -30,8 +30,8 @@
                online texts with so-called 'quadruples.' Quadruples form semantic networks that when
                uploaded to a repository can be used to for example develop advanced search engines."
 
-- image-color: projects/geco-logo-text-2.png
-  image-white: projects/geco-logo-text-2.png
+- image-color: projects/giles-color.png
+  image-white: projects/giles-white.png
   url: https://github.com/diging/giles-eco-giles-web
   id: giles-img-1
   description: "The Giles Ecosystem (GEco) is a distributed system based on Apache Kafka that allows

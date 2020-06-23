@@ -20,9 +20,6 @@
     - name: "Prashant Jadhav"
       img: "/images/people/prashant.jpg"
 
-    - name: "Zachary Rudebeck"
-      img: "/images/people/zach.jpg"
-
     - name: "Sagar Khar"
       img: "/images/people/sagar.jpg"
 
@@ -33,7 +30,7 @@
       img: "/images/people/akhil.jpg"
 
     - name: "Chandana Tarur Veerabhadraiah"
-      img: ""
+      img: "/images/people/avatar-default.png"
 
 - group: "Researchers"
   description: "DigInG Researchers deploy our research tools and workflows to address a wide range of problems in the humanities, from a computational perspective. DigInG researchers come from both the sciences and humanities, and work closely with DigInG Developers to improve and extend our tools and methods. Our researchers are expected to develop       and address their own research questions, based on their interests, and have the opportunity to acquire skills in computer science."
