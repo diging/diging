@@ -1114,6 +1114,7 @@ form input.error, form textarea.error {
 #footer {
   background: #222;
   color: #999;
+  margin-top: 60px;
 }
 #footer h1 {
   margin-bottom: 25px;
@@ -1451,7 +1452,7 @@ form input.error, form textarea.error {
 .modProjectPost .tags a {
   font-style: italic;
 }
-..modProjectPost img {
+.modProjectPost img {
   width: 100%;
   padding: 0px 20px 0px 20px;
   vertical-align: baseline;
@@ -4156,13 +4157,6 @@ p { line-height: 1.8; margin-bottom: 1.8rem;}
   .image1{display: none;}
 } */
 
-@media screen and (min-width: 1140px) {
-  ul.example {
-
-    /*padding-left: 837px;*/
-
-  }
-}
 @media screen and (min-width: 401px) and (max-width: 1139px) {
   ul.example {
     padding-left: 40px;
@@ -4176,8 +4170,8 @@ p { line-height: 1.8; margin-bottom: 1.8rem;}
 }
 
 
-@@media only screen and (max-width: 990px)
-  #asu_hdr{
+@media only screen and (max-width: 990px) {
+  #asu_hdr {
     z-index: 100;
   }
 #asu_hdr {
@@ -4444,4 +4438,5 @@ table tr:nth-of-type(even) {
     --header: rgba(255,255,255,0.25);
     --active-links:#19b1d4;
     --p2s: #F25774;
+}
 }
