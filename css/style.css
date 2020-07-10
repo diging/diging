@@ -3776,9 +3776,7 @@ body {
   .contain-to-grid {
     height: auto;
   }
-  .contain-to-grid .title-area img, .contain-to-grid .title-area li img, .contain-to-grid .title-area a img {
-    width: auto;
-  }
+  
   .contain-to-grid .top-bar-section li:not(.has-form) a:not(.button) {
     height: 60px;
     line-height: 60px;
@@ -4122,7 +4120,6 @@ p { line-height: 1.8; margin-bottom: 1.8rem;}
   margin-left: auto;
   padding-left: 0px;
   padding-right: 0px;
-  width: 1170px;
   box-sizing: border-box;
 	padding: 8px 40px 0px 40px;
   max-width: 83em;
@@ -4170,10 +4167,10 @@ p { line-height: 1.8; margin-bottom: 1.8rem;}
 }
 
 
-@media only screen and (max-width: 990px) {
-  #asu_hdr {
-    z-index: 100;
-  }
+#asu_hdr {
+  z-index: 100;
+}
+
 #asu_hdr {
     position: relative;
     background-color: transparent ;
@@ -4414,6 +4411,26 @@ table tr:nth-of-type(even) {
     background: unset; 
 }
 
+@media screen and (max-width: 968px) {
+  .grid-posts {
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  .grid-projects, .modTeamMember {
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+  }
+
+  .grid-2 {
+    grid-template-columns: auto auto auto;
+  }
+
+  .flex-spacing {
+    display: block;
+  }
+}
+
 :root {
     --primary-color: #19b1d4;
     --secondary-color: #ffc627;
@@ -4438,5 +4455,4 @@ table tr:nth-of-type(even) {
     --header: rgba(255,255,255,0.25);
     --active-links:#19b1d4;
     --p2s: #F25774;
-}
 }
