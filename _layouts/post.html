@@ -19,7 +19,7 @@ section_id: blog
         <h3>{{page.title}}</h3>
 
           {% for image in page.images %}
-            <img align="left" class='image' alt="" src="{{site.url}}/{{image}}" />
+            <img style="margin-bottom: 20px" alt="" src="{{site.url}}/{{image}}" />
           {% endfor %}
           {{ content }}
       </div>

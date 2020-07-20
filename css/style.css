@@ -4435,6 +4435,10 @@ table tr:nth-of-type(even) {
   background: var(--bg-color);
 }
 
+.css-y7r3-AppHeader {
+  position: absolute !important;
+}
+
 :root {
     --primary-color: #19b1d4;
     --secondary-color: #ffc627;
