@@ -3,7 +3,7 @@ layout: post
 header: The Digital Innovation Group @ ASU
 title: The Giles Ecosystem – Storage, Text Extraction, and OCR of Documents
 subtitle: Published in the Journal of Open Research Software
-images: images/20170928/164-2023-2-ED.png
+images: images/post_images/164-2023-2-ED.png
 images_caption: "The Giles Ecosystem Architecture"
 excerpt: "The paper <i>The Giles Ecosystem – Storage, Text Extraction, and OCR of Documents</i> was published in the Journal of Open Research Software on September 28, 2017 (<a href='http://doi.org/10.5334/jors.164'>check it out here</a>). The paper describes the Giles Ecosystem developed by the Digital Innovation Group."
 ---

@@ -4431,6 +4431,10 @@ table tr:nth-of-type(even) {
   }
 }
 
+#nc-root {
+  background: var(--bg-color);
+}
+
 :root {
     --primary-color: #19b1d4;
     --secondary-color: #ffc627;

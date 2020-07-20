@@ -3,7 +3,7 @@ layout: post
 header: The Digital Innovation Group @ ASU
 title: DigInG in Times of the Pandemic
 subtitle:
-images: images/20200430/DigInGZoom.png
+images: images/post_images/DigInGZoom.png
 images_caption: "DigInG on Zoom"
 permalink: /digingpandemic/
 author: jdamerow
