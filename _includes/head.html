@@ -40,6 +40,12 @@
 
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
+  <script>
+    $(document).ready(function() {
+      $("#myLinks").hide();
+    });
+  </script>
+
 {% if site.google_analytics and jekyll.environment == 'production' %}
   {% include analytics.html %}
 {% endif %}

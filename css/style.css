@@ -4423,11 +4423,35 @@ table tr:nth-of-type(even) {
   }
 
   .grid-2 {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
   }
 
   .flex-spacing {
     display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-posts {
+    grid-template-columns: auto;
+    grid-gap: 20px;
+  }
+
+  .grid-projects, .modTeamMember {
+    grid-template-columns: auto;
+    grid-gap: 40px;
+  }
+
+  .grid-2 {
+    grid-template-columns: auto ;
+  }
+
+  .flex-spacing {
+    display: block;
+  }
+
+  #asu-links {
+    display: none !important;
   }
 }
 
@@ -4437,6 +4461,17 @@ table tr:nth-of-type(even) {
 
 .css-y7r3-AppHeader {
   position: absolute !important;
+}
+
+#myLinks {
+  background: var(--cards);
+  padding: 20px;
+}
+
+.menu-link {
+  display: grid;
+  text-align: center;
+  width: 100%;
 }
 
 :root {

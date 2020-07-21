@@ -6,7 +6,7 @@
     <a href= "https://www.asu.edu" target="_blank"><img  width="160px" id="asu-logo" src="/images/asu_university_full_maroon.png"/></a>
 
     <ul class="example">
-      <li>
+      <li id="asu-links">
       {% for item in site.data.asu_navigation %}
       <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
       {% endfor %}
@@ -44,7 +44,7 @@ function switchTheme(e) {
         {% for items in site.data.mini-projects %}
          $("#{{ items.id }}").attr('src',"{{ items.image-white }}")
         {% endfor %}
-        localStorage.setItem('theme', 'dark'); //add this
+        localStorage.setItem('theme', 'dark');
 
     }
     else {
@@ -59,9 +59,8 @@ function switchTheme(e) {
         {% for items in site.data.mini-projects %}
           $("#{{ items.id }}").attr('src',"{{ items.image-color }}")
         {% endfor %}
-        localStorage.setItem('theme', 'light'); //add this
+        localStorage.setItem('theme', 'light');
     }    
-    //window.location.reload(true);
 }
 
   const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;

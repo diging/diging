@@ -1,7 +1,6 @@
 backend:
   name: github
-  repo: adhvikmadhav/diging
-  branch: adhvikmadhav
+  repo: diging/diging
 
 publish_mode: editorial_workflow
 
