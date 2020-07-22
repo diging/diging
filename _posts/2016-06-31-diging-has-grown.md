@@ -3,9 +3,9 @@ layout: post
 header: The Digital Innovation Group @ ASU
 title: DigInG goes International
 subtitle: Introducing the expanded DigInG, a cooperation between ASU and the Max Planck Institute for the History of Science
-images: images/20160631/mpiwg.png
+images: images/post_images/mpiwg.png
 images_caption: "The Max Planck Institute for the History of Science in Berlin, Germany"
-summary: "DigInG has grown! As of June, 2016, the Digital Innovation Group at ASU has merged with software development activities within Department I of the Max Planck Institute for the History of Science in Berlin, Germany to form an efficient and agile software development and innovation unit for computational history of knowledge."
+excerpt: "DigInG has grown! As of June, 2016, the Digital Innovation Group at ASU has merged with software development activities within Department I of the Max Planck Institute for the History of Science in Berlin, Germany to form an efficient and agile software development and innovation unit for computational history of knowledge."
 ---
 
 JUNE 31, 2016 — BERLIN — DigInG has grown! As of June, 2016, the Digital Innovation Group at [ASU](http://diging.asu.edu/index.html) has merged with software development activities within <a href = "https://www.mpiwg-berlin.mpg.de/en/content/Departments-and-Groups" target = "_blank">Department I</a> of the Max Planck Institute for the History of Science in Berlin, Germany to form an efficient and agile software development and innovation unit for computational history of knowledge.

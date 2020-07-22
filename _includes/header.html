@@ -4,12 +4,13 @@
     <ul class='title-area'>
       <li class='name'>
         <h2 >
-          <a href='{{site.url}}/index.html' style="font-size: 88%;" class ='f_adapt'>The Digital Innovation Group @ ASU
+          <a href='{{site.url}}/index.html' style="font-size: 88%;" class ='f_adapt'>
+            <img id="diging-logo" width="130px" src="/images/DigInG logo_final-color.png"/>
           </a>
         </h2>
       </li>
       <li class='toggle-topbar menu-icon'>
-        <a href='#'>Menu</a>
+        <a class="icon" onclick="menuToggle()">Menu</a>
       </li>
     </ul>
     <section class='top-bar-section'>
@@ -20,28 +21,42 @@
           {% else %}
             {% assign active_class = "" %}
           {% endif %}
-
-          {% if item.children %}
-            <li class="has-dropdown {{active_class}}">
-              <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
-              <ul class='dropdown'>
-                {% for child in item.children %}
-                  <li>
-                    <a href="{{site.url}}/{{ child.path }}">{{ child.name }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </li>
-          {% else %}
             <li class="{{active_class}}">
               <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
             </li>
-          {% endif %}
         {% endfor %}
-        <li>
-          <a href="https://complexity.asu.edu" target="_blank" >GBCI</a>
-        </li>
       </ul>
     </section>
   </nav>
 </div>
+
+<div id="myLinks" style="display: none;">
+  <div class="menu-link">
+    {% for item in site.data.nav %}
+    {% if item.section_id == page.section_id %}
+      {% assign active_class = "active" %}
+    {% else %}
+      {% assign active_class = "" %}
+    {% endif %}
+        <a style="margin-bottom: 10px;" href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
+    {% endfor %}
+  </div>
+</div>
+
+
+<script>
+  var Theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+  if (Theme === 'dark') {
+    $("#diging-logo").attr('src',"/images/DigInG logo_final-white.png");      
+  }
+
+  function menuToggle() {
+    if ($("#myLinks").css('display')==='block') {
+      $("#myLinks").css('display', 'none');
+    } 
+    else {
+      $("#myLinks").css('display', 'block');
+    }
+  }
+</script>

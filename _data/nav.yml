@@ -4,26 +4,15 @@
 - name: Our Team
   path: people/index.html
   section_id: people
-  children:
-    - name: leadership
-      path: people/index.html#leadership
-    - name: Developers
-      path: people/index.html#developers
-    - name: Researchers
-      path: people/index.html#researchers
-    - name: Alumni
-      path: people/index.html#alumni
 - name: Our Projects
   path: projects/index.html
   section_id: projects
-  children:
-    - name: Software
-      path: projects/index.html#software
-    - name: Research
-      path: projects/index.html#research
 - name: Opportunities
   path: opportunities/index.html
   section_id: opportunities
 - name: Gallery
   path: gallery/portfolio.html
   section_id: portfolio
+- name: MoU
+  path: mou
+  section_id: mou

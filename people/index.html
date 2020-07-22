@@ -10,7 +10,7 @@ section_id: people
     <div class="large-12 columns">
       <a name='leadership'></a>
 
-      {% include section-header.html title="our leadership" %}
+      {% include section-header.html title="Our leadership" %}
 
       <div class="spacing"></div>
     </div>
@@ -23,112 +23,23 @@ section_id: people
       <div class="row">
 
 
-        <div class='small-6 medium-3 large-3 columns'>
-          <div class='mod modTeamMember'>
+        <div>
+          <div class='modTeamMember'>
+            {% for item in site.data.leadership %}
             <div class='member'>
-              <img alt="" src="/images/people/manfred.jpg" />
-              <!-- <div class='overlay'>
-                        <div class='intro'>
-                          <ul class='socials'>
-                              <li>
-                                <a href="https://www.linkedin.com/in/manfred-laubichler-442a458" target="_blank"><i class='fa fa-linkedin'></i> </a>
-                              </li>
-                          </ul>
-                        </div>
-                      </div> -->
+              <img alt="" src="{{ item.img }}" />
+            
+              <header class="headspace centered-text">
+                <h4 style="color: var(--headings); font-size: 16px;">{{ item.name }}</h4>
+                <a href="{{ item.link }}" target="_blank" class="reverse-underline">
+                  <p style="color: var(--primary-color)" ;>{{ item.designation }}</p>
+                </a>
+              </header>
+
+              <p style="text-align: left; padding: 15px;">{{ item.description }}</p>
+              <div class='two spacing'></div>
             </div>
-            <header class="headspace centered-text">
-              <h4 style="margin-bottom: 0px;">Manfred Laubichler</h4>
-              <a href="http://devo-evo.lab.asu.edu/laubichler" target="_blank" class="reverse-underline">
-                <p style="margin-bottom: 0.8rem" ;>Director</p>
-              </a>
-            </header>
-
-            <p class='centered-text'>Dr. Laubichler is Presidents Professor of Theoretical Biology and History of
-              Biology at ASU.</p>
-            <div class='two spacing'></div>
-          </div>
-        </div>
-
-
-        <div class='small-6 medium-3 large-3 columns'>
-          <div class='mod modTeamMember'>
-            <div class='member'>
-              <img alt="" src="/images/people/julia.jpg" />
-              <!-- <div class='overlay'>
-                        <div class='intro'>
-                          <ul class='socials'>
-                              <li>
-                                <a href="https://www.linkedin.com/in/julia-damerow-2443457b" target="_blank"><i class='fa fa-linkedin'></i> </a>
-                              </li>
-                          </ul>
-                        </div>
-                      </div> -->
-            </div>
-            <header class="headspace centered-text">
-              <h4 style="margin-bottom: 0px;">Julia Damerow</h4>
-              <a href="http://jdamerow.users.sourceforge.net/" target="_blank" class="reverse-underline">
-                <p style="margin-bottom: 0.8rem" ;>Head of Development</p>
-              </a>
-            </header>
-
-            <p class='centered-text'>Julia is a software engineer focusing on the development of software for
-              digital/computational history and philosophy of science and digital humanities. </p>
-            <div class='two spacing'></div>
-          </div>
-        </div>
-
-        <div class='small-6 medium-3 large-3 columns'>
-          <div class='mod modTeamMember'>
-            <div class='member'>
-              <img alt="" src="/images/people/dirk.jpg" />
-              <!-- <div class='overlay'>
-                        <div class='intro'>
-                          <ul class='socials'>
-                              <li>
-                                <a href="https://www.linkedin.com/in/dirk-wintergr%C3%BCn-a4619497" target="_blank" ><i class='fa fa-linkedin'></i> </a>
-                              </li>
-                          </ul>
-                        </div>
-                      </div> -->
-            </div>
-            <header class="headspace centered-text">
-              <h4 style="margin-bottom: 0px;">Dirk Wintergrün</h4>
-              <a href="https://www.mpiwg-berlin.mpg.de/en/users/dwinter" target="_blank" class="reverse-underline">
-                <p style="margin-bottom: 0.8rem" ;>Department I MPIWG</p>
-              </a>
-            </header>
-
-            <p class='centered-text'>Dirk is in charge of software and infrastructure projects in Department I of the
-              Max Planck Institute for the History of Science.</p>
-            <div class='two spacing'></div>
-          </div>
-        </div>
-
-        <div class='small-6 medium-3 large-3 columns'>
-          <div class='mod modTeamMember'>
-            <div class='member'>
-              <img alt="" src="/images/people/TaylorQuinn.png" style="width: 140px; height: 166px;" />
-              <!-- <div class='overlay'>
-                        <div class='intro'>
-                          <ul class='socials'>
-                              <li>
-                                <a href="https://www.linkedin.com/in/taylor-quinn-6b966714a"><i class='fa fa-linkedin'></i> </a>
-                              </li>
-                          </ul>
-                        </div>
-                      </div> -->
-            </div>
-            <header class="headspace centered-text">
-              <h4 style="margin-bottom: 0px;">Taylor Quinn</h4>
-              <a href="" class="reverse-underline">
-                <p style="margin-bottom: 0.8rem" ;>Software Engineer</p>
-              </a>
-            </header>
-
-            <p class='centered-text'>Taylor is a software engineer with a background in Geographic Information Science.
-            </p>
-            <div class='two spacing'></div>
+            {% endfor %}
           </div>
         </div>
 
@@ -138,223 +49,40 @@ section_id: people
 
       <section class="container">
         <div class="row">
-          <div class='medium-6 columns'>
-            <section class="first">
-
-
-              <div class="mod modSectionHeader ">
-                <div class="special-title centered-text separateline">
-                  <a name='developers'></a>
-                  <h2 class="separate" style="font-size: x-large; color: ;">Software Developers</h2>
+          <div>            
+            <div class="first">  
+              {% for item in site.data.members %}
+                <div class="mod modSectionHeader ">                
+                  <div class="special-title centered-text separateline">
+                    <a name='developers'></a>
+                    <h2 class="separate" style="font-size: x-large; color: var(--headings) ;">{{ item.group }}</h2>
+                  </div>
                 </div>
 
-              </div>
+                <p>{{ item.description }} </p>
 
-
-              <p>DigInG Software Developers are a dynamic and creative team of student engineers. Our developers work in
-                an agile environment to create robust, beautiful, and scalable software to support computational
-                research. Each team member
-                cultivates a unique skillset tailored to their career goals and intellectual interests, and receives
-                one-on-one mentorship in software engineering.
-                <!-- <strong>The first step to becoming a DigInG Software Developer is typically to participate as a <a href="#trainees">DigInG Trainee</strong></a>. If you are interested in becoming a DigInG Software Engineer, please contact <a href="mailto:jdamerow@asu.edu">Julia Damerow (jdamerow@asu.edu)</a>.-->
-              </p>
-
-              <div class='spacing'></div>
-
-              <div class="row" style="text-align: center;">
-
-                <div class='medium-6 columns'>
-                  <section class="box">
-                    <img class="featured border" width="200px" src="/images/people/radhika.jpg" />
-                    <header class="headspace">
-                      <h4>Radhika Nyati</h4>
-                    </header>
-                  </section>
+                <div class='spacing'></div>
+                <div class="grid-2">
+                {% for member in item.members %}
+                  <div class="row" style="text-align: center;">
+                    <section class="box">
+                      <div class="member-img">
+                        <img src="{{ member.img }}" />
+                      </div>
+                      <header class="headspace">
+                        <h4 class="member-name">{{ member.name }}</h4>
+                      </header>
+                    </section>
+                  </div>  
+                
+                {% endfor %}  
                 </div>
-
-                <div class='medium-6 columns'>
-                  <section class="box">
-                    <img class="featured border" width="200px" src="/images/people/ashmi.jpg" />
-                    <header class="headspace">
-                      <h4>Ashmi Chheda</h4>
-                    </header>
-                  </section>
-                </div>
-
-              </div>
-
-              <div class="row" style="text-align: center;">
-
-                <div class='medium-6 columns'>
-                  <section class="box">
-                    <img class="featured border" width="200px" src="/images/people/keerthivasan.jpg" />
-                    <header class="headspace">
-                      <h4>Keerthivasan Krishnamurthy</h4>
-                    </header>
-                  </section>
-                </div>
-
-                <div class='medium-6 columns'>
-                  <section class="box">
-                    <img class="featured border" width="200px" src="/images/people/navaneesh.jpg" />
-                    <header class="headspace">
-                      <h4>Navaneesh Kumar Bajakudlu</h4>
-                    </header>
-                  </section>
-                </div>
-
-              </div>
-
-              <div class="row" style="text-align: center;">
-
-                <div class='medium-6 columns'>
-                  <section class="box">
-                    <img class="featured border" width="200px" src="/images/people/adhvik.jpg" />
-                    <header class="headspace">
-                      <h4>Adhvik Madhav Yeleswarapu <br /> (UX Designer)</h4>
-                    </header>
-                  </section>
-                </div>
-
-                <div class='medium-6 columns'>
-                  <section class="box">
-                    <img class="featured border" width="200px" src="/images/people/prashant.jpg" />
-                    <header class="headspace">
-                      <h4>Prashant Jadhav</h4>
-                    </header>
-                  </section>
-                </div>
-
-              </div>
-
-              <div class="row" style="text-align: center;">
-
-                <div class='medium-6 columns'>
-                  <section class="box">
-                    <img class="featured border" width="200px" src="/images/people/zach.jpg" />
-                    <header class="headspace">
-                      <h4>Zachary Rudebeck</h4>
-                    </header>
-                  </section>
-                </div>
-
-                <div class='medium-6 columns'>
-                  <section class="box">
-                    <img class="featured border" width="200px" src="/images/people/sagar.jpg" />
-                    <header class="headspace">
-                      <h4>Sagar Khar</h4>
-                    </header>
-                  </section>
-                </div>
-
-              </div>
-
-              <div class="row" style="text-align: center;">
-
-                <div class='medium-6 columns'>
-                  <section class="box">
-                    <img class="featured border" width="200px" src="/images/people/Aakash.jpg" />
-                    <header class="headspace">
-                      <h4>Aakash Kumar</h4>
-                    </header>
-                  </section>
-                </div>
-
-                <div class='medium-6 columns'>
-                  <section class="box">
-                    <img class="featured border" width="200px" src="/images/people/akhil.jpg" />
-                    <header class="headspace">
-                      <h4>Akhil Reddy Katpally</h4>
-                    </header>
-                  </section>
-                </div>
-
-              </div>
-
-              <div class="row" style="text-align: center;">
-
-                <div class='medium-6 columns'>
-                  <section class="box">
-                    <img class="featured border" width="200px" src="" />
-                    <header class="headspace">
-                      <h4>Chandana Tarur Veerabhadraiah</h4>
-                    </header>
-                  </section>
-                </div>
-
-              </div>
-
-              <div class="row" style="text-align: center;">
-
-              </div>
-
-            </section>
+              {% endfor %}  
           </div>
-          <div class='medium-6 columns'>
-            <section class="second">
+        </div>
 
-              <div class="mod modSectionHeader ">
-                <div class="special-title centered-text separateline">
-
-                  <a name='researchers'></a>
-                  <h2 class="separate" style="font-size: x-large;color: ;">Researchers</h2>
-                </div>
-
-              </div>
-
-              <p>DigInG Researchers deploy our research tools and workflows to address a wide range of problems in the
-                humanities, from a computational perspective. DigInG researchers come from both the sciences and
-                humanities, and work closely with
-                DigInG Developers to improve and extend our tools and methods. Our researchers are expected to develop
-                and address their own research questions, based on their interests, and have the opportunity to acquire
-                skills in computer science.
-                <!--<strong>The first step to becoming a DigInG Researcher is typically to participate as a <a href="#trainees">DigInG Trainee</strong></a>. If you are interested in becoming a DigInG Researcher, please contact <a href="mailto:jdamerow@asu.edu">Julia Damerow (jdamerow@asu.edu)</a>.-->
-              </p>
-
-              <div class="row" style="text-align: center;">
-
-                <div class='medium-6 columns'>
-                  <section class="box">
-                    <img class="featured border" width="200px" src="/images/people/ian.jpg" />
-                    <header class="headspace">
-                      <h4>Ian Lobo</h4>
-                    </header>
-                  </section>
-                </div>
-
-                <div class='medium-6 columns'>
-                  <section class="box">
-                    <img class="featured border" width="200px" src="/images/people/yuva.jpg" />
-                    <header class="headspace">
-                      <h4>Yuva Venkata Sai Priyanka Kurakula</h4>
-                    </header>
-                  </section>
-                </div>
-
-              </div>
-
-              <div class="row" style="text-align: center;">
-
-                <div class='medium-6 columns'>
-                  <section class="box">
-                    <img class="featured border" width="200px" src="/images/people/Megan.png" />
-                    <header class="headspace">
-                      <h4>Megan Bromley</h4>
-                    </header>
-                  </section>
-                </div>
-
-              </div>
-
-          </div>
-      </section>
-    </div>
-
-
+      </div>
   </div>
-
-</div>
-</div>
 </div>
 
 {% include map.html %}

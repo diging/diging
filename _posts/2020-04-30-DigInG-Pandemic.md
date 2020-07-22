@@ -3,10 +3,11 @@ layout: post
 header: The Digital Innovation Group @ ASU
 title: DigInG in Times of the Pandemic
 subtitle:
-images: images/20200430/DigInGZoom.png
+images: images/post_images/DigInGZoom.png
 images_caption: "DigInG on Zoom"
 permalink: /digingpandemic/
 author: jdamerow
+excerpt: It’s been over a month now that ASU has moved to remote work whenever possible and online classes for the rest of the semester. This of course includes the Digital Innovation Group. We are all working remotely from home as the Spring semester draws to a close.
 ---
 
 It’s been over a month now that ASU has moved to remote work whenever possible and online classes for the rest of the semester. This of course includes the Digital Innovation Group. We are all working remotely from home as the Spring semester draws to a close. Zoom and Slack, which have been important tools before COVID-19, have become even more essential to our daily work. Our social interactions with colleagues have been mainly replaced by our roommates, partners, and pets.

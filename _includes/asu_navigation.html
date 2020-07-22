@@ -3,16 +3,77 @@
 
   <div id ="asu_universal_nav">
 
-    <a href= "https://www.asu.edu" target="_blank"><img  width="95px" src="/images/asu_sun.png"/></a>
+    <a href= "https://www.asu.edu" target="_blank"><img  width="160px" id="asu-logo" src="/images/asu_university_full_maroon.png"/></a>
 
-    <ul class="example" style = "float: right;">
-      <li>
+    <ul class="example">
+      <li id="asu-links">
       {% for item in site.data.asu_navigation %}
       <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
       {% endfor %}
 
     </li>
+    <li>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <i class="fa fa-adjust" style="font-size: 25px !important; margin-right: -20px; color: var(--headings);"></i>
+            <input type="checkbox" id="checkbox" style="visibility: hidden;"/>
+            <div class="slider round"></div>
+        </label>
+      </div>
+    </li>
     </ul>
   </div>
 </div>
 </div>
+
+<script>
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        $("#asu-logo").attr('src',"/images/asu_university_full_white.png");
+        $("#diging-logo").attr('src',"/images/DigInG logo_final-white.png");
+        $(".hero").attr('src',"/images/Hero image – 1.png");
+        $("#mission-image").attr('src',"/images/Icon awesome-tools.png");
+        {% for item in site.data.projects %}
+         $("#{{ item.id }}").attr('src',"{{ item.image-white }}")
+        {% endfor %}
+        {% for items in site.data.mini-projects %}
+         $("#{{ items.id }}").attr('src',"{{ items.image-white }}")
+        {% endfor %}
+        localStorage.setItem('theme', 'dark');
+
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        $("#asu-logo").attr('src',"/images/asu_university_full_maroon.png");
+        $("#diging-logo").attr('src',"/images/DigInG logo_final-color.png");
+        $(".hero").attr('src',"/images/Hero image.png");
+        $("#mission-image").attr('src',"/images/Icon awesome-tools (2).png");
+        {% for item in site.data.projects %}
+          $("#{{ item.id }}").attr('src',"{{ item.image-color }}")
+        {% endfor %}
+        {% for items in site.data.mini-projects %}
+          $("#{{ items.id }}").attr('src',"{{ items.image-color }}")
+        {% endfor %}
+        localStorage.setItem('theme', 'light');
+    }    
+}
+
+  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+  if (currentTheme) {
+      $("html").attr('data-theme', currentTheme);
+
+      if (currentTheme === 'dark') {
+          toggleSwitch.checked = true;
+          $("#asu-logo").attr('src',"/images/asu_university_full_white.png");
+      }
+  }
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+</script>

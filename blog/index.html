@@ -8,14 +8,18 @@ section_id: blog
 {% for post in paginator.posts %}
   <div class='big mod modBlogPost' style="min-height: 380px;">
 
-    <div class='content'style="padding-bottom: 60px;">
+    <div class='content'>
       <h4><a href="{{post.url}}">{{post.title}}</a></h4>
       <p class='info'><span>{{post.date | date: "%B %d, %Y" }}</span> </p>
-      <p>{% for image in post.images %}<div class='image'><img style="max-height: 250px; width: auto; padding:0 15px; float: left;" alt="" src="{{site.url}}/{{image}}" /></div>{% endfor %}</p>
-      <p style="margin-top: 20px;"></p>
-      <p>{{post.excerpt}}</p>
-      <div class='spacing'></div>
-      <a class="button small" href="{{post.url}}">Read more</a>
+      {% for image in post.images %}
+      <div style="display: flex;">
+        <img style="max-height: 250px; width: auto; padding:0 30px 0 0;" alt="" src="{{site.url}}/{{image}}" />
+        <div>
+          <p>{{post.excerpt}}</p>
+          <div class='spacing'></div>
+          <a class="button small" style="margin: 0" href="{{post.url}}">Read more</a>
+        </div>
+      </div>{% endfor %}
     </div>
   </div>
 {% endfor %}
