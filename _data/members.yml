@@ -31,6 +31,15 @@
 
     - name: "Chandana Tarur Veerabhadraiah"
       img: "/images/people/avatar-default.png"
+      
+    - name: "Smit Dharmeshkur Shah"
+      img: "/images/people/Smit.jpg"
+     
+    - name: "Narmada Ravali Namburi"
+      img: "/images/people/Narmada.jpg"
+      
+    - name: "Srihari Ravi"
+      img: "/images/people/Srihari.jpg"
 
 - group: "Researchers"
   description: "DigInG Researchers deploy our research tools and workflows to address a wide range of problems in the humanities, from a computational perspective. DigInG researchers come from both the sciences and humanities, and work closely with DigInG Developers to improve and extend our tools and methods. Our researchers are expected to develop       and address their own research questions, based on their interests, and have the opportunity to acquire skills in computer science."
@@ -43,3 +52,8 @@
 
     - name: "Megan Bromley"
       img: "/images/people/Megan.png"
+      
+    - name: "Audrey Varaidzo Mutswiri"
+      img: "/images/people/Audrey.jpg"
+      
+      
