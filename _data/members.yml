@@ -25,21 +25,28 @@
 
     - name: "Aakash Kumar"
       img: "/images/people/Aakash.jpg"
-
-    - name: "Akhil Reddy Katpally"
-      img: "/images/people/akhil.jpg"
-
-    - name: "Chandana Tarur Veerabhadraiah"
-      img: "/images/people/avatar-default.png"
+      
+    - name: "Smit Dharmeshkur Shah"
+      img: "/images/people/Smit.jpg"
+     
+    - name: "Narmada Ravali Namburi"
+      img: "/images/people/Narmada.jpg"
+      
+    - name: "Srihari Ravi"
+      img: "/images/people/Srihari.jpg"
+    
+    - name: "Sayali Suryakant"
+      img: "/images/people/Sayali.jpg"
+      
 
 - group: "Researchers"
   description: "DigInG Researchers deploy our research tools and workflows to address a wide range of problems in the humanities, from a computational perspective. DigInG researchers come from both the sciences and humanities, and work closely with DigInG Developers to improve and extend our tools and methods. Our researchers are expected to develop       and address their own research questions, based on their interests, and have the opportunity to acquire skills in computer science."
   members:
-    - name: "Ian Lobo"
-      img: "/images/people/ian.jpg"
 
     - name: "Yuva Venkata Sai Priyanka Kurakula"
       img: "/images/people/yuva.jpg"
-
-    - name: "Megan Bromley"
-      img: "/images/people/Megan.png"
+      
+    - name: "Audrey Varaidzo Mutswiri"
+      img: "/images/people/Audrey.jpg"
+      
+     
