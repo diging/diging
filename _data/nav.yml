@@ -4,9 +4,9 @@
 - name: Our Team
   path: people/index.html
   section_id: people
-- name: Our Projects
+- name: Our Work
   path: projects/index.html
-  section_id: projects
+  section_id: workspace
 - name: Opportunities
   path: opportunities/index.html
   section_id: opportunities
