@@ -6,13 +6,29 @@ section_id: workspace
 
 <div class='full'>
 	<div class='row'>
-		<div class='large-12 columns'>
-            
+		<div class='large-12 columns'>            
             <h2 class="text-center">We build software products for all your research needs.</h2>
             <p class="mt-2">DigInG provides services and resources for computational humanities software and infrastructure
                 development. In addition, DigInG programmers provide support to academic units and individual researchers seeking to extend their research into
                 the computational realm.</p>
             <div class='spacing'></div>
+            <div class="categories">
+                <button class="tabs active2">Applications</button>
+                <button class="tabs">Tools</button>
+                <button class="tabs">Projects</button>
+            </div>   
+            <div id="apps" class="app-grid">
+                {% for item in site.data.applications %}
+                <div class="app-tile">
+                    <img style="max-height: 100%" src="{{ item.image-color }}">
+                    <div style="margin: 5px 0px 0px 10px">
+                        <h4 style="margin-bottom: 10px">{{ item.name }}</h4>
+                        <p style="font-size: 12px; line-height: 1.2;">{{ item.description }}</p>
+                    </div>
+
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>    

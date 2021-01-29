@@ -4474,6 +4474,37 @@ table tr:nth-of-type(even) {
   width: 100%;
 }
 
+.tabs {
+  background: none;
+  border: none;
+  color: #9d9d9d;
+  font-weight: 600;
+}
+
+.active2 {
+  color: #d23153;
+  border-bottom: 2px solid #d23153;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 40px 0 60px 0;
+  grid-gap: 30px;
+}
+
+.app-tile {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  background-color: var(--cards);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0 auto;
+  transition-timing-function: ease-in-out;
+  transition: width 0.6s, height 0.6s, box-shadow 0.6s;
+}
+
 :root {
     --primary-color: #19b1d4;
     --secondary-color: #ffc627;
