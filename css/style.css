@@ -18,6 +18,17 @@
   align-items: center;
 }
 
+.btn {
+  background: #d23153;
+  margin: 0;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
 .ui-helper-hidden {
   display: none;
 }
@@ -4481,6 +4492,12 @@ table tr:nth-of-type(even) {
   font-weight: 600;
 }
 
+.tabs:focus {
+  outline: none;
+  background: none;
+  color: #d23153;
+}
+
 .active2 {
   color: #d23153;
   border-bottom: 2px solid #d23153;
@@ -4489,7 +4506,7 @@ table tr:nth-of-type(even) {
 .app-grid {
   display: grid;
   grid-template-columns: auto auto auto;
-  margin: 40px 0 60px 0;
+  margin: 40px 0 100px 0;
   grid-gap: 30px;
 }
 
@@ -4504,6 +4521,58 @@ table tr:nth-of-type(even) {
   transition-timing-function: ease-in-out;
   transition: width 0.6s, height 0.6s, box-shadow 0.6s;
 }
+
+.app-tile:hover {
+  width: 305px;
+  height: 105px;
+  box-shadow: 5px 5px 20px rgb(0 0 0 / 20%);
+  transition-timing-function: ease-in-out;
+  transition: width 0.6s, height 0.6s, box-shadow 0.6s;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 40px 0 100px 0;
+  grid-gap: 30px;
+}
+
+.tool-tile {
+  background: white;
+  width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 40px 0 100px 0;
+  grid-gap: 30px;
+}
+
+.accordion {
+  background: white;
+  color: var(--headings);
+  padding: 15px;
+  width: 100%;
+  transition: 0.4s;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.panel {
+  padding: 15px;
+  background-color: none;
+  display: none;
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+}
+
+
 
 :root {
     --primary-color: #19b1d4;
