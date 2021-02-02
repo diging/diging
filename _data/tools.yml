@@ -1,16 +1,20 @@
 
-- name: Tool #1
+- name: Tool1
+  desc: "Lorem ipsum dolor sit amet."
   description: "Aute qui officia qui officia quis dolore in adipisicing laboris aliqua aute fugiat eu." 
   url: #
 
-- name: Tool #2
+- name: Tool2
+  desc: "Lorem ipsum dolor sit amet."
   description: "Aute qui officia qui officia quis dolore in adipisicing laboris aliqua aute fugiat eu." 
   url: #
 
-- name: Tool #3
+- name: Tool3
+  desc: "Lorem ipsum dolor sit amet."
   description: "Aute qui officia qui officia quis dolore in adipisicing laboris aliqua aute fugiat eu." 
   url: #
 
-- name: Tool #4
+- name: Tool4
+  desc: "Lorem ipsum dolor sit amet."
   description: "Aute qui officia qui officia quis dolore in adipisicing laboris aliqua aute fugiat eu." 
   url: #

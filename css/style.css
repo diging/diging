@@ -4572,7 +4572,64 @@ table tr:nth-of-type(even) {
   border-radius: 10px;
 }
 
+.dropbtn {
+  color: var(--headings);
+  font-family: inherit;
+  padding: 16px;
+  border: none;
+  background: none;
+}
 
+.ourWork {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 20px rgb(0 0 0 / 20%);
+  z-index: 1;
+  top: 110%;
+  right: -50%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.ourWork:hover .dropdown-content {
+  display: flex;
+}
+
+.ourWork:hover {
+  background: var(--bg-color);
+}
+
+.dropdownList {
+  border-right: 1px solid #bdbdbd;
+  width: max-content;
+  padding: 20px;
+}
+
+.drpH {
+  font-size: 12px; 
+  margin-bottom: 5px
+}
+
+.drpP {
+  font-size: 8px; 
+  line-height: 1.2;
+}
 
 :root {
     --primary-color: #19b1d4;
