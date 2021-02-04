@@ -33,18 +33,18 @@ section_id: workspace
                 {% for item in site.data.tools %}
                 <div class="tool-tile">
                     <h4 style="margin-bottom: 10px">{{ item.name }}</h4>
-                    <p style="font-size: 12px; line-height: 1.2;">{{ item.description }}</p>
-                    <a href="#" class="read-more">Click here&nbsp;<i class="fa fa-external-link"></i></a>
+                    <p style="font-size: 12px; line-height: 1.2;">{{ item.desc }}</p>
+                    <a href="{{ item.url }}" target="_blank" class="read-more">Click here&nbsp;<i class="fa fa-external-link"></i></a>
                 </div>
                 {% endfor %}
             </div>
 
             <div id="projects" class="project-grid">
-                {% for item in site.data.tools %}
+                {% for item in site.data.projects %}
                 <div class="tool-tile">
                     <h4 style="margin-bottom: 10px">{{ item.name }}</h4>
-                    <p style="font-size: 12px; line-height: 1.2;">{{ item.description }}</p>
-                    <a href="#" class="read-more">Click here&nbsp;<i class="fa fa-external-link"></i></a>
+                    <p style="font-size: 12px; line-height: 1.2;">{{ item.desc }}</p>
+                    <a href="{{ item.url }}" class="read-more">Click here&nbsp;<i class="fa fa-external-link"></i></a>
                 </div>
                 {% endfor %}
             </div>

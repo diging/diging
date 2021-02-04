@@ -4066,7 +4066,7 @@ body {
     font-weight: normal; color: var(--headings)32E; background-color: var(--bg-color);}
 
 	h1, h2, h3, h4, h5, h6 {
-    font-family: 'HaufeMerriweatherSans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     color: var(--headings);
@@ -4377,6 +4377,7 @@ dd {
 
 p {
   color: var(--paragraphs);
+  font-family: 'Roboto', sans-serif;
 }
 
 h2 {
@@ -4594,15 +4595,7 @@ table tr:nth-of-type(even) {
   padding: 20px;
   box-shadow: 5px 5px 20px rgb(0 0 0 / 20%);
   z-index: 1;
-  top: 110%;
-  right: -50%;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+  right: -150%;
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
@@ -4617,7 +4610,7 @@ table tr:nth-of-type(even) {
 
 .dropdownList {
   border-right: 1px solid #bdbdbd;
-  width: max-content;
+  width: 250px;
   padding: 20px;
 }
 
@@ -4627,8 +4620,18 @@ table tr:nth-of-type(even) {
 }
 
 .drpP {
-  font-size: 8px; 
+  font-size: 10px; 
   line-height: 1.2;
+}
+
+.drpLink {
+  margin: 0;
+  padding: 0 !important;
+  line-height: 0 !important;
+}
+
+.drpH:hover {
+  color: var(--primary-color);
 }
 
 :root {
