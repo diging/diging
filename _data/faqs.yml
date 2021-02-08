@@ -1,8 +1,9 @@
-- question: Question 1  
-  answer: "Fugiat amet do culpa laborum aute laborum id occaecat adipisicing laboris ullamco labore ipsum. Aute cillum pariatur aliqua culpa sunt. Nulla deserunt excepteur laboris qui veniam."
 
-- question: Question 2  
-  answer: "Fugiat amet do culpa laborum aute laborum id occaecat adipisicing laboris ullamco labore ipsum. Aute cillum pariatur aliqua culpa sunt. Nulla deserunt excepteur laboris qui veniam."
+- question: How did The Digital Innovation Group came to be?  
+  answer: "Tools that enable historians and philosophers of science to interact with large volumes data lag behind those available in the natural sciences. Most training programs in the history and philosophy of science do not impart the skills necessary to take advantage of computational tools, and computer scientists receive little training in the humanities. DigInG aims to bridge that gap."
 
-- question: Question 3  
-  answer: "Fugiat amet do culpa laborum aute laborum id occaecat adipisicing laboris ullamco labore ipsum. Aute cillum pariatur aliqua culpa sunt. Nulla deserunt excepteur laboris qui veniam."
+- question: Do I need to pay to use the software?  
+  answer: "All of our software is open source and can be found on GitHub. Most projects are developed using the Mozilla Public License 2.0. We welcome any contributions and new users and use cases."
+
+- question: How do I give feedback to DigInG?  
+  answer: "Please get in touch with Julia (jdamerow@asu.edu) if you have any questions or comments."

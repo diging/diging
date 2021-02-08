@@ -34,13 +34,13 @@
             <div class="dropdown-content">
               <div class="dropdownList">
                 {% for item in site.data.applications %}
-                <div style="display: flex">
+                <a href="{{ site.url }}/{{ item.url }}" style="display: flex" class="drpLink">
                     <img style="width: 30px; height: 30px" src="/projects/{{ item.image-color }}">
                     <div style="margin: 0px 0px 0px 10px">
                         <h4 class="drpH">{{ item.name }}</h4>
                         <p class="drpP">{{ item.description }}</p>
                     </div>
-                </div>
+                </a>
                 {% endfor %}
               </div>
 

@@ -1,25 +1,20 @@
 
 - name: DigInG Icon Pack
   desc: "Web icons made for commercial or personal use."
-  description: "Aute qui officia qui officia quis dolore in adipisicing laboris aliqua aute fugiat eu." 
   url: https://github.com/diging/diging-icon-pack
 
 - name: JSTOR Importer
-  desc: "Import JSTOR data for corpus analysis and Elasticsearch."
-  description: "Aute qui officia qui officia quis dolore in adipisicing laboris aliqua aute fugiat eu." 
+  desc: "Import JSTOR data for corpus analysis into Elasticsearch." 
   url: https://github.com/diging/jstor-import
 
 - name: Place Name Resolver
-  desc: "Retrieve Wikipedia titles and their geographic coordinates."
-  description: "Aute qui officia qui officia quis dolore in adipisicing laboris aliqua aute fugiat eu." 
+  desc: "Match place names with Wikipedia titles and retrieve their geographic coordinates."
   url: https://github.com/diging/place_name_resolver
 
-- name: Amphora iPython Notebooks
-  desc: "Repository for various ipyhton notebooks written for Amphora."
-  description: "Aute qui officia qui officia quis dolore in adipisicing laboris aliqua aute fugiat eu." 
-  url: https://github.com/diging/amphora-ipython-notebooks
-
+- name: Amphora Bulk Upload Script
+  desc: "Jupyter Notebook to bulk upload files to Amphora." 
+  url: https://github.com/diging/amphora-ipython-notebooks/tree/master/Amphora-Bulk-Upload
+  
 - name: Publication Metadata Utility
   desc: "Java library to parse publication metadata."
-  description: "Aute qui officia qui officia quis dolore in adipisicing laboris aliqua aute fugiat eu." 
   url: https://github.com/diging/publication-metadata-util

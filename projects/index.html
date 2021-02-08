@@ -19,13 +19,13 @@ section_id: workspace
             </div>   
             <div id="apps" class="app-grid">
                 {% for item in site.data.applications %}
-                <div class="app-tile">
+                <a href="{{ site.url }}/{{ item.url }}" class="app-tile">
                     <img style="max-height: 100%" src="{{ item.image-color }}">
                     <div style="margin: 5px 0px 0px 10px">
                         <h4 style="margin-bottom: 10px">{{ item.name }}</h4>
                         <p style="font-size: 12px; line-height: 1.2;">{{ item.description }}</p>
                     </div>
-                </div>
+                </a>
                 {% endfor %}
             </div>
 
@@ -34,7 +34,7 @@ section_id: workspace
                 <div class="tool-tile">
                     <h4 style="margin-bottom: 10px">{{ item.name }}</h4>
                     <p style="font-size: 12px; line-height: 1.2;">{{ item.desc }}</p>
-                    <a href="{{ item.url }}" target="_blank" class="read-more">Click here&nbsp;<i class="fa fa-external-link"></i></a>
+                    <a href="{{ item.url }}" target="_blank" class="read-more">Go to repository&nbsp;<i class="fa fa-external-link"></i></a>
                 </div>
                 {% endfor %}
             </div>
@@ -44,7 +44,7 @@ section_id: workspace
                 <div class="tool-tile">
                     <h4 style="margin-bottom: 10px">{{ item.name }}</h4>
                     <p style="font-size: 12px; line-height: 1.2;">{{ item.desc }}</p>
-                    <a href="{{ item.url }}" class="read-more">Click here&nbsp;<i class="fa fa-external-link"></i></a>
+                    <a href="{{ item.url }}" class="read-more">More info&nbsp;<i class="fa fa-chevron-right"></i></a>
                 </div>
                 {% endfor %}
             </div>
@@ -52,9 +52,12 @@ section_id: workspace
             {% include section-header.html title="FAQs" %}
 
             {% for item in site.data.faqs %}
-            <div class="accordion"><h4>{{ item.question }}</h4><i class="fa fa-chevron-down"></i></div>
+            <div class="accordion">
+                    <h4 style="margin: 0;">{{ item.question }}</h4>
+                    <i class="fa fa-chevron-down"></i>
+            </div>
             <div class="panel">
-            <p>{{ item.answer }}</p>
+                <p style="width: 60%">{{ item.answer }}</p>
             </div>
             {% endfor %}
         </div>

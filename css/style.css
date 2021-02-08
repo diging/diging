@@ -866,9 +866,7 @@ ul.shortcode-list i {
   transition-duration: 0.2s;
   border-color: var(--headings) transparent transparent transparent;
 }
-.contain-to-grid .top-bar-section li:not(.has-form) a:not(.button) {
-  height: 100px;
-}
+
 .contain-to-grid .top-bar-section .has-dropdown > a:after {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -3966,103 +3964,7 @@ body {
 }
 
 
-/*DESIGN OFFICE - Haufe Group Style - Oriented @ goodlooking.haufe.de*/
-
-/*FONTS*/
-
-/* Webfont: HaufeMerriweather */@font-face {
-    font-family: 'HaufeMerriweather';
-    src: url('fonts/HaufeMerriweather.eot'); /* IE9 Compat Modes */
-    src: url('fonts/haufemerriweather.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/haufemerriweather.woff') format('woff'), /* Modern Browsers */
-         url('fonts/haufemerriweather.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/haufemerriweather.svg#HaufeMerriweather') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-
-.haufemerriweather {font-family: 'HaufeMerriweather',serif; font-weight: normal;}
-
-
-/* Webfont: HaufeMerriweather-Bold */@font-face {
-    font-family: 'HaufeMerriweather';
-    src: url('fonts/haufemerriweather-bold.eot'); /* IE9 Compat Modes */
-    src: url('fonts/haufemerriweather-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/haufemerriweather-bold.woff') format('woff'), /* Modern Browsers */
-         url('fonts/haufemerriweather-bold.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/haufemerriweather-bold.svg#HaufeMerriweather-Bold') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: bold;
-    text-rendering: optimizeLegibility;
-}
-
-.haufemerriweatherbold { font-family: 'HaufeMerriweather', serif; font-weight: bold;}
-
-
-/* Webfont: HaufeMerriweather-BoldItalic */@font-face {
-    font-family: 'HaufeMerriweather';
-    src: url('fonts/haufemerriweather-bolditalic.eot'); /* IE9 Compat Modes */
-    src: url('fonts/haufemerriweather-bolditalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/haufemerriweather-bolditalic.woff') format('woff'), /* Modern Browsers */
-         url('fonts/haufemerriweather-bolditalic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/haufemerriweather-bolditalic.svg#HaufeMerriweather-BoldItalic') format('svg'); /* Legacy iOS */
-    font-style: italic;
-    font-weight: bold;
-    text-rendering: optimizeLegibility;
-}
-
-.haufemerriweatherbolditalic { font-family: 'HaufeMerriweather', serif;   font-style: italic;
-    font-weight: bold;}
-
-
-/* Webfont: HaufeMerriweather-Italic */@font-face {
-    font-family: 'HaufeMerriweather';
-    src: url('fonts/haufemerriweather-italic.eot'); /* IE9 Compat Modes */
-    src: url('fonts/haufemerriweather-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/haufemerriweather-italic.woff') format('woff'), /* Modern Browsers */
-         url('fonts/haufemerriweather-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/haufemerriweather-italic.svg#HaufeMerriweather-Italic') format('svg'); /* Legacy iOS */
-    font-style: italic;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
- .haufemerriweatheritalic {    font-family: 'HaufeMerriweather', serif;    font-style: italic;
-    font-weight: normal;
-
- }
-
- /* Webfont: HaufeMerriweatherSans */@font-face {
-    font-family: 'HaufeMerriweatherSans';
-    src: url('fonts/haufemerriweathersans.eot'); /* IE9 Compat Modes */
-    src: url('fonts/haufemerriweathersans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/haufemerriweathersans.woff') format('woff'), /* Modern Browsers */
-         url('fonts/haufemerriweathersans.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/haufemerriweathersans.svg#HaufeMerriweatherSans') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-.haufemerriweathersans {  font-family: 'HaufeMerriweatherSans', sans-serif;    font-style: normal;
-    font-weight: normal;}
-
-/* Webfont: HaufeMerriweatherSans-Bold */@font-face {
-    font-family: 'HaufeMerriweatherSans';
-    src: url('fonts/haufemerriweathersans-bold.eot'); /* IE9 Compat Modes */
-    src: url('fonts/haufemerriweathersans-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/haufemerriweathersans-bold.woff') format('woff'), /* Modern Browsers */
-         url('fonts/haufemerriweathersans-bold.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/haufemerriweathersans-bold.svg#HaufeMerriweatherSans-Bold') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: bold;
-    text-rendering: optimizeLegibility;
-}
-
-	.haufemerriweathersansbold {  font-family: 'HaufeMerriweatherSans', sans-serif;    font-style: normal;
-    font-weight: bold;}
-
-
-	body {font-family: 'HaufeMerriweather', serif;     font-style: normal;
+	body {font-family: 'Roboto', sans-serif;     font-style: normal;
     font-weight: normal; color: var(--headings)32E; background-color: var(--bg-color);}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -4072,7 +3974,7 @@ body {
     color: var(--headings);
   }
 
-	.button, .button.boxed, nav, .top-bar-section ul li > a, .info  {font-family: 'HaufeMerriweatherSans', sans-serif;     font-style: normal;
+	.button, .button.boxed, nav, .top-bar-section ul li > a, .info  {font-family: 'Roboto', sans-serif;     font-style: normal;
     font-weight: normal;}
 
 	a, .modBlogPost.big h3 a:hover, .pager a, .modIconText .icon-text-circle:hover i  {color: var(--primary-color); /*haufe blue*/}
@@ -4286,8 +4188,8 @@ dd {
 
 .label{ display: none;}
 
-.fa-chevron-right {
-  margin-left: 15px;
+.fa-chevron-right, .fa-external-link {
+  margin-left: 10px;
 }
 
 .secondary-btn {
@@ -4361,6 +4263,7 @@ dd {
 .read-more {
   float: right;
   color: var(--primary-color);
+  font-family: 'Roboto', sans-serif;
 }
 
 .post-image {
@@ -4562,6 +4465,12 @@ table tr:nth-of-type(even) {
   border-radius: 10px;
   margin-bottom: 10px;
   display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion::before, .accordion::after {
+  content: none;
 }
 
 .panel {
@@ -4632,6 +4541,17 @@ table tr:nth-of-type(even) {
 
 .drpH:hover {
   color: var(--primary-color);
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.app-img {
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(0 0 0 / 20%); 
 }
 
 :root {
