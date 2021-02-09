@@ -8,35 +8,35 @@
 
 - image-color: projects/conceptpower-logo.png
   image-white: projects/conceptpower-white.png
-  url: https://diging.github.io/conceptpower/
+  url: projects/app-pages/conceptpower
   id: conceptpower-img-1
   name: Conceptpower
   description: "Search for concepts and related words."
 
 - image-color: projects/vspace-logo.png
   image-white: projects/virtualspaces-white.png
-  url: https://github.com/diging/virtual-spaces-2.0
+  url: projects/app-pages/virtualspaces
   id: virtualspaces-img-1
   name: Virtual Spaces 2.0
   description: "Build virtual exhibitions through 2D space."
 
 - image-color: projects/vogonweb-logo.png
   image-white: projects/vogonweb-white.png
-  url: https://github.com/diging/vogon-web
+  url: projects/app-pages/vogonweb
   id: vogonweb-img-1
   name: VogonWeb
   description: "Annotate texts and create networks."
 
 - image-color: projects/giles-logo.png
   image-white: projects/giles-white.png
-  url: https://github.com/diging/giles-eco-giles-web
+  url: projects/app-pages/giles
   id: giles-img-1
   name: Giles
   description: "Extract text and images from documents."
 
 - image-color: projects/Quadriga-logo.png
   image-white: projects/Quadriga-logo.png
-  url: http://diging.github.io/quadriga/index.html
+  url: projects/app-pages/quadriga
   id: quadriga-img-1
   name: Quadriga
   description: "View and manange annotated networks."

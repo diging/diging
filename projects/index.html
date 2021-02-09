@@ -57,9 +57,16 @@ section_id: workspace
                     <i class="fa fa-chevron-down"></i>
             </div>
             <div class="panel">
-                <p style="width: 60%">{{ item.answer }}</p>
+                <p style="width: 60%; color: var(--paragraphs)">{{ item.answer }}</p>
             </div>
             {% endfor %}
+
+            <div style="margin-top: 100px">
+                {% include section-header.html title="Recent GitHub Activity" %}
+    
+                <table id="githubTable"></table>  
+            </div>       
+
         </div>
     </div>
 </div>    
@@ -106,5 +113,96 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+axios.get('https://api.github.com/orgs/diging/events')
+	.then((response) => {
+		data = response.data;
+
+		$(document).ready(function() {
+
+			let headerRow = $("<tr />")
+			$("#githubTable").append(headerRow);
+
+			headerRow.append($("<th>" + "Repository" + "</th>"));
+			headerRow.append($("<th>" + "Author" + "</th>"));
+			headerRow.append($("<th>" + "Message" + "</th>"));
+			headerRow.append($("<th>" + "Timestamp" + "</th>"));
+
+
+			for(let i = 0; i < Object.keys(data).length; i++)
+			{
+			
+				if("PushEvent".localeCompare(Object.values(data)[i]["type"]) == 0)
+				{
+					let row = $("<tr />")
+					$("#githubTable").append(row);
+
+					let repo = Object.values(data)[i]["repo"]["name"];
+					repo = repo.substring(7);
+					
+					let link = Object.values(data)[i]["repo"]["url"];
+					link = link.substring(0,8) + link.substring(12, 23) + link.substring(29);
+					
+					row.append($('<td><a href="'+ link +'">' + repo + '</a></td>'));
+					
+					let author = Object.values(data)[i]["payload"]["commits"][0]["author"]["name"];
+					row.append($("<td>" + author + "</td>"));
+		
+					let message = Object.values(data)[i]["payload"]["commits"][0]["message"];
+					let asterisk = message.indexOf("\n*");
+					
+					if(asterisk > -1)
+					{
+						message = message.substring(0, asterisk);
+						row.append($("<td>" + message + "</td>"));
+					}
+					else
+					{
+						row.append($("<td>" + message + "</td>"));
+					}
+					
+					let timeStamp = new Date(Object.values(data)[i]["created_at"]);
+					row.append($("<td>" + timeStamp.toString().substring(0, 24)+ "</td>"));
+
+				}
+				
+				if("PullRequestEvent".localeCompare(Object.values(data)[i]["type"]) == 0)
+				{
+					let row = $("<tr />")
+					$("#githubTable").append(row);
+
+					let repo = Object.values(data)[i]["repo"]["name"];
+					repo = repo.substring(7);
+
+					let link = Object.values(data)[i]["repo"]["url"];
+					link = link.substring(0,8) + link.substring(12, 23) + link.substring(29);
+					
+					row.append($('<td><a href="'+ link +'">' + repo + '</a></td>'));
+					
+					let author = Object.values(data)[i]["payload"]["pull_request"]["user"]["login"];
+					row.append($("<td>" + author + "</td>"));
+		
+					let message = "Pull request " + Object.values(data)[i]["payload"]["number"] + " opened by " + author;
+					row.append($("<td>" + message + "</td>"));
+					
+					let timeStamp = new Date(Object.values(data)[i]["created_at"]);
+					row.append($("<td>" + timeStamp.toString().substring(0, 24)+ "</td>"));
+				}
+			
+				
+				}
+
+		});
+		
+		
+	}).catch((error) =>{
+		$("#githubTable").append("We're sorry, but GitHub events could not be loaded.");å
+	});
+
+    var Theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+    if (Theme === 'dark') {
+
+    }
 
 </script>

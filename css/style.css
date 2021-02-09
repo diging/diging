@@ -4442,7 +4442,7 @@ table tr:nth-of-type(even) {
 }
 
 .tool-tile {
-  background: white;
+  background: var(--cards);
   width: 250px;
   padding: 15px;
   border-radius: 10px;
@@ -4457,7 +4457,7 @@ table tr:nth-of-type(even) {
 }
 
 .accordion {
-  background: white;
+  background: var(--cards);
   color: var(--headings);
   padding: 15px;
   width: 100%;
@@ -4475,15 +4475,15 @@ table tr:nth-of-type(even) {
 
 .panel {
   padding: 15px;
-  background-color: none;
+  background: none;
   display: none;
   overflow: hidden;
   border: none;
   border-radius: 10px;
 }
 
-.dropbtn {
-  color: var(--headings);
+.dropbtn, .drotbtn:hover {
+  color: inherit;
   font-family: inherit;
   padding: 16px;
   border: none;
@@ -4494,12 +4494,18 @@ table tr:nth-of-type(even) {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  color: var(--headings);
+}
+
+.ourWork:hover {
+  color: #19b1d4;
+  background: #f9f9f9;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: var(--cards);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 5px 5px 20px rgb(0 0 0 / 20%);
@@ -4507,14 +4513,14 @@ table tr:nth-of-type(even) {
   right: -150%;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: var(--header) !important;}
 
 .ourWork:hover .dropdown-content {
   display: flex;
 }
 
 .ourWork:hover {
-  background: var(--bg-color);
+  background: #f9f9f9;
 }
 
 .dropdownList {
@@ -4554,6 +4560,12 @@ table tr:nth-of-type(even) {
   box-shadow: 5px 5px 20px rgb(0 0 0 / 20%); 
 }
 
+#githubTable {
+  border-collapse: collapse; 
+  background-color: var(--cards); 
+  margin: auto;
+}
+
 :root {
     --primary-color: #19b1d4;
     --secondary-color: #ffc627;
@@ -4574,7 +4586,7 @@ table tr:nth-of-type(even) {
     --secondary-headings: rgba(255,255,255,0.60);
     --paragraphs: rgba(255,255,255,0.87);
     --bg-color: #121212;
-    --cards: rgba(255,255,255,0.13);
+    --cards: #313131;
     --header: rgba(255,255,255,0.25);
     --active-links:#19b1d4;
     --p2s: #F25774;
