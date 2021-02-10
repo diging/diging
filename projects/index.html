@@ -19,7 +19,7 @@ section_id: workspace
             </div>   
             <div id="apps" class="app-grid">
                 {% for item in site.data.applications %}
-                <a href="{{ site.url }}/{{ item.url }}" class="app-tile">
+                <a href="{{ item.url }}" class="app-tile">
                     <img style="max-height: 100%" src="{{ item.image-color }}">
                     <div style="margin: 5px 0px 0px 10px">
                         <h4 style="margin-bottom: 10px">{{ item.name }}</h4>

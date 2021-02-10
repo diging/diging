@@ -1,7 +1,7 @@
 - name: Women in Computer Science
-  desc: ""
-  url: https://github.com/diging/women-in-computer-science
+  desc: "Network map of remarkable women engineers."
+  url: https://chps.asu.edu/wic
 
 - name: CORD19 Geo Explorer
   desc: "Explore COVID19 publications worldwide."
-  url: https://github.com/diging/cord19-geo-explorer
+  url: https://diging.asu.edu/cord19-geo-explorer/
