@@ -4,7 +4,7 @@
   url: https://github.com/diging/diging-icon-pack
 
 - name: JSTOR Importer
-  desc: "Import JSTOR data for corpus analysis into Elasticsearch." 
+  desc: "Import your JSTOR data into Elasticsearch." 
   url: https://github.com/diging/jstor-import
 
 - name: Place Name Resolver

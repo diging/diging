@@ -1,10 +1,10 @@
 
 - image-color: projects/citesphere-logo.png
   image-white: projects/citesphere-white.png
-  url: ./projects/app-pages/citesphere
+  url: ../projects/app-pages/citesphere
   id: citesphere-img-1
   name: Citesphere
-  description: "Manage your citations and more."
+  description: "Manage your references and more."
 
 - image-color: projects/conceptpower-logo.png
   image-white: projects/conceptpower-white.png
@@ -18,7 +18,7 @@
   url: https://github.com/diging/virtual-spaces-2.0
   id: virtualspaces-img-1
   name: Virtual Spaces 2.0
-  description: "Build virtual exhibitions through 2D space."
+  description: "Build virtual exhibitions online."
 
 - image-color: projects/vogonweb-logo.png
   image-white: projects/vogonweb-white.png
