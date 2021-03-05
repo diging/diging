@@ -18,6 +18,17 @@
   align-items: center;
 }
 
+.btn {
+  background: #d23153;
+  margin: 0;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
 .ui-helper-hidden {
   display: none;
 }
@@ -855,9 +866,7 @@ ul.shortcode-list i {
   transition-duration: 0.2s;
   border-color: var(--headings) transparent transparent transparent;
 }
-.contain-to-grid .top-bar-section li:not(.has-form) a:not(.button) {
-  height: 100px;
-}
+
 .contain-to-grid .top-bar-section .has-dropdown > a:after {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -3955,113 +3964,17 @@ body {
 }
 
 
-/*DESIGN OFFICE - Haufe Group Style - Oriented @ goodlooking.haufe.de*/
-
-/*FONTS*/
-
-/* Webfont: HaufeMerriweather */@font-face {
-    font-family: 'HaufeMerriweather';
-    src: url('fonts/HaufeMerriweather.eot'); /* IE9 Compat Modes */
-    src: url('fonts/haufemerriweather.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/haufemerriweather.woff') format('woff'), /* Modern Browsers */
-         url('fonts/haufemerriweather.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/haufemerriweather.svg#HaufeMerriweather') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-
-.haufemerriweather {font-family: 'HaufeMerriweather',serif; font-weight: normal;}
-
-
-/* Webfont: HaufeMerriweather-Bold */@font-face {
-    font-family: 'HaufeMerriweather';
-    src: url('fonts/haufemerriweather-bold.eot'); /* IE9 Compat Modes */
-    src: url('fonts/haufemerriweather-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/haufemerriweather-bold.woff') format('woff'), /* Modern Browsers */
-         url('fonts/haufemerriweather-bold.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/haufemerriweather-bold.svg#HaufeMerriweather-Bold') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: bold;
-    text-rendering: optimizeLegibility;
-}
-
-.haufemerriweatherbold { font-family: 'HaufeMerriweather', serif; font-weight: bold;}
-
-
-/* Webfont: HaufeMerriweather-BoldItalic */@font-face {
-    font-family: 'HaufeMerriweather';
-    src: url('fonts/haufemerriweather-bolditalic.eot'); /* IE9 Compat Modes */
-    src: url('fonts/haufemerriweather-bolditalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/haufemerriweather-bolditalic.woff') format('woff'), /* Modern Browsers */
-         url('fonts/haufemerriweather-bolditalic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/haufemerriweather-bolditalic.svg#HaufeMerriweather-BoldItalic') format('svg'); /* Legacy iOS */
-    font-style: italic;
-    font-weight: bold;
-    text-rendering: optimizeLegibility;
-}
-
-.haufemerriweatherbolditalic { font-family: 'HaufeMerriweather', serif;   font-style: italic;
-    font-weight: bold;}
-
-
-/* Webfont: HaufeMerriweather-Italic */@font-face {
-    font-family: 'HaufeMerriweather';
-    src: url('fonts/haufemerriweather-italic.eot'); /* IE9 Compat Modes */
-    src: url('fonts/haufemerriweather-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/haufemerriweather-italic.woff') format('woff'), /* Modern Browsers */
-         url('fonts/haufemerriweather-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/haufemerriweather-italic.svg#HaufeMerriweather-Italic') format('svg'); /* Legacy iOS */
-    font-style: italic;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
- .haufemerriweatheritalic {    font-family: 'HaufeMerriweather', serif;    font-style: italic;
-    font-weight: normal;
-
- }
-
- /* Webfont: HaufeMerriweatherSans */@font-face {
-    font-family: 'HaufeMerriweatherSans';
-    src: url('fonts/haufemerriweathersans.eot'); /* IE9 Compat Modes */
-    src: url('fonts/haufemerriweathersans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/haufemerriweathersans.woff') format('woff'), /* Modern Browsers */
-         url('fonts/haufemerriweathersans.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/haufemerriweathersans.svg#HaufeMerriweatherSans') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-.haufemerriweathersans {  font-family: 'HaufeMerriweatherSans', sans-serif;    font-style: normal;
-    font-weight: normal;}
-
-/* Webfont: HaufeMerriweatherSans-Bold */@font-face {
-    font-family: 'HaufeMerriweatherSans';
-    src: url('fonts/haufemerriweathersans-bold.eot'); /* IE9 Compat Modes */
-    src: url('fonts/haufemerriweathersans-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/haufemerriweathersans-bold.woff') format('woff'), /* Modern Browsers */
-         url('fonts/haufemerriweathersans-bold.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/haufemerriweathersans-bold.svg#HaufeMerriweatherSans-Bold') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: bold;
-    text-rendering: optimizeLegibility;
-}
-
-	.haufemerriweathersansbold {  font-family: 'HaufeMerriweatherSans', sans-serif;    font-style: normal;
-    font-weight: bold;}
-
-
-	body {font-family: 'HaufeMerriweather', serif;     font-style: normal;
+	body {font-family: 'Roboto', sans-serif;     font-style: normal;
     font-weight: normal; color: var(--headings)32E; background-color: var(--bg-color);}
 
 	h1, h2, h3, h4, h5, h6 {
-    font-family: 'HaufeMerriweatherSans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     color: var(--headings);
   }
 
-	.button, .button.boxed, nav, .top-bar-section ul li > a, .info  {font-family: 'HaufeMerriweatherSans', sans-serif;     font-style: normal;
+	.button, .button.boxed, nav, .top-bar-section ul li > a, .info  {font-family: 'Roboto', sans-serif;     font-style: normal;
     font-weight: normal;}
 
 	a, .modBlogPost.big h3 a:hover, .pager a, .modIconText .icon-text-circle:hover i  {color: var(--primary-color); /*haufe blue*/}
@@ -4275,8 +4188,8 @@ dd {
 
 .label{ display: none;}
 
-.fa-chevron-right {
-  margin-left: 15px;
+.fa-chevron-right, .fa-external-link {
+  margin-left: 10px;
 }
 
 .secondary-btn {
@@ -4350,6 +4263,7 @@ dd {
 .read-more {
   float: right;
   color: var(--primary-color);
+  font-family: 'Roboto', sans-serif;
 }
 
 .post-image {
@@ -4366,6 +4280,7 @@ dd {
 
 p {
   color: var(--paragraphs);
+  font-family: 'Roboto', sans-serif;
 }
 
 h2 {
@@ -4474,6 +4389,183 @@ table tr:nth-of-type(even) {
   width: 100%;
 }
 
+.tabs {
+  background: none;
+  border: none;
+  color: #9d9d9d;
+  font-weight: 600;
+}
+
+.tabs:focus {
+  outline: none;
+  background: none;
+  color: #d23153;
+}
+
+.active2 {
+  color: #d23153;
+  border-bottom: 2px solid #d23153;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 40px 0 100px 0;
+  grid-gap: 30px;
+}
+
+.app-tile {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  background-color: var(--cards);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0 auto;
+  transition-timing-function: ease-in-out;
+  transition: width 0.6s, height 0.6s, box-shadow 0.6s;
+}
+
+.app-tile:hover {
+  width: 305px;
+  height: 105px;
+  box-shadow: 5px 5px 20px rgb(0 0 0 / 20%);
+  transition-timing-function: ease-in-out;
+  transition: width 0.6s, height 0.6s, box-shadow 0.6s;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 40px 0 100px 0;
+  grid-gap: 30px;
+}
+
+.tool-tile {
+  background: var(--cards);
+  width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 40px 0 100px 0;
+  grid-gap: 30px;
+}
+
+.accordion {
+  background: var(--cards);
+  color: var(--headings);
+  padding: 15px;
+  width: 100%;
+  transition: 0.4s;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion::before, .accordion::after {
+  content: none;
+}
+
+.panel {
+  padding: 15px;
+  background: none;
+  display: none;
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+}
+
+.dropbtn, .drotbtn:hover {
+  color: inherit;
+  font-family: inherit;
+  padding: 16px;
+  border: none;
+  background: none;
+}
+
+.ourWork {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--headings);
+}
+
+.ourWork:hover {
+  color: #19b1d4;
+  background: #f9f9f9;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--cards);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 20px rgb(0 0 0 / 20%);
+  z-index: 1;
+  right: -150%;
+}
+
+.dropdown-content a:hover {background-color: var(--header) !important;}
+
+.ourWork:hover .dropdown-content {
+  display: flex;
+}
+
+.ourWork:hover {
+  background: #f9f9f9;
+}
+
+.dropdownList {
+  border-right: 1px solid #bdbdbd;
+  width: 250px;
+  padding: 20px;
+}
+
+.drpH {
+  font-size: 12px; 
+  margin-bottom: 5px
+}
+
+.drpP {
+  font-size: 10px; 
+  line-height: 1.2;
+}
+
+.drpLink {
+  margin: 0;
+  padding: 0 !important;
+  line-height: 0 !important;
+}
+
+.drpH:hover {
+  color: var(--primary-color);
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.app-img {
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(0 0 0 / 20%); 
+}
+
+#githubTable {
+  border-collapse: collapse; 
+  background-color: var(--cards); 
+  margin: auto;
+}
+
 :root {
     --primary-color: #19b1d4;
     --secondary-color: #ffc627;
@@ -4494,7 +4586,7 @@ table tr:nth-of-type(even) {
     --secondary-headings: rgba(255,255,255,0.60);
     --paragraphs: rgba(255,255,255,0.87);
     --bg-color: #121212;
-    --cards: rgba(255,255,255,0.13);
+    --cards: #313131;
     --header: rgba(255,255,255,0.25);
     --active-links:#19b1d4;
     --p2s: #F25774;

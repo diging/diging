@@ -16,6 +16,9 @@
     <section class='top-bar-section'>
       <ul class="right">
         {% for item in site.data.nav %}
+        {% if forloop.index>2 %}
+          {% break %}
+        {% endif %}
           {% if item.section_id == page.section_id %}
             {% assign active_class = "active" %}
           {% else %}
@@ -24,6 +27,55 @@
             <li class="{{active_class}}">
               <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
             </li>
+        {% endfor %}
+        <li>
+          <div class="ourWork">
+            <a href="{{site.url}}/projects/index" class="dropbtn">OUR WORK</a>
+            <div class="dropdown-content">
+              <div class="dropdownList">
+                {% for item in site.data.applications %}
+                <a href="{{ item.url }}" style="display: flex" class="drpLink">
+                    <img style="width: 30px; height: 30px" src="/projects/{{ item.image-color }}">
+                    <div style="margin: 0px 0px 0px 10px">
+                        <h4 class="drpH">{{ item.name }}</h4>
+                        <p class="drpP">{{ item.description }}</p>
+                    </div>
+                </a>
+                {% endfor %}
+              </div>
+
+              <div class="dropdownList">
+                {% for item in site.data.tools %}
+                  <a class="drpLink" href="{{ item.url }}" target="_blank">
+                    <h4 class="drpH">{{ item.name }}</h4>
+                    <p class="drpP">{{ item.desc }}</p>
+                  </a>
+                {% endfor %}
+              </div>
+
+              <div style="width: 250px; padding: 20px;">
+                {% for item in site.data.projects %}
+                <a class="drpLink" href="{{ item.url }}" target="_blank">
+                  <h4 class="drpH">{{ item.name }}</h4>
+                  <p class="drpP">{{ item.desc }}</p>
+                </a>
+                {% endfor %}
+                <a href="{{site.url}}/projects/index" class="read-more">View all<i class="fa fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        {% for item in site.data.nav %}
+        {% if forloop.index>2 %}
+          {% if item.section_id == page.section_id %}
+            {% assign active_class = "active" %}
+          {% else %}
+            {% assign active_class = "" %}
+          {% endif %}
+            <li class="{{active_class}}">
+              <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
+            </li>
+        {% endif %}
         {% endfor %}
       </ul>
     </section>

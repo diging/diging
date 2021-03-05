@@ -1,0 +1,20 @@
+
+- name: DigInG Icon Pack
+  desc: "Web icons made for commercial or personal use."
+  url: https://github.com/diging/diging-icon-pack
+
+- name: JSTOR Importer
+  desc: "Import your JSTOR data into Elasticsearch." 
+  url: https://github.com/diging/jstor-import
+
+- name: Place Name Resolver
+  desc: "Match place names with Wikipedia titles and retrieve their geographic coordinates."
+  url: https://github.com/diging/place_name_resolver
+
+- name: Amphora Bulk Upload Script
+  desc: "Jupyter Notebook to bulk upload files to Amphora." 
+  url: https://github.com/diging/amphora-ipython-notebooks/tree/master/Amphora-Bulk-Upload
+  
+- name: Publication Metadata Utility
+  desc: "Java library to parse publication metadata."
+  url: https://github.com/diging/publication-metadata-util

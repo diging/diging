@@ -4,9 +4,6 @@
 - name: Our Team
   path: people/index.html
   section_id: people
-- name: Our Projects
-  path: projects/index.html
-  section_id: projects
 - name: Opportunities
   path: opportunities/index.html
   section_id: opportunities

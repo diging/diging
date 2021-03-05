@@ -1,0 +1,42 @@
+
+- image-color: projects/citesphere-logo.png
+  image-white: projects/citesphere-white.png
+  url: ../projects/app-pages/citesphere
+  id: citesphere-img-1
+  name: Citesphere
+  description: "Manage your references and more."
+
+- image-color: projects/conceptpower-logo.png
+  image-white: projects/conceptpower-white.png
+  url: https://github.com/diging/conceptpower
+  id: conceptpower-img-1
+  name: Conceptpower
+  description: "Search for concepts and related words."
+
+- image-color: projects/vspace-logo.png
+  image-white: projects/virtualspaces-white.png
+  url: https://github.com/diging/virtual-spaces-2.0
+  id: virtualspaces-img-1
+  name: Virtual Spaces 2.0
+  description: "Build virtual exhibitions online."
+
+- image-color: projects/vogonweb-logo.png
+  image-white: projects/vogonweb-white.png
+  url: https://github.com/diging/vogon-web
+  id: vogonweb-img-1
+  name: VogonWeb
+  description: "Annotate texts and create networks."
+
+- image-color: projects/giles-logo.png
+  image-white: projects/giles-white.png
+  url: https://github.com/diging/giles-eco-giles-web
+  id: giles-img-1
+  name: Giles
+  description: "Extract text and images from documents."
+
+- image-color: projects/Quadriga-logo.png
+  image-white: projects/Quadriga-logo.png
+  url: http://diging.github.io/quadriga/index.html
+  id: quadriga-img-1
+  name: Quadriga
+  description: "View and manange annotated networks."
