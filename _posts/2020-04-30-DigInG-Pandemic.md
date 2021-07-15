@@ -16,7 +16,7 @@ While this is a difficult situation for all of us, there are also some positive 
 
 Of course, there have also been challenges. Slow internet connections can make it almost impossible to work. We have regular issues with people’s microphones not working. And we had DigInG members starting their shifts late because their laptops were needed by their roommates. All in all though, Taylor and I are proud of all our student workers of how professionally they are handling the situation and although we are looking forward to the time when we can all meet in person again, DigInG is alive and well, and our projects make great progress. As Prashant, one of our student workers, likes to stay: stay safe, stay healthy!
 
-<div class="pull-right">Julia for the Digital Innovation Group</div>
+
 
 <div class="clear">&nbsp;</div>
 <div>&nbsp;</div>
