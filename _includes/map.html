@@ -111,14 +111,15 @@
     shadowAnchor: [16, 40]
   });
 
+  var memberMarkers = [];
   for (var i = 0; i < labMembers.length; i++) {
-    marker = new L.marker([labMembers[i][1], labMembers[i][2]], {
+     marker = new L.marker([labMembers[i][1], labMembers[i][2]], {
       icon: redIcon
-    })
-      .bindPopup(labMembers[i][0])
-      .addTo(map);
+     }).bindPopup(labMembers[i][0])
+     memberMarkers.push(marker);
+     map.addLayer(marker);
   }
-
+  var alumniMarkers[];		
   for (var i = 0; i < alumni.length; i++) {
     marker = new L.marker([alumni[i][1], alumni[i][2]], {
       icon: goldIcon
@@ -126,7 +127,7 @@
       .bindPopup(alumni[i][0])
       .addTo(map);
   }
-
+  var formerMarkers [];
   for (var i = 0; i < formerStudents.length; i++) {
     marker = new L.marker([formerStudents[i][1], formerStudents[i][2]])
       .bindPopup(formerStudents[i][0])
@@ -145,6 +146,49 @@
                 d > 1.1 ? '#FED976' :
                   '#FFEDA0';
   }
+  
+  function filterMarkers() {
+  	var select = document.getElementById("filterSelect");
+  	var strUser = e.value;
+  	for (var i = 0; i< memberMarkers.length; i++) {
+  		map.removeLayer(memberMarkers[i]);
+  	}
+  	//map.removeLayer(formerStudents);
+  	//map.addLayer(alumni);
+  }
+  
+  function filterMarkers() {
+  	var select = document.getElementById("filterSelect");
+  	var strUser = e.value;
+  	for (var i = 0; i< alumniMarkers.length; i++) {
+  		map.removeLayer(alumniMarkers([i]);
+  	}
+  	//map.removeLayer(formerStudents);
+  	//map.addLayer(alumni);
+  }
+  
+  function filterMarkers() {
+  	var select = document.getElementById("filterSelect");
+  	var strUser = e.value;
+  	for (var i = 0; i< formerMarkers.length; i++) {
+  		map.removeLayer(formerMarkers[i]);
+  	}
+  	//map.removeLayer(formerStudents);
+  	//map.addLayer(alumni);
+  }
+  
+var legend = L.control({position: 'topright'});
+legend.onAdd = function (map) {
+	var div = L.DomUtil.create('div', 'info legend');
+	div.innerHTML = '<select onChange="filterMarkers()" id="filterSelect"><option>value="noFilter">No Filter</option><option>value="CurrentMembers">Current DigInG Members</option><option>value="Alumnimembers">Alumni Members</option><option>value="formerStudents">Former Students of DigInG courses</option></select>';
+	div.firstChild.onmousedown = div.firstChild.ondblclick = L.DomEvent.stopPropagation;
+	
+	return div;
+};
+
+
+
+legend.addTo(map);
 
   var legend = L.control({
     position: 'bottomleft'
@@ -155,7 +199,7 @@
       labels = [];
 
     labels.push(
-      '<span style="background:' + "#c92539" + '">Current Lab Members</span> ');
+      '<span style="background:' + "#c92539" + '">Current DigInG Members</span> ');
 
     labels.push(
       '<span style="background:' + "#ffd326" + '">Alumni Members</span> ');
@@ -167,6 +211,10 @@
     return div;
   };
 
+
+
+
+  
   // Do not forget to add your control to the map?
   legend.addTo(map);
 </script>
