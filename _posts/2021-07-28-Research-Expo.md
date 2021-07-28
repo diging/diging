@@ -7,7 +7,7 @@ images:
 images_caption:
 permalink: /researchexpo/
 author: jdamerow
-excerpt: The Research Computing Expo will be held August 2-6, 2021 by Research Computing. The Digital Innovation Group will be contributing to the expo by hosting two workshops led by Taylor Quinn and Julia Damerow:
+excerpt: The Research Computing Expo will be held August 2-6, 2021 by Research Computing. The Digital Innovation Group will be contributing to the expo by hosting two workshops led by Taylor Quinn and Julia Damerow.
 ---
 
 
