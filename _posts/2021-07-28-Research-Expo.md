@@ -24,4 +24,5 @@ Description: Have you been given a script by a colleague and then ran into depen
 Time: August 5th, 2021, 10:00 AM to 11:00 AM
 
 Description: In this workshop, participants will be introduced to Git, a popular version control system that lets you manage different versions of your files. We will first present the basic concepts of Git and how to use it. Then, the participants will do a self-paced tutorial that gives them hands-on experience with the Git command line. By the end of the workshop, participants should have a basic understanding of what Git and GitHub are as well as how and when to use it.
+
 There are many more workshops related to Research Computing to choose from. More information and registration information can be found <a href= "https://asurc.atlassian.net/wiki/spaces/RC/pages/556204036/Workshops" target= "_blank">here</a>.
