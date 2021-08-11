@@ -63,7 +63,8 @@ var currentLayer = ""
 	["Pradeep Kumar Chenchala", 21.1458, 79.0882],
 	["Maulik Limbadiya", 22.7251, 71.637],
 	["Avirup Biswas", 22.5726, 88.3639],	
-	["Campbell Spurlin", 39.7392, -104.9903]
+	["Campbell Spurlin", 39.7392, -104.9903],
+	["Narmada Ravali Namburi", 17.543360 ,80.618698]
 	
   ];
 
@@ -88,8 +89,8 @@ var currentLayer = ""
 	["Audrey Varaidzo Mutswiri", -18.188231 , 31.546070],
 	["Sayali Suryakant",18.5204, 73.8567],
 	["Srihari Ravi", 10.818790, 78.289703],
-	["Smit Shah", 22.414709, 71.291367],
-	["Narmada Ravali Namburi", 17.543360 ,80.618698] 
+	["Smit Shah", 22.414709, 71.291367]
+	
 
   ];
 
@@ -121,7 +122,6 @@ var currentLayer = ""
   
  
 function formerStudentsMarkers(){
-//if (markersLayer){markersLayer.clearLayers()}
 var memberMarkers = [];
   	for (var i = 0; i < formerStudents.length; i++) {
     	marker = L.marker([formerStudents[i][1], formerStudents[i][2]])
@@ -133,7 +133,6 @@ var memberMarkers = [];
  	
   }
   function labMemberMarkers(){
-//if (markersLayer){markersLayer.clearLayers()}
 var memberMarkers = [];
   	for (var i = 0; i < labMembers.length; i++) {
     	marker = L.marker([labMembers[i][1], labMembers[i][2]],{
@@ -146,7 +145,6 @@ var memberMarkers = [];
  	
   }
   function alumniMarkers(){
-//if (markersLayer){markersLayer.clearLayers()}
 var memberMarkers = [];
   	for (var i = 0; i < alumni.length; i++) {
   	console.log(alumni[i][1])
@@ -171,8 +169,6 @@ return memberMarkers;
   
   window.onload = function setup(){
   filterMarkers()
- 	//allMarkers()
-  
   } 	
 
 
@@ -190,7 +186,6 @@ return memberMarkers;
   
   function filterMarkers() {
   	var select = document.getElementById("filterSelect");
-  	console.log(select.options[select.selectedIndex].value)
   	switch(select.options[select.selectedIndex].value){
   		case "Current DigInG Members":
   		if(currentLayer){
@@ -227,13 +222,10 @@ return memberMarkers;
   		currentLayer = allMarkersLayer
   		break;
   		default:
-  		console.log("here")
-  		//allMarkers()
+ 
   		
   	}
   	
-  	//map.removeLayer(formerStudents);
-  	//map.addLayer(alumni);
   }
   
 var legend = L.control({position: 'topright'});
@@ -273,6 +265,6 @@ legend.addTo(map);
 
 
   
-  // Do not forget to add your control to the map?
+  
   legend.addTo(map);
 </script>
