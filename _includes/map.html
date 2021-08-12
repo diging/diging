@@ -52,19 +52,33 @@
     accessToken: 'pk.eyJ1IjoiZGlnaW5nZ3JvdXAiLCJhIjoiY2syemJxNjlrMGg4bTNubzg0b254bW9tbCJ9.MgjW6NsPmtafhhs9wofDBA'
   }).addTo(map);
 
-var currentLayer = ""
-
   let labMembers = [
 	["Taylor Quinn", 42.36008, -71.05888],
+	["Ashmi Chheda", 19.07598, 72.87765],
+	["Navaneesh K. Bajakudlu", 12.508, 74.98821],
+	["Keerthivasan Krishnamurthy", 11.66432, 78.14601],
 	["Julia Damerow, Dirk Wintergrün", 52.52, 13.40495],
 	["Adhvik M. Yeleswarapu", 28.45949, 77.02663],
+	["Yuva V.S.P Kurakula", 16.50617, 80.64801],
+	["Radhika Nyati", 25.21381, 75.86475],
+	["Prashant Jadhav", 18.5204, 73.8567],
+	["Sagar Khar", 32.7266, 74.8570],
+	["Aakash Kumar", 17.385576, 78.473814],
 	["Manfred Laubichler", 47.8095, 13.0550],
+<<<<<<< HEAD
 	["Sudheera Daggumalli", 15.9129, 79.7400],
 	["Pradeep Kumar Chenchala", 21.1458, 79.0882],
 	["Maulik Limbadiya", 22.7251, 71.637],
 	["Avirup Biswas", 22.5726, 88.3639],	
 	["Campbell Spurlin", 39.7392, -104.9903],
 	["Narmada Ravali Namburi", 17.543360 ,80.618698]
+=======
+	["Audrey Varaidzo Mutswiri", -18.188231 , 31.546070],
+	["Sayali Suryakant",18.5204, 73.8567],
+	["Srihari Ravi", 10.818790, 78.289703],
+	["Smit Shah", 22.414709, 71.291367],
+	["Narmada Ravali Namburi", 17.543360 ,80.618698] 	
+>>>>>>> parent of 95b5645 ([WEB-52])
 	
   ];
 
@@ -77,6 +91,7 @@ var currentLayer = ""
 	["Erick Peirson", 47.7511, -120.7401],
 	["Ian Lobo", 29.37585, 47.9774],
 	["Yogananda Kishore, Supraj Kolluri", 17.3850, 78.4867],
+<<<<<<< HEAD
 	["Neeharika Dasari", 17.38504, 78.48667],
 	["Ashmi Chheda", 19.07598, 72.87765],
 	["Navaneesh K. Bajakudlu", 12.508, 74.98821],
@@ -91,6 +106,9 @@ var currentLayer = ""
 	["Srihari Ravi", 10.818790, 78.289703],
 	["Smit Shah", 22.414709, 71.291367]
 	
+=======
+	["Neeharika Dasari", 17.38504, 78.48667]
+>>>>>>> parent of 95b5645 ([WEB-52])
 
   ];
 
@@ -119,6 +137,7 @@ var currentLayer = ""
     shadowAnchor: [16, 40]
   });
 
+<<<<<<< HEAD
   
  
 function formerStudentsMarkers(){
@@ -157,19 +176,37 @@ var memberMarkers = [];
   
 return memberMarkers;
  	
+=======
+  var memberMarkers = [];
+  for (var i = 0; i < labMembers.length; i++) {
+     marker = new L.marker([labMembers[i][1], labMembers[i][2]], {
+      icon: redIcon
+     }).bindPopup(labMembers[i][0])
+     memberMarkers.push(marker);
+     map.addLayer(marker);
   }
-  
-  function allMarkers(){
-	return [].concat(alumniMarkers(),labMemberMarkers(),formerStudentsMarkers())
-  	
-  
 
-  
+  for (var i = 0; i < alumni.length; i++) {
+    marker = new L.marker([alumni[i][1], alumni[i][2]], {
+      icon: goldIcon
+    })
+      .bindPopup(alumni[i][0])
+      .addTo(map);
+>>>>>>> parent of 95b5645 ([WEB-52])
   }
+
+  for (var i = 0; i < formerStudents.length; i++) {
+    marker = new L.marker([formerStudents[i][1], formerStudents[i][2]])
+      .bindPopup(formerStudents[i][0])
+      .addTo(map);
+  }
+<<<<<<< HEAD
   
   window.onload = function setup(){
   filterMarkers()
   } 	
+=======
+>>>>>>> parent of 95b5645 ([WEB-52])
 
 
 
@@ -186,6 +223,7 @@ return memberMarkers;
   
   function filterMarkers() {
   	var select = document.getElementById("filterSelect");
+<<<<<<< HEAD
   	switch(select.options[select.selectedIndex].value){
   		case "Current DigInG Members":
   		if(currentLayer){
@@ -226,6 +264,12 @@ return memberMarkers;
   		
   	}
   	
+=======
+  	
+  	for (var i = 0; i< memberMarkers.length; i++) {
+  		map.removeLayer(memberMarkers[i]);
+  	}
+>>>>>>> parent of 95b5645 ([WEB-52])
   }
   
 var legend = L.control({position: 'topright'});
@@ -237,6 +281,14 @@ legend.onAdd = function (map) {
 	return div;
 }
 
+function filterMarkers() {
+  	var select = document.getElementById("filterSelect");
+  	
+  	for (var i = 0; i< alumni.length; i++) {
+  		map.removeLayer(alumni[i]);
+  	}
+  }
+  
 
 legend.addTo(map);
 
