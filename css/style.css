@@ -4370,6 +4370,16 @@ table tr:nth-of-type(even) {
   }
 }
 
+#post-display {
+  display: flex;
+}
+
+@media screen and (max-width: 750px) {
+  #post-display {
+    display: block;
+  }
+}
+
 #nc-root {
   background: var(--bg-color);
 }

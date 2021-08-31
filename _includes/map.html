@@ -24,7 +24,22 @@
             <a name="alumni"></a>
             <h2 class="separate" style="color:">Where we are from</h2>
           </div>
-
+          
+          <div class="mod modGallery">
+            <div class='gallery-nav'>
+              <ul>
+                <li class='current'>
+                  <a id="all" href='#'>All</a>
+                </li>
+                <li>
+                  <a id="current" href='#'>Team</a>
+                </li>
+                <li>
+                  <a id="alumni" href='#'>Work</a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <div id="mapid"></div>
 
@@ -155,7 +170,7 @@
       labels = [];
 
     labels.push(
-      '<span style="background:' + "#c92539" + '">Current Lab Members</span> ');
+      '<span style="background:' + "#c92539" + '">Current DigInG Members</span> ');
 
     labels.push(
       '<span style="background:' + "#ffd326" + '">Alumni Members</span> ');
@@ -169,4 +184,8 @@
 
   // Do not forget to add your control to the map?
   legend.addTo(map);
+
+  $("#all").click(function() {
+    map.removeLayer(alumni);
+  })
 </script>
