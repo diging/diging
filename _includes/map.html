@@ -22,7 +22,7 @@
         <div class="mod modSectionHeader ">
           <div class="special-title centered-text separateline">
             <a name="alumni"></a>
-            <h2 class="separate" style="color:">Where we are from</h2>
+            <h2 class="separate">Where we are from</h2>
           </div>
           
           <div class="mod modGallery">
@@ -80,11 +80,12 @@
 	["Sagar Khar", 32.7266, 74.8570],
 	["Aakash Kumar", 17.385576, 78.473814],
 	["Manfred Laubichler", 47.8095, 13.0550],
-	["Audrey Varaidzo Mutswiri", -18.188231 , 31.546070],
-	["Sayali Suryakant",18.5204, 73.8567],
-	["Srihari Ravi", 10.818790, 78.289703],
-	["Smit Shah", 22.414709, 71.291367],
-	["Narmada Ravali Namburi", 17.543360 ,80.618698] 	
+	["Sudheera Daggumalli", 15.9129, 79.7400],
+	["Pradeep Kumar Chenchala", 21.1458, 79.0882],
+	["Maulik Limbadiya", 22.7251, 71.637],
+	["Avirup Biswas", 22.5726, 88.3639],	
+	["Campbell Spurlin", 39.7392, -104.9903],
+	["Narmada Ravali Namburi", 17.543360 ,80.618698]
 	
   ];
 
@@ -97,7 +98,20 @@
 	["Erick Peirson", 47.7511, -120.7401],
 	["Ian Lobo", 29.37585, 47.9774],
 	["Yogananda Kishore, Supraj Kolluri", 17.3850, 78.4867],
-	["Neeharika Dasari", 17.38504, 78.48667]
+	["Neeharika Dasari", 17.38504, 78.48667],
+	["Ashmi Chheda", 19.07598, 72.87765],
+	["Navaneesh K. Bajakudlu", 12.508, 74.98821],
+	["Keerthivasan Krishnamurthy", 11.66432, 78.14601],
+	["Yuva V.S.P Kurakula", 16.50617, 80.64801],
+	["Radhika Nyati", 25.21381, 75.86475],
+	["Prashant Jadhav", 18.5204, 73.8567],
+	["Sagar Khar", 32.7266, 74.8570],
+	["Aakash Kumar", 17.385576, 78.473814],
+	["Audrey Varaidzo Mutswiri", -18.188231 , 31.546070],
+	["Sayali Suryakant",18.5204, 73.8567],
+	["Srihari Ravi", 10.818790, 78.289703],
+	["Smit Shah", 22.414709, 71.291367]
+	
 
   ];
 
@@ -126,20 +140,44 @@
     shadowAnchor: [16, 40]
   });
 
-  for (var i = 0; i < labMembers.length; i++) {
-    marker = new L.marker([labMembers[i][1], labMembers[i][2]], {
-      icon: redIcon
-    })
-      .bindPopup(labMembers[i][0])
-      .addTo(map);
+  
+ 
+function formerStudentsMarkers(){
+var memberMarkers = [];
+  	for (var i = 0; i < formerStudents.length; i++) {
+    	marker = L.marker([formerStudents[i][1], formerStudents[i][2]])
+      	.bindPopup(formerStudents[i][0])
+      	memberMarkers.push(marker)
+  	}
+  	return memberMarkers;
+ 	
+ 	
   }
-
-  for (var i = 0; i < alumni.length; i++) {
-    marker = new L.marker([alumni[i][1], alumni[i][2]], {
-      icon: goldIcon
-    })
-      .bindPopup(alumni[i][0])
-      .addTo(map);
+  function labMemberMarkers(){
+var memberMarkers = [];
+  	for (var i = 0; i < labMembers.length; i++) {
+    	marker = L.marker([labMembers[i][1], labMembers[i][2]],{
+    	icon: redIcon
+    	})
+      	.bindPopup(labMembers[i][0])
+      	memberMarkers.push(marker)
+  	}
+ 	return memberMarkers
+ 	
+  }
+  function alumniMarkers(){
+var memberMarkers = [];
+  	for (var i = 0; i < alumni.length; i++) {
+  	console.log(alumni[i][1])
+    	marker = L.marker([alumni[i][1], alumni[i][2]],{
+    	icon: goldIcon
+    	})
+      	.bindPopup(alumni[i][0])
+      	memberMarkers.push(marker)
+  	}
+  
+return memberMarkers;
+ 	
   }
 
   for (var i = 0; i < formerStudents.length; i++) {
@@ -147,6 +185,10 @@
       .bindPopup(formerStudents[i][0])
       .addTo(map);
   }
+  
+  window.onload = function setup(){
+  filterMarkers()
+  } 	
 
 
 
@@ -160,6 +202,70 @@
                 d > 1.1 ? '#FED976' :
                   '#FFEDA0';
   }
+  
+  function filterMarkers() {
+  	var select = document.getElementById("filterSelect");
+  	switch(select.options[select.selectedIndex].value){
+  		case "Current DigInG Members":
+  		if(currentLayer){
+  		map.removeLayer(currentLayer)
+  		}
+  		var currentMembersLayer = new L.layerGroup(labMemberMarkers());
+  			map.addLayer(currentMembersLayer)
+  			currentLayer = currentMembersLayer
+  			 break;
+  		case "Alumni Members":
+  		if(currentLayer){
+  		map.removeLayer(currentLayer)
+  		}
+  		var alumniMarkersLayer = new L.layerGroup(alumniMarkers())
+  			map.addLayer(alumniMarkersLayer)
+  			currentLayer = alumniMarkersLayer
+  			alumniMarkers()
+  			 break;
+  		case "Former Students of DigInG courses":
+  		if(currentLayer){
+  		map.removeLayer(currentLayer)
+  		}
+  		 var formerStudentsMarkersLayer = new L.layerGroup(formerStudentsMarkers())
+  		 map.addLayer(formerStudentsMarkersLayer)
+  		 currentLayer = formerStudentsMarkersLayer
+  			 break;
+  		case "No Filter":
+  		if (currentLayer){
+  		map.removeLayer(currentLayer)
+  		}
+  		var allMarkersLayer = new L.layerGroup(allMarkers())
+  		console.log(allMarkersLayer)
+  		map.addLayer(allMarkersLayer)
+  		currentLayer = allMarkersLayer
+  		break;
+  		default:
+ 
+  		
+  	}
+  	
+  }
+  
+var legend = L.control({position: 'topright'});
+legend.onAdd = function (map) {
+	var div = L.DomUtil.create('div', 'info legend');
+	div.innerHTML = '<select onChange="filterMarkers()" id="filterSelect"><option>No Filter</option><option>Current DigInG Members</option><option>Alumni Members</option><option>Former Students of DigInG courses</option></select>';
+	div.firstChild.onmousedown = div.firstChild.ondblclick = L.DomEvent.stopPropagation;
+	
+	return div;
+}
+
+function filterMarkers() {
+  	var select = document.getElementById("filterSelect");
+  	
+  	for (var i = 0; i< alumni.length; i++) {
+  		map.removeLayer(alumni[i]);
+  	}
+  }
+  
+
+legend.addTo(map);
 
   var legend = L.control({
     position: 'bottomleft'
@@ -182,7 +288,11 @@
     return div;
   };
 
-  // Do not forget to add your control to the map?
+
+
+
+  
+  
   legend.addTo(map);
 
   $("#all").click(function() {
