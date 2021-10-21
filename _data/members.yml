@@ -2,45 +2,35 @@
 - group: "Software Developers"
   description: "DigInG Software Developers are a dynamic and creative team of student engineers. Our developers work in an agile environment to create robust, beautiful, and scalable software to support computational research. Each team member cultivates a unique skillset tailored to their career goals and intellectual interests, and receives    one-on-one mentorship in software engineering."
   members:
-    - name: "Radhika Nyati"
-      img: "/images/people/radhika.jpg"
 
-    - name: "Ashmi Chheda"
-      img: "/images/people/ashmi.jpg"
 
-    - name: "Keerthivasan Krishnamurthy"
-      img: "/images/people/keerthivasan.jpg"
+    - name: "Avirup Biswas"
+      img: "/images/people/Avirup.jpg"
 
-    - name: "Navaneesh Kumar Bajakudlu"
-      img: "/images/people/navaneesh.jpg"
+    - name: "Charishma Boddu"
+      img: "/images/people/Charishma.jpg"
 
-    - name: "Adhvik Madhav Yeleswarapu <br /> (UX Designer)"
-      img: "/images/people/adhvik.jpg"
-      
+    - name: "Glen Dsouza"
+      img: "/images/people/Glen.jpg"
+
+    - name: "Maulik Vajubhai Limbadiya"
+      img: "/images/people/Maulik.jpg"
+
     - name: "Narmada Ravali Namburi"
       img: "/images/people/Narmada.jpg"
 
-    - name: "Prashant Jadhav"
-      img: "/images/people/prashant.jpg"
+    - name: "Pooja Kulkarni"
+      img: "/images/people/Pooja.jpg"
 
-    - name: "Sagar Khar"
-      img: "/images/people/sagar.jpg"
+    - name: "Pradeep Kumar Chenchala"
+      img: "/images/people/Pradeep.png"
 
-    - name: "Aakash Kumar"
-      img: "/images/people/Aakash.jpg"
-      
-    - name: "Smit Dharmeshkur Shah"
-      img: "/images/people/Smit.jpg"
-     
-    - name: "Narmada Ravali Namburi"
-      img: "/images/people/Narmada.jpg"
-      
-    - name: "Srihari Ravi"
-      img: "/images/people/Srihari.jpg"
-    
-    - name: "Sayali Suryakant"
-      img: "/images/people/Sayali.jpg"
-      
+    - name: "Sola Kim"
+      img: "/images/people/Sola.jpg"
+
+    - name: "Sudheera Daggumalli"
+      img: "/images/people/Sudheera.jpg"
+
 
 - group: "Researchers"
   description: "DigInG Researchers deploy our research tools and workflows to address a wide range of problems in the humanities, from a computational perspective. DigInG researchers come from both the sciences and humanities, and work closely with DigInG Developers to improve and extend our tools and methods. Our researchers are expected to develop       and address their own research questions, based on their interests, and have the opportunity to acquire skills in computer science."
@@ -48,8 +38,6 @@
 
     - name: "Yuva Venkata Sai Priyanka Kurakula"
       img: "/images/people/yuva.jpg"
-      
+
     - name: "Audrey Varaidzo Mutswiri"
       img: "/images/people/Audrey.jpg"
-      
-     
