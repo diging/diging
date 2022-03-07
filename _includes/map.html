@@ -59,11 +59,18 @@
 	["Sudheera Daggumalli", 15.9129, 79.7400],
 	["Pradeep Kumar Chenchala", 21.1458, 79.0882],
 	["Maulik Limbadiya", 22.7251, 71.637],
-	["Avirup Biswas", 22.5726, 88.3639],	
+	["Avirup Biswas", 22.5726, 88.3639],
 	["Narmada Ravali Namburi", 17.543360 ,80.618698],
 	["Sola Kim", 37.46356, 126.95073],
-	["Pooja Kulkarni", 19.218398008673375, 72.8289117114724]
-
+	["Charishma Boddu", 17.50564, 78.33937],
+  ["Glen Dsouza", 12.9141, 74.8560],
+  ["Baishali Nayak", 22.597957618697485, 88.40196379725391],
+  ["Bindu Trilekha Mylavarapu", 16.9182, 80.3633],
+  ["Prachi Kharge", 19.219300, 72.962300],
+  ["Pratik Giri", 19.039209663656663, 73.02191829766114],
+  ["Swetalina Prusty", 20.8522697, 86.33857138888888],
+  ["Tushar Anand", 24.48807380038075, 86.68088410337648],
+  ["Vishnu Vardhan Sanikommu", 15.404126, 79.508372]
   ];
 
   let alumni = [
@@ -96,8 +103,8 @@
 	["Sayali Suryakant",18.5204, 73.8567],
 	["Srihari Ravi", 10.818790, 78.289703],
 	["Smit Shah", 22.414709, 71.291367],
-	["Ashmi Chheda", 19.07598, 72.87765]	
-
+	["Ashmi Chheda", 19.07598, 72.87765],
+  ["Pooja Kulkarni", 19.218398008673375, 72.8289117114724]
   ];
 
 
@@ -126,8 +133,8 @@
     shadowAnchor: [16, 40]
   });
 
-  
- 
+
+
   function formerStudentsMarkers(){
     var memberMarkers = [];
     for (var i = 0; i < formerStudents.length; i++) {
@@ -153,7 +160,7 @@
   function alumniMarkers(){
     var memberMarkers = [];
     for (var i = 0; i < alumni.length; i++) {
-      
+
       marker = L.marker([alumni[i][1], alumni[i][2]],{
       icon: goldIcon
       })
@@ -171,10 +178,10 @@
   map.addLayer(allMarkersLayer)
   let currentLayer = allMarkersLayer
 
-  
+
   window.onload = function setup(){
     filterMarkers()
-  } 	
+  }
 
 
 
@@ -194,10 +201,10 @@
     var div = L.DomUtil.create('div', 'info legend');
     div.innerHTML = '<select onChange="filterMarkers()" id="filterSelect"><option>No Filter</option><option>Current DigInG Members</option><option>Alumni Members</option><option>Former Students of DigInG courses</option></select>';
     div.firstChild.onmousedown = div.firstChild.ondblclick = L.DomEvent.stopPropagation;
-    
+
     return div;
   }
-  
+
   function filterMarkers() {
   	var select = document.getElementById("filterSelect");
   	switch(select.options[select.selectedIndex].value){
@@ -215,7 +222,7 @@
         }
 
         var alumniMarkersLayer = new L.layerGroup(alumniMarkers())
-          
+
           map.addLayer(alumniMarkersLayer)
           currentLayer = alumniMarkersLayer
           break;
@@ -232,7 +239,7 @@
           map.removeLayer(currentLayer)
         }
         var allMarkersLayer = new L.layerGroup(allMarkers())
-        
+
         map.addLayer(allMarkersLayer)
         currentLayer = allMarkersLayer
         break;
@@ -241,17 +248,17 @@
           map.removeLayer(currentLayer)
         }
   	}
-  	
+
   }
 
 // function filterMarkers() {
 //   	var select = document.getElementById("filterSelect");
-  	
+
 //   	for (var i = 0; i< alumni.length; i++) {
 //   		map.removeLayer(alumni[i]);
 //   	}
 //   }
-  
+
 
 legend.addTo(map);
 
@@ -279,8 +286,8 @@ legend.addTo(map);
 
 
 
-  
-  
+
+
   legend.addTo(map);
 
   $("#all").click(function() {

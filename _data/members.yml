@@ -7,6 +7,12 @@
     - name: "Avirup Biswas"
       img: "/images/people/Avirup.jpg"
 
+    - name: "Baishali Nayak"
+      img: "/images/people/Baishali.jpg"
+
+    - name: "Bindu Trilekha Mylavarapu"
+      img: "/images/people/Bindu.jpg"
+
     - name: "Charishma Boddu"
       img: "/images/people/Charishma.jpg"
 
@@ -28,8 +34,23 @@
     - name: "Sola Kim"
       img: "/images/people/Sola.jpg"
 
+    - name: "Prachi Kharge"
+      img: "/images/people/Prachi.jpg"
+
+    - name: "Pratik Giri"
+      img: "/images/people/Pratik.jpg"
+
     - name: "Sudheera Daggumalli"
       img: "/images/people/Sudheera.jpg"
+
+    - name: "Swetalina Prusty"
+      img: "/images/people/Swetalina.jpg"
+
+    - name: "Tushar Anand"
+      img: "/images/people/Tushar2.jpg"
+
+    - name: "Vishnu Vardhan Sanikommu"
+      img: "/images/people/Vishnu.jpg"
 
 
 - group: "Researchers"
