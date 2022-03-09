@@ -16,17 +16,8 @@
     - name: "Maulik Vajubhai Limbadiya"
       img: "/images/people/Maulik.jpg"
 
-    - name: "Narmada Ravali Namburi"
-      img: "/images/people/Narmada.jpg"
-
-    - name: "Pooja Kulkarni"
-      img: "/images/people/Pooja.jpg"
-
     - name: "Pradeep Kumar Chenchala"
-      img: "/images/people/Pradeep.png"
-
-    - name: "Sola Kim"
-      img: "/images/people/Sola.jpg"
+      img: "/images/people/Pradeep.jpg"
 
     - name: "Sudheera Daggumalli"
       img: "/images/people/Sudheera.jpg"
@@ -36,8 +27,5 @@
   description: "DigInG Researchers deploy our research tools and workflows to address a wide range of problems in the humanities, from a computational perspective. DigInG researchers come from both the sciences and humanities, and work closely with DigInG Developers to improve and extend our tools and methods. Our researchers are expected to develop       and address their own research questions, based on their interests, and have the opportunity to acquire skills in computer science."
   members:
 
-    - name: "Yuva Venkata Sai Priyanka Kurakula"
-      img: "/images/people/yuva.jpg"
-
-    - name: "Audrey Varaidzo Mutswiri"
-      img: "/images/people/Audrey.jpg"
+    - name: "Sola Kim"
+      img: "/images/people/Sola.jpg"
