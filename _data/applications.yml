@@ -15,7 +15,7 @@
 
 - image-color: projects/vspace-logo.png
   image-white: projects/virtualspaces-white.png
-  url: https://github.com/diging/virtual-spaces-2.0
+  url: /projects/app-pages/virtualspaces.html
   id: virtualspaces-img-1
   name: Virtual Spaces 2.0
   description: "Build virtual exhibitions online."
