@@ -10,6 +10,9 @@
 - name: Gallery
   path: gallery/portfolio.html
   section_id: portfolio
+- name: Resources
+  path: resources/comp-project-planning
+  section_id: resources
 - name: MoU
   path: mou.html
   section_id: mou
