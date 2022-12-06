@@ -11,7 +11,7 @@
   path: gallery/portfolio.html
   section_id: portfolio
 - name: Resources
-  path: resources/comp-project-planning
+  path: resources/comp-project-planning.html
   section_id: resources
 - name: MoU
   path: mou.html
