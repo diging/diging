@@ -11,15 +11,8 @@
   designation: "Head of Development"
   description: "Julia is a software engineer focusing on the development of software for digital/computational history and philosophy of science and digital humanities."
 
-- img: "/images/people/dirk.jpg"
-  name: "Dirk Wintergrün"
-  link: "https://www.mpiwg-berlin.mpg.de/en/users/dwinter"
-  designation: "Department I MPIWG"
-  description: "Dirk is in charge of software and infrastructure projects in Department I of the
-              Max Planck Institute for the History of Science."
-
-- img: "/images/people/TaylorQuinn.png"
-  name: "Taylor Quinn"
-  link: "#"
-  designation: "Software Engineer"
-  description: "Taylor is a software engineer with a background in Geographic Information Science."
+- img: "/images/people/Julian.jpg"
+  name: "Julian Ophals"
+  link: ""
+  designation: "Assistant Scientific Software Engineer"
+  description: "Julian assists Julia in developing software for digital/computational history and philosophy of science and digital humanities."
