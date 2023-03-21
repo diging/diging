@@ -3,9 +3,14 @@
   description: "DigInG Software Developers are a dynamic and creative team of student engineers. Our developers work in an agile environment to create robust, beautiful, and scalable software to support computational research. Each team member cultivates a unique skillset tailored to their career goals and intellectual interests, and receives    one-on-one mentorship in software engineering."
   members:
 
+    - name: "Ajay Yadav"
+      img: "/images/people/Ajay.jpg"
 
     - name: "Baishali Nayak"
       img: "/images/people/Baishali.jpg"
+
+    - name: "Diya Anna Biju"
+      img: "/images/people/Diya.jpg"
 
     - name: "Pratik Giri"
       img: "/images/people/Pratik.jpg"
@@ -13,11 +18,20 @@
     - name: "Prachi Kharge"
       img: "/images/people/Prachi.jpg"
 
+    - name: "Shivani Yerram"
+      img: "/images/people/Shivani.jpg"
+
+    - name: "Sreechandra Reddy Allala"
+      img: "/images/people/Sreechandra.jpg"
+
     - name: "Swetalina Prusty"
       img: "/images/people/Swetalina.jpg"
 
     - name: "Tushar Anand"
-      img: "/images/people/Tushar.jpg"
+      img: "/images/people/Tushar2.jpg"
+
+    - name: "Vishnu Saniko"
+      img: "/images/people/Vishnu.jpg"
 
     - name: "Vishnu Saniko"
       img: "/images/people/Vishnu.jpg"
