@@ -36,3 +36,9 @@
 
     - name: "Sola Kim"
       img: "/images/people/Sola.jpg"
+
+    - name: "David Costello"
+      img: "/images/people/David.jpg"
+
+    - name: "Namita Shah"
+      img: "/images/people/Namita.jpg"
