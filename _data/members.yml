@@ -12,23 +12,23 @@
     - name: "Diya Anna Biju"
       img: "/images/people/Diya.jpg"
 
-    - name: "Pratik Giri"
-      img: "/images/people/Pratik.jpg"
+    #- name: "Pratik Giri"
+    #  img: "/images/people/Pratik.jpg"
 
-    - name: "Prachi Kharge"
-      img: "/images/people/Prachi.jpg"
+    #- name: "Prachi Kharge"
+    #  img: "/images/people/Prachi.jpg"
 
     - name: "Shivani Yerram"
       img: "/images/people/Shivani.jpg"
 
-    - name: "Sreechandra Reddy Allala"
-      img: "/images/people/Sreechandra.jpg"
+    #- name: "Sreechandra Reddy Allala"
+    #  img: "/images/people/Sreechandra.jpg"
 
-    - name: "Swetalina Prusty"
-      img: "/images/people/Swetalina.jpg"
+    #- name: "Swetalina Prusty"
+    #  img: "/images/people/Swetalina.jpg"
 
-    - name: "Tushar Anand"
-      img: "/images/people/Tushar2.jpg"
+    #- name: "Tushar Anand"
+    #  img: "/images/people/Tushar2.jpg"
 
 - group: "Researchers"
   description: "DigInG Researchers deploy our research tools and workflows to address a wide range of problems in the humanities, from a computational perspective. DigInG researchers come from both the sciences and humanities, and work closely with DigInG Developers to improve and extend our tools and methods. Our researchers are expected to develop       and address their own research questions, based on their interests, and have the opportunity to acquire skills in computer science."
