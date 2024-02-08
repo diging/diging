@@ -19,11 +19,5 @@
   description: "DigInG Researchers deploy our research tools and workflows to address a wide range of problems in the humanities, from a computational perspective. DigInG researchers come from both the sciences and humanities, and work closely with DigInG Developers to improve and extend our tools and methods. Our researchers are expected to develop       and address their own research questions, based on their interests, and have the opportunity to acquire skills in computer science."
   members:
 
-    - name: "Sola Kim"
-      img: "/images/people/Sola.jpg"
-
-    - name: "David Costello"
-      img: "/images/people/David.jpg"
-
     - name: "Namita Shah"
       img: "/images/people/Namita.jpg"
