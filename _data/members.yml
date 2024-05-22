@@ -3,17 +3,23 @@
   description: "DigInG Software Developers are a dynamic and creative team of student engineers. Our developers work in an agile environment to create robust, beautiful, and scalable software to support computational research. Each team member cultivates a unique skillset tailored to their career goals and intellectual interests, and receives    one-on-one mentorship in software engineering."
   members:
 
-    - name: "Aditya Goyal"
-      img: "/images/people/Aditya.jpg"
+    - name: "Satish Reddy Gathpa"
+      img: "/images/people/satish.jpg"
 
     - name: "Ajay Yadav"
       img: "/images/people/Ajay.jpg"
 
-    - name: "Diya Anna Biju"
-      img: "/images/people/Diya.jpg"
+    - name: "Pooja Thalur"
+      img: "/images/people/poojaT.jpg"
 
-    - name: "Shivani Yerram"
-      img: "/images/people/Shivani.jpg"
+    - name: "Rajvi Patel"
+      img: "/images/people/rajvi.jpg"
+
+    - name: "Kulachi Thapar"
+      img: "/images/people/kulachi.jpg"
+
+    - name: "Girik Manchanda"
+      img: "/images/people/girik.jpg"
 
 - group: "Researchers"
   description: "DigInG Researchers deploy our research tools and workflows to address a wide range of problems in the humanities, from a computational perspective. DigInG researchers come from both the sciences and humanities, and work closely with DigInG Developers to improve and extend our tools and methods. Our researchers are expected to develop       and address their own research questions, based on their interests, and have the opportunity to acquire skills in computer science."
