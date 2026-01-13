@@ -3,9 +3,6 @@
   description: "DigInG Software Developers are a dynamic and creative team of student engineers. Our developers work in an agile environment to create robust, beautiful, and scalable software to support computational research. Each team member cultivates a unique skillset tailored to their career goals and intellectual interests, and receives    one-on-one mentorship in software engineering."
   members:
 
-    - name: "Rajvi Patel"
-      img: "/images/people/rajvi.jpg"
-
     - name: "Girik Manchanda"
       img: "/images/people/girik.jpg"
 
